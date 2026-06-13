@@ -2,7 +2,9 @@
 
 Site hub para prospecção local: **sites/e-commerce** + **captação aérea** (TechDrone360).
 
-**Domínio alvo:** [tiagofarias.com.br](https://tiagofarias.com.br)  
+**Site publicado:** [tofariasti.github.io/meu-site](https://tofariasti.github.io/meu-site/)  
+**Domínio alvo:** [tiagofarias.com.br](https://tiagofarias.com.br) (após configurar DNS)  
+**Repositório:** [github.com/tofariasti/meu-site](https://github.com/tofariasti/meu-site)  
 **WhatsApp:** (51) 98903-0405
 
 ## Páginas
@@ -27,10 +29,10 @@ meu-site/
 ├── assets/js/main.js
 ├── flyer/                   ← material para impressão
 ├── docs/
+│   ├── CNAME.example
 │   ├── deploy-dominio.md
 │   ├── pacotes.md
 │   └── prospeccao-piloto.md
-├── CNAME
 ├── sitemap.xml
 └── robots.txt
 ```
@@ -48,7 +50,7 @@ Edite [`assets/js/config.js`](assets/js/config.js):
 
 Instruções completas em [`docs/deploy-dominio.md`](docs/deploy-dominio.md).
 
-Resumo: push para GitHub Pages com `CNAME` = `tiagofarias.com.br` e DNS apontando para o GitHub.
+Resumo: push na `main` publica automaticamente em **https://tofariasti.github.io/meu-site/** via GitHub Actions.
 
 ## Testar localmente
 
