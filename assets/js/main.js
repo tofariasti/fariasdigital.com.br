@@ -12,6 +12,16 @@
     return HubConfig.dominio || ('https://' + getDominioHost());
   }
 
+  function renderMarcaLogo(el) {
+    var marca = HubConfig.marca || 'Farias Digital';
+    var parts = marca.trim().split(/\s+/);
+    if (parts.length < 2) {
+      el.textContent = marca;
+      return;
+    }
+    el.innerHTML = parts[0] + ' <span>' + parts.slice(1).join(' ') + '</span>';
+  }
+
   function buildWhatsAppUrl(key) {
     const msg = HubConfig.mensagensWhatsApp[key] || HubConfig.mensagensWhatsApp.geral;
     return 'https://wa.me/' + HubConfig.whatsappNumero + '?text=' + encodeURIComponent(msg);
@@ -44,6 +54,8 @@
   document.querySelectorAll('[data-region]').forEach(function (el) {
     el.textContent = HubConfig.cidadeRegiao;
   });
+
+  document.querySelectorAll('[data-logo]').forEach(renderMarcaLogo);
 
   document.querySelectorAll('[data-dominio]').forEach(function (el) {
     el.textContent = getDominioHost();
