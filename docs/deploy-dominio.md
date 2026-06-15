@@ -1,11 +1,11 @@
-# Publicar tiagofarias.com.br
+# Publicar fariasdigital.com.br
 
 Site estático pronto para GitHub Pages ou qualquer hospedagem de arquivos estáticos.
 
 ## 1. Registrar o domínio
 
 1. Acesse um registrador brasileiro (Registro.br, Hostinger, Locaweb, etc.).
-2. Pesquise e registre **tiagofarias.com.br** (~R$ 40/ano no Registro.br).
+2. Pesquise e registre **fariasdigital.com.br** (~R$ 40/ano no Registro.br).
 3. Guarde login e painel DNS do domínio.
 
 ## 2. Publicar no GitHub Pages
@@ -16,7 +16,7 @@ O deploy é automático via GitHub Actions (`.github/workflows/deploy-pages.yml`
 
 URL publicada: **https://tofariasti.github.io/meu-site/**
 
-Quando o DNS do domínio estiver configurado (passo 3), copie `docs/CNAME.example` para `CNAME` na raiz, faça commit/push e adicione `tiagofarias.com.br` em **Settings → Pages → Custom domain**.
+O arquivo `CNAME` na raiz já contém `fariasdigital.com.br`. Após configurar o DNS (passo 3), adicione o domínio em **Settings → Pages → Custom domain** no GitHub (se ainda não estiver).
 
 ## 3. Configurar DNS (Registro.br)
 
@@ -40,7 +40,7 @@ No GitHub Pages, marque **Enforce HTTPS** após o certificado ser emitido (pode 
 
 ## 5. Checklist pós-publicação
 
-- [ ] Abrir https://tiagofarias.com.br no celular
+- [ ] Abrir https://fariasdigital.com.br no celular
 - [ ] Testar botões de WhatsApp (mensagens pré-preenchidas)
 - [ ] Cadastrar no [Google Search Console](https://search.google.com/search-console)
 - [ ] Criar perfil no [Google Meu Negócio](https://business.google.com) com link do site

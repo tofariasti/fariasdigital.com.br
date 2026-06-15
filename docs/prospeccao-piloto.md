@@ -15,7 +15,7 @@ Roteiro para testar distribuição local antes de imprimir em grande volume.
 ## Materiais
 
 - [ ] 50–100 flyers impressos ([`flyer/index.html`](../flyer/index.html) → PDF na gráfica)
-- [ ] Site no ar em https://tiagofarias.com.br
+- [ ] Site no ar em https://fariasdigital.com.br
 - [ ] WhatsApp Business com etiquetas: `web`, `drone`, `flyer-piloto`
 - [ ] Planilha simples (nome, endereço, data, nicho, follow-up feito?)
 
@@ -63,7 +63,7 @@ Olá, [NOME]! Sou o Tiago — ontem deixei um flyer na [RUA/BAIRRO].
 
 Trabalho com site profissional para loja e serviço local: página que leva o cliente direto pro WhatsApp, feita pra celular.
 
-Preparei exemplos por segmento (pet shop, móveis, autopeças) — dá pra ver em tiagofarias.com.br
+Preparei exemplos por segmento (pet shop, móveis, autopeças) — dá pra ver em fariasdigital.com.br
 
 Se fizer sentido, monto um orçamento sem compromisso pro seu negócio. Posso te mandar um exemplo parecido com o que você faz?
 ```
@@ -81,7 +81,7 @@ Se quiser, faço um orçamento rápido pro próximo imóvel — é só me passar
 ### Segundo follow-up (dia 5–7, só se não respondeu)
 
 ```
-Oi, [NOME]! Só passando pra saber se chegou a ver o site de exemplos (tiagofarias.com.br). Sem pressão — se não for o momento, tranquilo. Qualquer coisa estou à disposição.
+Oi, [NOME]! Só passando pra saber se chegou a ver o site de exemplos (fariasdigital.com.br). Sem pressão — se não for o momento, tranquilo. Qualquer coisa estou à disposição.
 ```
 
 ---

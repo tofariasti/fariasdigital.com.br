@@ -1,11 +1,11 @@
 /**
- * Tiago Farias — Hub comercial
- * Altere aqui antes de publicar em tiagofarias.com.br
+ * Farias Digital — Hub comercial
+ * Configuração central: WhatsApp, pacotes, demos e domínio
  */
 const HubConfig = {
   nome: 'Tiago Farias',
   nomeCompleto: 'Tiago O. de Farias',
-  dominio: 'https://tiagofarias.com.br',
+  dominio: 'https://fariasdigital.com.br',
   cidadeRegiao: 'Porto Alegre e região metropolitana',
   email: 'tiago.farias.poa@gmail.com',
   whatsappNumero: '5551989030405',
@@ -16,8 +16,8 @@ const HubConfig = {
   googleAnalyticsId: '',
 
   mensagensWhatsApp: {
-    geral: 'Olá! Vi o site tiagofarias.com.br e gostaria de conversar sobre um projeto.',
-    site: `Olá! Vi o site tiagofarias.com.br e quero orçamento.
+    geral: 'Olá! Vi o site fariasdigital.com.br e gostaria de conversar sobre um projeto.',
+    site: `Olá! Vi o site fariasdigital.com.br e quero orçamento.
 
 Para agilizar, já tenho:
 • Tipo de negócio:
@@ -27,7 +27,7 @@ Para agilizar, já tenho:
 • Prazo desejado:
 
 Obrigado!`,
-    drone: `Olá! Vi o site tiagofarias.com.br e quero orçamento de captação com drone.
+    drone: `Olá! Vi o site fariasdigital.com.br e quero orçamento de captação com drone.
 
 Para agilizar:
 • Tipo: (imóvel / Airbnb / obra / evento / empresa / outro)

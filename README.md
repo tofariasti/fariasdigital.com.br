@@ -1,9 +1,9 @@
-# tiagofarias.com.br — Hub comercial
+# fariasdigital.com.br — Hub comercial
 
 Site hub para prospecção local: **sites/e-commerce** + **captação aérea** (TechDrone360).
 
 **Site publicado:** [tofariasti.github.io/meu-site](https://tofariasti.github.io/meu-site/)  
-**Domínio alvo:** [tiagofarias.com.br](https://tiagofarias.com.br) (após configurar DNS)  
+**Domínio alvo:** [fariasdigital.com.br](https://fariasdigital.com.br) (após configurar DNS)  
 **Repositório:** [github.com/tofariasti/meu-site](https://github.com/tofariasti/meu-site)  
 **WhatsApp:** (51) 98903-0405
 

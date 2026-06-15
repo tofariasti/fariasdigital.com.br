@@ -112,7 +112,7 @@
         actionsHtml = '';
       }
     } else {
-      var waMsg = 'Olá! Vi o modelo de site para ' + demo.titulo + ' no tiagofarias.com.br e quero algo assim para minha empresa.';
+      var waMsg = 'Olá! Vi o modelo de site para ' + demo.titulo + ' no fariasdigital.com.br e quero algo assim para minha empresa.';
       var waUrl = 'https://wa.me/' + HubConfig.whatsappNumero + '?text=' + encodeURIComponent(waMsg);
       actionsHtml =
         '<a href="' + demo.url + '" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Ver modelo</a>' +

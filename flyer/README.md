@@ -1,8 +1,16 @@
-# Flyer frente e verso — Tiago Farias
+# Flyers — Tiago Farias
 
-Arquivo para impressão do material de prospecção física.
+Arquivos para impressão do material de prospecção física.
 
-## Visualizar
+## Flyer de serviços (estilo dark tech)
+
+Abra [`servicos.html`](servicos.html) no navegador.
+
+- Formato A5 (148 × 210 mm), frente única
+- Visual inspirado no material de divulgação de serviços web
+- CTA para WhatsApp com orçamento grátis
+
+## Flyer A6 frente e verso (clássico)
 
 Abra [`index.html`](index.html) no navegador.
 
@@ -20,7 +28,7 @@ Abra [`index.html`](index.html) no navegador.
 | Lado | Conteúdo |
 |------|----------|
 | **Frente** | Nome, dois blocos (sites + drone), MEI/NF |
-| **Verso** | QR → tiagofarias.com.br, WhatsApp, bullets de confiança, miniaturas |
+| **Verso** | QR → fariasdigital.com.br, WhatsApp, bullets de confiança, miniaturas |
 
 ## Piloto
 
