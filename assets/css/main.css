@@ -338,19 +338,19 @@ a:hover { color: var(--color-accent); }
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-text);
-  letter-spacing: var(--tracking-tight);
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
   position: relative;
+  flex-shrink: 0;
 }
 
-.logo span {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.logo__img {
+  display: block;
+  height: clamp(2rem, 5vw, 2.65rem);
+  width: auto;
+  max-width: min(12rem, 42vw);
+  object-fit: contain;
 }
 
 .site-nav {

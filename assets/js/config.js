@@ -8,6 +8,10 @@ const HUB_DOMINIO_HOST = 'fariasdigital.com.br';
 const HubConfig = {
   nome: 'Tiago Farias',
   marca: 'Farias Digital',
+  marcaLogo: '/assets/img/logo-header.png',
+  marcaLogoFull: '/assets/img/logo.png',
+  marcaLogoIcon: '/assets/img/logo-icon.png',
+  marcaLogoAlt: 'Farias Digital — Tecnologia, Estratégia, Resultados',
   nomeCompleto: 'Tiago O. de Farias',
   dominio: HUB_DOMINIO,
   dominioHost: HUB_DOMINIO_HOST,

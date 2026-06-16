@@ -13,13 +13,19 @@
   }
 
   function renderMarcaLogo(el) {
-    var marca = HubConfig.marca || 'Farias Digital';
-    var parts = marca.trim().split(/\s+/);
-    if (parts.length < 2) {
-      el.textContent = marca;
-      return;
-    }
-    el.innerHTML = parts[0] + ' <span>' + parts.slice(1).join(' ') + '</span>';
+    var src = HubConfig.marcaLogo || '/assets/img/logo-header.png';
+    var alt = HubConfig.marcaLogoAlt || HubConfig.marca || 'Farias Digital';
+    el.textContent = '';
+    el.setAttribute('aria-label', alt);
+    var img = document.createElement('img');
+    img.src = src;
+    img.alt = alt;
+    img.className = 'logo__img';
+    img.width = 180;
+    img.height = 48;
+    img.loading = 'eager';
+    img.decoding = 'async';
+    el.appendChild(img);
   }
 
   function buildWhatsAppUrl(key) {

@@ -22,7 +22,7 @@
       alternateName: HubConfig.nome,
       url: dominio,
       image: seo.ogImage,
-      logo: dominio + '/assets/img/favicon.svg',
+      logo: dominio + '/assets/img/logo.png',
       description: seo.descriptionDefault,
       email: HubConfig.email,
       telephone: '+55-51-99121-3724',
