@@ -13,8 +13,8 @@ const HubConfig = {
   dominioHost: HUB_DOMINIO_HOST,
   cidadeRegiao: 'Porto Alegre e região metropolitana',
   email: 'tiago.farias.poa@gmail.com',
-  whatsappNumero: '5551989030405',
-  whatsappExibicao: '(51) 98903-0405',
+  whatsappNumero: '5551991213724',
+  whatsappExibicao: '(51) 99121-3724',
   mei: true,
   emiteNF: true,
 

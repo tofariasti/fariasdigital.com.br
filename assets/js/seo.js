@@ -25,7 +25,7 @@
       logo: dominio + '/assets/img/favicon.svg',
       description: seo.descriptionDefault,
       email: HubConfig.email,
-      telephone: '+55-51-98903-0405',
+      telephone: '+55-51-99121-3724',
       priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
@@ -174,7 +174,7 @@
           jobTitle: 'Desenvolvedor web e operador de drone',
           worksFor: { '@id': dominio + '/#business' },
           email: HubConfig.email,
-          telephone: '+55-51-98903-0405',
+          telephone: '+55-51-99121-3724',
           address: {
             '@type': 'PostalAddress',
             addressLocality: seo.local.cidade,

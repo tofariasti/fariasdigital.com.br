@@ -5,7 +5,7 @@ Site hub para prospecção local: **sites/e-commerce** + **captação aérea** (
 **Site publicado:** [fariasdigital.com.br](https://fariasdigital.com.br/)  
 **Espelho GitHub Pages:** [tofariasti.github.io/fariasdigital.com.br](https://tofariasti.github.io/fariasdigital.com.br/)  
 **Repositório:** [github.com/tofariasti/fariasdigital.com.br](https://github.com/tofariasti/fariasdigital.com.br)  
-**WhatsApp:** (51) 98903-0405
+**WhatsApp:** (51) 99121-3724
 
 ## Páginas
 
