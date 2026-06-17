@@ -169,9 +169,18 @@ body {
   text-decoration: none;
 }
 
+.verso__wa img,
 .verso__wa svg {
   width: 5mm;
   height: 5mm;
+  flex-shrink: 0;
+}
+
+.verso__wa img {
+  filter: brightness(0) invert(1);
+}
+
+.verso__wa svg {
   fill: currentColor;
 }
 

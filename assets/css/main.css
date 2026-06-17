@@ -1718,7 +1718,13 @@ a:hover { color: var(--color-accent); }
   animation: none;
 }
 
-.wa-float svg { width: 28px; height: 28px; }
+.wa-float .wa-icon { width: 28px; height: 28px; }
+
+.wa-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex-shrink: 0;
+}
 
 /* —— Drone page —— */
 .drone-hero-card {

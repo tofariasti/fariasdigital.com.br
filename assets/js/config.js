@@ -12,6 +12,7 @@ const HubConfig = {
   marcaLogoFull: '/assets/img/logo.png',
   marcaLogoIcon: '/assets/img/logo-icon.png',
   marcaLogoAlt: 'Farias Digital — Tecnologia, Estratégia, Resultados',
+  whatsappIcon: '/assets/img/whatsapp-icon.svg',
   nomeCompleto: 'Tiago O. de Farias',
   dominio: HUB_DOMINIO,
   dominioHost: HUB_DOMINIO_HOST,
