@@ -235,10 +235,70 @@
   var portfolioDemosRoot = document.getElementById('portfolio-demos');
   var demosRoot = document.getElementById('demos-root');
   var demosTarget = portfolioDemosRoot || demosRoot;
-  if (demosTarget && HubConfig.demos) {
-    demosTarget.innerHTML = HubConfig.demos.map(function (item, i) {
+  var currentFilter = 'todos';
+  
+  function renderDemos(filter) {
+    if (!demosTarget || !HubConfig.demos) return;
+    
+    var filteredDemos = filter === 'todos' 
+      ? HubConfig.demos 
+      : HubConfig.demos.filter(function (demo) {
+          return demo.segmento === filter;
+        });
+    
+    demosTarget.innerHTML = filteredDemos.map(function (item, i) {
       return renderPortfolioCard(item, i, 'demo');
     }).join('');
+    
+    if (window.HubAnimations && window.HubAnimations.init) {
+      window.HubAnimations.init();
+    }
+  }
+  
+  function setupFilterBar(filterBar) {
+    if (!filterBar || !HubConfig.demos) return;
+    
+    var segmentos = ['todos'];
+    HubConfig.demos.forEach(function (demo) {
+      if (segmentos.indexOf(demo.segmento) === -1) {
+        segmentos.push(demo.segmento);
+      }
+    });
+    
+    filterBar.innerHTML = segmentos.map(function (segmento) {
+      var label = segmento === 'todos' ? 'Todos' : segmento;
+      var activeClass = segmento === 'todos' ? ' is-active' : '';
+      return '<button class="filter-btn' + activeClass + '" data-filter="' + segmento + '">' + label + '</button>';
+    }).join('');
+    
+    filterBar.querySelectorAll('.filter-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = this.getAttribute('data-filter');
+        currentFilter = filter;
+        
+        filterBar.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('is-active');
+        });
+        this.classList.add('is-active');
+        
+        renderDemos(filter);
+      });
+    });
+  }
+  
+  if (demosTarget && HubConfig.demos) {
+    var filterBar = document.getElementById('filter-bar');
+    var filterBarHome = document.getElementById('filter-bar-home');
+    
+    if (filterBar) {
+      setupFilterBar(filterBar);
+    }
+    
+    if (filterBarHome) {
+      setupFilterBar(filterBarHome);
+    }
+    
+    renderDemos('todos');
   }
 
   var stepsRoot = document.getElementById('steps-root');
