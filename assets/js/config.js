@@ -260,6 +260,12 @@ Obrigado!`,
       url: 'https://tofariasti.github.io/cardapio-digital/',
       descricao: 'Menu interativo com filtros por categoria, galeria de pratos e pedidos/reservas via WhatsApp.',
     },
+    {
+      titulo: 'Doce Encanto',
+      segmento: 'Gastronomia',
+      url: 'https://tofariasti.github.io/lojadoces-landing/',
+      descricao: 'Loja de doces artesanais com catálogo, depoimentos, animações premium e pedidos via WhatsApp.',
+    },
   ],
 
   processoWeb: [
