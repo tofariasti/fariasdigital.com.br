@@ -213,6 +213,12 @@ Obrigado!`,
       descricao: 'Serviços, orçamento e localização.',
     },
     {
+      titulo: 'Oficina Mecânica',
+      segmento: 'Automotivo',
+      url: 'https://tofariasti.github.io/oficinamecanica/',
+      descricao: 'Serviços automotivos especializados, agendamento online e orçamento via WhatsApp.',
+    },
+    {
       titulo: 'Escritório de Advocacia',
       segmento: 'Serviços',
       url: 'https://tofariasti.github.io/advogado-landing-page/',
