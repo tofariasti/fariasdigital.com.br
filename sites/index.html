@@ -21,6 +21,7 @@
   <meta name="theme-color" content="#060b14">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/carousel.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Criação de Sites e Loja Online em Porto Alegre | Farias Digital">
   <meta property="og:description" content="Sites profissionais, landing pages e e-commerce a partir de R$ 1.490. Automação de WhatsApp e SEO básico.">
@@ -153,6 +154,25 @@
           <h2 class="section__title">Veja o layout antes de contratar</h2>
           <p class="section__lead">Landing pages prontas para você avaliar layout, velocidade e experiência no celular. Ao contratar, personalizo com a identidade, fotos e textos da sua empresa.</p>
         </header>
+        
+        <!-- Banner Rotativo -->
+        <div class="projects-carousel" data-reveal>
+          <div class="carousel-wrapper">
+            <div class="carousel-track" id="carousel-track"></div>
+          </div>
+          <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Projeto anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Próximo projeto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+          <div class="carousel-indicators" id="carousel-indicators"></div>
+        </div>
+        
         <div class="filter-bar" id="filter-bar" data-reveal></div>
         <div class="demo-grid" id="demos-root"></div>
       </div>
@@ -202,6 +222,7 @@
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/seo.js"></script>
   <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/carousel.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>
