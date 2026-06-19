@@ -278,6 +278,18 @@ Obrigado!`,
       url: 'https://tofariasti.github.io/marido-aluguel/',
       descricao: 'Reparos, instalações e manutenção residencial com formulário WhatsApp para agendamento.',
     },
+    {
+      titulo: 'Super Bom Preço',
+      segmento: 'Varejo',
+      url: 'https://tofariasti.github.io/supermercado-landing/',
+      descricao: 'Ofertas da semana, departamentos, entrega agendada ou retirada na loja via WhatsApp.',
+    },
+    {
+      titulo: 'Barbearia',
+      segmento: 'Serviços',
+      url: 'https://tofariasti.github.io/landing-barbearia/',
+      descricao: 'Cortes premium, barba, galeria de trabalhos e agendamento estruturado via WhatsApp.',
+    },
   ],
 
   processoWeb: [
