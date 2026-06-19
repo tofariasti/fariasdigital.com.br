@@ -248,6 +248,12 @@ Obrigado!`,
       url: 'https://tofariasti.github.io/catalogo-digital/',
       descricao: 'Catálogo de produtos premium com filtros por categoria, animações suaves e integração WhatsApp.',
     },
+    {
+      titulo: 'Cardápio Digital',
+      segmento: 'Gastronomia',
+      url: 'https://tofariasti.github.io/cardapio-digital/',
+      descricao: 'Menu interativo com filtros por categoria, galeria de pratos e pedidos/reservas via WhatsApp.',
+    },
   ],
 
   processoWeb: [
@@ -310,7 +316,7 @@ Obrigado!`,
     faq: [
       {
         pergunta: 'Quanto custa um site profissional em Porto Alegre?',
-        resposta: 'Os pacotes começam em R$ 1.490 (Presença Digital — landing page com WhatsApp) e R$ 2.990 (Loja Essencial — e-commerce com até 50 produtos). Projetos com pagamento online, integrações ou automação avançada são orçados sob medida.',
+        resposta: 'Os pacotes começam a partir de R$ 300,00. Projetos com pagamento online, integrações ou automação avançada são orçados sob medida.',
       },
       {
         pergunta: 'A Farias Digital emite nota fiscal?',
@@ -319,10 +325,6 @@ Obrigado!`,
       {
         pergunta: 'Quanto tempo leva para colocar meu site no ar?',
         resposta: 'Landing pages e sites institucionais costumam ficar prontos em 7 a 15 dias úteis, dependendo do escopo e da agilidade no envio de textos e fotos. Prazo exato vem fechado na proposta.',
-      },
-      {
-        pergunta: 'Você atende cidades além de Porto Alegre?',
-        resposta: 'Sim. Atendo Porto Alegre e região metropolitana — Canoas, Novo Hamburgo, Gravataí, Cachoeirinha, Viamão, Alvorada, São Leopoldo e cidades próximas. Para drone, deslocamento fora da região pode alterar o valor.',
       },
       {
         pergunta: 'O site aparece no Google?',
