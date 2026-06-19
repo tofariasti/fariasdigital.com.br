@@ -272,6 +272,12 @@ Obrigado!`,
       url: 'https://tofariasti.github.io/lojadoces-landing/',
       descricao: 'Loja de doces artesanais com catálogo, depoimentos, animações premium e pedidos via WhatsApp.',
     },
+    {
+      titulo: 'Marido de Aluguel',
+      segmento: 'Serviços',
+      url: 'https://tofariasti.github.io/marido-aluguel/',
+      descricao: 'Reparos, instalações e manutenção residencial com formulário WhatsApp para agendamento.',
+    },
   ],
 
   processoWeb: [
