@@ -46,7 +46,8 @@ Para agilizar:
 • Data ou período:
 
 Obrigado!`,
-    pacotePresenca: 'Olá! Tenho interesse no pacote Presença Digital (site com WhatsApp). Gostaria de um orçamento.',
+    pacoteLanding: 'Olá! Tenho interesse em uma landing page personalizada (a partir de R$ 300). Gostaria de um orçamento.',
+    pacotePresenca: 'Olá! Tenho interesse no pacote Site Institucional (site completo com WhatsApp). Gostaria de um orçamento.',
     pacoteLoja: 'Olá! Tenho interesse no pacote Loja Essencial (e-commerce / catálogo online). Gostaria de um orçamento.',
     pacoteAutomacao: 'Olá! Tenho interesse em automação de WhatsApp (formulários, mensagens automáticas ou integração). Gostaria de um orçamento.',
     pacoteDrone: 'Olá! Tenho interesse no pacote Drone Imóvel (fotos + vídeo aéreo). Gostaria de um orçamento.',
@@ -61,14 +62,37 @@ Obrigado!`,
     youtubeDrone: 'https://www.youtube.com/@techdrone360',
   },
 
+  pricingLanding: {
+    preco: 'a partir de R$ 300,00',
+    precoCurto: 'R$ 300',
+    titulo: 'Landing pages personalizadas',
+    lead: 'Escolha o modelo do seu segmento e adapto com sua marca, textos e WhatsApp.',
+  },
+
   pacotesWeb: [
     {
-      id: 'presenca-digital',
-      nome: 'Presença Digital',
+      id: 'landing-page',
+      nome: 'Landing Page',
+      preco: 'a partir de R$ 300',
+      publico: 'Negócios locais que querem presença rápida no Google',
+      inclui: [
+        '1 página focada em conversão (modelo do seu segmento)',
+        'Personalização com sua marca, textos e WhatsApp',
+        'Layout responsivo + SEO básico',
+        '1 rodada de ajustes após a entrega',
+      ],
+      naoInclui: 'Domínio, hospedagem e fotos profissionais (podem ser orçados à parte)',
+      mensagemWhatsApp: 'pacoteLanding',
+      destaque: true,
+      badge: 'Melhor custo-benefício',
+    },
+    {
+      id: 'site-institucional',
+      nome: 'Site Institucional',
       preco: 'a partir de R$ 1.490',
       publico: 'Comércio local, clínicas, prestadores de serviço',
       inclui: [
-        'Landing page de 1 página focada em conversão',
+        'Site com múltiplas seções (serviços, sobre, contato, localização)',
         'Botão e formulário para WhatsApp com mensagem pronta',
         'Layout responsivo (celular e computador)',
         'SEO básico (título, descrição, Google)',
@@ -91,7 +115,6 @@ Obrigado!`,
       ],
       naoInclui: 'Pagamento online integrado e ERP (sob consulta no pacote Sob medida)',
       mensagemWhatsApp: 'pacoteLoja',
-      destaque: true,
     },
     {
       id: 'sob-medida',
@@ -132,8 +155,8 @@ Obrigado!`,
       lead: 'Sites e aplicações web que desenvolvi — incluindo meu serviço de captação aérea.',
     },
     grupoDemos: {
-      titulo: 'Sites por segmento',
-      lead: 'Landing pages prontas para você ver layout e responsividade. Ao contratar, adapto com a marca, textos e fotos da sua empresa.',
+      titulo: 'Landing pages por segmento',
+      lead: 'Modelos prontos para você ver layout e responsividade. Ao contratar, personalizo com a identidade da sua empresa — a partir de R$ 300,00.',
     },
     badgeProjeto: 'Em produção',
     badgeDemo: 'Pronto para personalizar',
@@ -394,6 +417,118 @@ Obrigado!`,
     },
   ],
 
+  proofBar: [
+    { valor: 10, sufixo: '+', label: 'Anos em sistemas web corporativos' },
+    { valor: 40, sufixo: '+', label: 'Modelos por segmento disponíveis' },
+    { valor: 100, sufixo: '%', label: 'Atendimento direto com o desenvolvedor' },
+  ],
+
+  intentItems: [
+    {
+      titulo: 'Presença no Google',
+      descricao: 'Aparecer quando o cliente pesquisa seu serviço na região.',
+      anchor: '#pacotes',
+      wa: 'pacoteLanding',
+    },
+    {
+      titulo: 'Vender pelo WhatsApp',
+      descricao: 'Formulários e botões que levam o visitante direto para conversa.',
+      anchor: '#pacotes',
+      wa: 'pacotePresenca',
+    },
+    {
+      titulo: 'Loja online',
+      descricao: 'Catálogo de produtos com pedido ou orçamento pelo WhatsApp.',
+      anchor: '#pacotes',
+      wa: 'pacoteLoja',
+    },
+    {
+      titulo: 'Integrações & sistemas',
+      descricao: 'APIs, pagamento online, ERP e automação avançada.',
+      anchor: '#pacotes',
+      wa: 'site',
+    },
+    {
+      titulo: 'Drone 4K',
+      descricao: 'Fotos e vídeos aéreos para imóveis, obras e empresas.',
+      href: 'https://techdrone360.com.br/',
+      externo: true,
+    },
+  ],
+
+  servicos: [
+    {
+      id: 'landing',
+      titulo: 'Landing Pages',
+      descricao: 'Páginas estratégicas para captar leads e vender mais pelo WhatsApp.',
+      preco: 'a partir de R$ 300',
+      anchor: '#portfolio',
+    },
+    {
+      id: 'institucional',
+      titulo: 'Sites institucionais',
+      descricao: 'Presença profissional com múltiplas seções, SEO e credibilidade.',
+      preco: 'a partir de R$ 1.490',
+      anchor: '#pacotes',
+    },
+    {
+      id: 'ecommerce',
+      titulo: 'E-commerce',
+      descricao: 'Loja virtual, catálogo de produtos e pedidos pelo WhatsApp ou pagamento online.',
+      preco: 'a partir de R$ 2.990',
+      anchor: '#pacotes',
+    },
+    {
+      id: 'whatsapp',
+      titulo: 'Automação WhatsApp',
+      descricao: 'Formulários inteligentes, mensagens prontas e fluxos que agilizam o atendimento.',
+      preco: 'sob medida',
+      wa: 'pacoteAutomacao',
+    },
+    {
+      id: 'integracoes',
+      titulo: 'Integrações & APIs',
+      descricao: 'Pagamento online, ERP, marketplaces e sistemas Laravel sob medida.',
+      preco: 'sob medida',
+      wa: 'site',
+    },
+    {
+      id: 'drone',
+      titulo: 'Imagens aéreas',
+      descricao: 'Fotos e vídeos com drone para imóveis, obras e empresas.',
+      preco: 'a partir de R$ 650',
+      href: 'https://techdrone360.com.br/',
+      externo: true,
+    },
+  ],
+
+  credibilidade: {
+    titulo: 'Mais que sites bonitos',
+    lead: 'Por trás da Farias Digital há mais de 10 anos desenvolvendo sistemas corporativos — APIs, integrações e plataformas críticas em produção.',
+    setores: ['Agronegócio', 'Saúde', 'Governo', 'Pagamentos', 'Logística', 'SaaS corporativo'],
+    marcos: [
+      { periodo: '2015–2017', titulo: 'Inmetro · Cronotacógrafo', texto: 'Sistema governamental de metrologia legal com PHP e Oracle.' },
+      { periodo: '2018–2020', titulo: 'Ticket Log · Pagamentos', texto: 'Sistemas críticos de frotas e meios de pagamento — alta disponibilidade.' },
+      { periodo: '2020–2024', titulo: 'Stargrid · Healthtech', texto: 'Plataforma SaaS para escalas hospitalares com APIs Laravel e RabbitMQ.' },
+      { periodo: '2024–atual', titulo: 'Yara Brasil · Agronegócio', texto: 'API Laravel offline-first, integrações Salesforce e observabilidade em produção.' },
+    ],
+  },
+
+  cases: [
+    {
+      titulo: 'TechDrone360',
+      segmento: 'Captação aérea · Em produção',
+      descricao: 'Site comercial com portfólio, vídeos 4K, SEO local e conversão via WhatsApp — meu próprio negócio de drone.',
+      url: 'https://techdrone360.com.br',
+    },
+    {
+      titulo: 'IBGE Localidades',
+      segmento: 'React · TypeScript · Open Source',
+      descricao: 'Mapa interativo consumindo a API de Localidades do IBGE — prova de qualidade em frontend e integração.',
+      url: 'https://tofariasti.github.io/ibge-localidades/',
+    },
+  ],
+
   processoWeb: [
     { passo: '1', titulo: 'Conversa rápida', texto: 'Você conta seu negócio e objetivo pelo WhatsApp — sem compromisso.' },
     { passo: '2', titulo: 'Proposta clara', texto: 'Envio escopo, prazo e investimento fechados, sem surpresas.' },
@@ -435,12 +570,12 @@ Obrigado!`,
     ],
     paginas: {
       home: {
-        title: 'Farias Digital | Sites, E-commerce e Drone em Porto Alegre',
-        description: 'Criação de sites, lojas online, automação de WhatsApp e fotos aéreas com drone para empresas em Porto Alegre e região. MEI · Nota Fiscal · Orçamento grátis.',
+        title: 'Farias Digital | Landing Pages e Sites em Porto Alegre',
+        description: 'Landing pages a partir de R$ 300, sites institucionais, e-commerce e automação WhatsApp em Porto Alegre e região. MEI · Nota Fiscal · Orçamento grátis.',
       },
       sites: {
-        title: 'Criação de Sites e Loja Online em Porto Alegre | Farias Digital',
-        description: 'Sites profissionais, landing pages e e-commerce a partir de R$ 1.490. Automação de WhatsApp, SEO básico e layout mobile. Porto Alegre e região metropolitana.',
+        title: 'Landing Page e Criação de Sites em Porto Alegre | Farias Digital',
+        description: 'Landing pages a partir de R$ 300 · Sites institucionais a partir de R$ 1.490. E-commerce, automação WhatsApp e SEO básico. Porto Alegre e região metropolitana.',
       },
       drone: {
         title: 'Drone para Imóveis e Empresas em Porto Alegre | Farias Digital',
@@ -448,13 +583,17 @@ Obrigado!`,
       },
       sobre: {
         title: 'Sobre a Farias Digital | Tiago Farias — MEI, Porto Alegre',
-        description: 'Tiago Farias — desenvolvedor web e operador de drone certificado em Porto Alegre. Mais de 10 anos em sistemas web. MEI com emissão de Nota Fiscal.',
+        description: 'Tiago Farias — desenvolvedor web sênior e operador de drone certificado em Porto Alegre. 10+ anos em Laravel, APIs e integrações. MEI com emissão de Nota Fiscal.',
       },
     },
     faq: [
       {
         pergunta: 'Quanto custa um site profissional em Porto Alegre?',
-        resposta: 'Os pacotes começam a partir de R$ 300,00. Projetos com pagamento online, integrações ou automação avançada são orçados sob medida.',
+        resposta: 'Landing pages personalizadas começam a partir de R$ 300,00 — ideal para presença rápida no Google com WhatsApp integrado. Sites institucionais com múltiplas seções começam a partir de R$ 1.490. E-commerce e projetos com integrações são orçados conforme escopo.',
+      },
+      {
+        pergunta: 'Qual a diferença entre landing page e site institucional?',
+        resposta: 'A landing page (a partir de R$ 300) é uma página única focada em conversão — escolho um modelo do seu segmento e personalizo com sua marca. O site institucional (a partir de R$ 1.490) tem mais seções (serviços, sobre, contato, localização) e transmite mais credibilidade para negócios que precisam de presença completa.',
       },
       {
         pergunta: 'A Farias Digital emite nota fiscal?',
@@ -462,11 +601,15 @@ Obrigado!`,
       },
       {
         pergunta: 'Quanto tempo leva para colocar meu site no ar?',
-        resposta: 'Landing pages e sites institucionais costumam ficar prontos em 7 a 15 dias úteis, dependendo do escopo e da agilidade no envio de textos e fotos. Prazo exato vem fechado na proposta.',
+        resposta: 'Landing pages costumam ficar prontas em 5 a 10 dias úteis. Sites institucionais e e-commerce levam de 7 a 21 dias, dependendo do escopo e da agilidade no envio de textos e fotos. Prazo exato vem fechado na proposta.',
       },
       {
         pergunta: 'O site aparece no Google?',
         resposta: 'Todos os pacotes incluem SEO básico: título, descrição, URLs amigáveis e configuração para indexação. Também oriento sobre Google Meu Negócio e Search Console para acelerar a presença local.',
+      },
+      {
+        pergunta: 'Domínio e hospedagem estão inclusos?',
+        resposta: 'Não estão inclusos nos pacotes base, mas posso orientar a contratação ou gerenciar para você (domínio .com.br + hospedagem a partir de ~R$ 150/ano). Informo tudo no orçamento antes de iniciar.',
       },
     ],
   },

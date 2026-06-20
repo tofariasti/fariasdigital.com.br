@@ -69,7 +69,8 @@ Material A6 frente/verso: [`flyer/index.html`](flyer/index.html) → exportar PD
 
 | Pacote | A partir de |
 |--------|-------------|
-| Presença Digital | R$ 1.490 |
+| Landing Page | R$ 300 |
+| Site Institucional | R$ 1.490 |
 | Loja Essencial | R$ 2.990 |
 | Drone Imóvel | R$ 650 |
 

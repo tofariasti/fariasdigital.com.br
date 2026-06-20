@@ -126,7 +126,8 @@
   if (packagesRoot && HubConfig.pacotesWeb) {
     packagesRoot.innerHTML = HubConfig.pacotesWeb.map(function (pkg, i) {
       var featured = pkg.destaque ? ' package-card--featured' : '';
-      var badge = pkg.destaque ? '<span class="package-card__badge">Mais pedido</span>' : '';
+      var badgeText = pkg.badge || (pkg.destaque ? 'Mais pedido' : '');
+      var badge = badgeText ? '<span class="package-card__badge' + (pkg.badge ? ' package-card__badge--value' : '') + '">' + badgeText + '</span>' : '';
       var items = pkg.inclui.map(function (item) {
         return '<li>' + item + '</li>';
       }).join('');
@@ -146,6 +147,133 @@
       );
     }).join('');
     injectWhatsAppIcons(packagesRoot);
+  }
+
+  var proofBarRoot = document.getElementById('proof-bar-root');
+  if (proofBarRoot && HubConfig.proofBar) {
+    proofBarRoot.innerHTML = HubConfig.proofBar.map(function (item, i) {
+      return (
+        '<div class="proof-bar__item" data-reveal data-reveal-delay="' + (i + 1) + '">' +
+          '<strong class="proof-bar__value" data-count="' + item.valor + '" data-count-suffix="' + (item.sufixo || '') + '">0' + (item.sufixo || '') + '</strong>' +
+          '<span class="proof-bar__label">' + item.label + '</span>' +
+        '</div>'
+      );
+    }).join('');
+  }
+
+  var intentRoot = document.getElementById('intent-root');
+  if (intentRoot && HubConfig.intentItems) {
+    intentRoot.innerHTML = HubConfig.intentItems.map(function (item, i) {
+      var href;
+      var attrs = ' class="intent-card" data-reveal data-reveal-delay="' + (i + 1) + '"';
+      if (item.externo && item.href) {
+        href = item.href;
+        attrs += ' href="' + href + '" target="_blank" rel="noopener noreferrer"';
+      } else if (item.wa) {
+        href = buildWhatsAppUrl(item.wa);
+        attrs += ' href="' + href + '" target="_blank" rel="noopener noreferrer"';
+      } else {
+        href = item.anchor || '#pacotes';
+        attrs += ' href="' + href + '"';
+      }
+      return (
+        '<a' + attrs + '>' +
+          '<h3 class="intent-card__title">' + item.titulo + '</h3>' +
+          '<p class="intent-card__desc">' + item.descricao + '</p>' +
+          '<span class="intent-card__link">' + (item.externo ? 'Saiba mais →' : 'Ver opções →') + '</span>' +
+        '</a>'
+      );
+    }).join('');
+  }
+
+  var pricingCalloutRoot = document.getElementById('pricing-callout-root');
+  if (pricingCalloutRoot && HubConfig.pricingLanding) {
+    var pl = HubConfig.pricingLanding;
+    var exemplosAnchor = document.getElementById('portfolio-demos')
+      ? '#portfolio-demos'
+      : (document.getElementById('demos-root') ? '#exemplos' : '#portfolio');
+    pricingCalloutRoot.innerHTML =
+      '<div class="pricing-callout" data-reveal>' +
+        '<div class="pricing-callout__content">' +
+          '<p class="pricing-callout__eyebrow">Investimento acessível</p>' +
+          '<h3 class="pricing-callout__title">' + pl.titulo + '</h3>' +
+          '<p class="pricing-callout__price">' + pl.preco + '</p>' +
+          '<p class="pricing-callout__lead">' + pl.lead + '</p>' +
+        '</div>' +
+        '<div class="pricing-callout__actions">' +
+          '<a href="' + buildWhatsAppUrl('pacoteLanding') + '" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener noreferrer">Quero minha landing</a>' +
+          '<a href="' + exemplosAnchor + '" class="btn btn--outline">Ver modelos</a>' +
+        '</div>' +
+      '</div>';
+    injectWhatsAppIcons(pricingCalloutRoot);
+  }
+
+  var servicosRoot = document.getElementById('servicos-root');
+  if (servicosRoot && HubConfig.servicos) {
+    servicosRoot.innerHTML = HubConfig.servicos.map(function (svc, i) {
+      var linkHtml;
+      if (svc.externo && svc.href) {
+        linkHtml = '<a href="' + svc.href + '" class="mini-service__link" target="_blank" rel="noopener noreferrer">Saiba mais →</a>';
+      } else if (svc.wa) {
+        linkHtml = '<a href="' + buildWhatsAppUrl(svc.wa) + '" class="mini-service__link" target="_blank" rel="noopener noreferrer">Saiba mais →</a>';
+      } else if (svc.anchor) {
+        linkHtml = '<a href="' + svc.anchor + '" class="mini-service__link">Saiba mais →</a>';
+      } else {
+        linkHtml = '';
+      }
+      var precoHtml = svc.preco ? '<span class="mini-service__price">' + svc.preco + '</span>' : '';
+      return (
+        '<article class="mini-service" data-stagger-item data-reveal data-reveal-delay="' + ((i % 3) + 1) + '">' +
+          '<h3>' + svc.titulo + '</h3>' +
+          '<p>' + svc.descricao + '</p>' +
+          precoHtml +
+          linkHtml +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  var credibilidadeRoot = document.getElementById('credibilidade-root');
+  if (credibilidadeRoot && HubConfig.credibilidade) {
+    var cred = HubConfig.credibilidade;
+    var sectorsHtml = cred.setores.map(function (s) {
+      return '<span class="credibility-sector">' + s + '</span>';
+    }).join('');
+    var timelineHtml = cred.marcos.map(function (m) {
+      return (
+        '<div class="timeline__item">' +
+          '<span class="timeline__period">' + m.periodo + '</span>' +
+          '<h3 class="timeline__title">' + m.titulo + '</h3>' +
+          '<p class="timeline__text">' + m.texto + '</p>' +
+        '</div>'
+      );
+    }).join('');
+    credibilidadeRoot.innerHTML =
+      '<div class="credibility-grid">' +
+        '<div data-reveal="left">' +
+          '<h2 class="section__title">' + cred.titulo + '</h2>' +
+          '<p class="section__lead">' + cred.lead + '</p>' +
+          '<div class="credibility-sectors">' + sectorsHtml + '</div>' +
+          '<p style="margin-top:1.5rem;">' +
+            '<a href="' + (HubConfig.links.portfolio || '#') + '" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Ver portfólio técnico completo</a>' +
+          '</p>' +
+        '</div>' +
+        '<div class="timeline" data-reveal="right">' + timelineHtml + '</div>' +
+      '</div>';
+  }
+
+  var casesRoot = document.getElementById('cases-root');
+  if (casesRoot && HubConfig.cases) {
+    casesRoot.innerHTML = HubConfig.cases.map(function (c, i) {
+      return (
+        '<article class="case-card" data-reveal data-reveal-delay="' + (i + 1) + '">' +
+          '<p class="case-card__segment">' + c.segmento + '</p>' +
+          '<h3 class="case-card__title">' + c.titulo + '</h3>' +
+          '<p class="case-card__desc">' + c.descricao + '</p>' +
+          (c.url ? '<a href="' + c.url + '" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Ver projeto</a>' : '') +
+        '</article>'
+      );
+    }).join('');
   }
 
   function renderPortfolioCard(demo, i, tipo) {

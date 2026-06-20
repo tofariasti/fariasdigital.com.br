@@ -4,7 +4,29 @@
 
 ---
 
-## Web — Presença Digital
+## Web — Landing Page
+
+**Público:** negócios locais que querem presença rápida no Google com WhatsApp integrado.
+
+**Investimento:** a partir de **R$ 300**
+
+| Entregável | Detalhe |
+|------------|---------|
+| Landing page | 1 página focada em conversão (modelo do segmento) |
+| Personalização | Marca, textos e WhatsApp do cliente |
+| Responsivo | Celular e desktop |
+| SEO básico | title, description, Open Graph |
+| Ajustes | 1 rodada após entrega |
+
+**Não inclui:** domínio, hospedagem anual, sessão de fotos, redação longa de textos.
+
+**Prazo típico:** 5–10 dias úteis após aprovação do escopo e recebimento do material (logo, fotos, textos).
+
+**Diferença vs Site Institucional:** landing = 1 página com modelo pronto; institucional = múltiplas seções e mais conteúdo.
+
+---
+
+## Web — Site Institucional
 
 **Público:** comércio local, clínicas, prestadores de serviço, profissionais liberais.
 
@@ -12,7 +34,7 @@
 
 | Entregável | Detalhe |
 |------------|---------|
-| Landing page | 1 página (hero, serviços, contato, localização) |
+| Site institucional | Múltiplas seções (serviços, sobre, contato, localização) |
 | WhatsApp | Botão flutuante + formulário que monta mensagem |
 | Responsivo | Celular e desktop |
 | SEO básico | title, description, Open Graph |
@@ -37,7 +59,7 @@
 | Catálogo | Até 50 produtos com foto, nome, preço e descrição curta |
 | Pedido | Checkout via WhatsApp (sem gateway integrado) |
 | Institucional | Sobre, contato, localização |
-| Responsivo + SEO | Igual Presença Digital |
+| Responsivo + SEO | Igual pacotes anteriores |
 | Ajustes | 1 rodada após entrega |
 
 **Não inclui:** Mercado Pago, PagSeguro, ERP, estoque em tempo real.

@@ -26,7 +26,7 @@
       description: seo.descriptionDefault,
       email: HubConfig.email,
       telephone: '+55-51-99121-3724',
-      priceRange: '$$',
+      priceRange: 'R$300-R$5000',
       address: {
         '@type': 'PostalAddress',
         addressLocality: seo.local.cidade,
@@ -48,10 +48,13 @@
       },
       sameAs: seo.sameAs,
       knowsAbout: [
+        'Landing pages',
         'Desenvolvimento de sites',
+        'Sites institucionais',
         'E-commerce',
         'Automação WhatsApp',
         'SEO',
+        'Integrações API',
         'Captação aérea com drone',
       ],
     };
@@ -120,12 +123,17 @@
           areaServed: seo.local.cidade + ', RS',
           description: seo.paginas.sites.description,
           offers: HubConfig.pacotesWeb.map(function (pkg) {
-            return {
+            var priceMatch = pkg.preco.match(/R\$\s?([\d.,]+)/);
+            var offer = {
               '@type': 'Offer',
               name: pkg.nome,
               priceCurrency: 'BRL',
               description: pkg.preco + ' — ' + pkg.publico,
             };
+            if (priceMatch) {
+              offer.price = priceMatch[1].replace('.', '').replace(',', '.');
+            }
+            return offer;
           }),
         },
       ],
@@ -171,7 +179,7 @@
           name: HubConfig.nomeCompleto,
           alternateName: HubConfig.nome,
           url: dominio + '/sobre/',
-          jobTitle: 'Desenvolvedor web e operador de drone',
+          jobTitle: 'Desenvolvedor web sênior e operador de drone',
           worksFor: { '@id': dominio + '/#business' },
           email: HubConfig.email,
           telephone: '+55-51-99121-3724',
