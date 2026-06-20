@@ -16,7 +16,7 @@ const HubConfig = {
   nomeCompleto: 'Tiago O. de Farias',
   dominio: HUB_DOMINIO,
   dominioHost: HUB_DOMINIO_HOST,
-  cidadeRegiao: 'Porto Alegre e região metropolitana',
+  cidadeRegiao: 'Atendimento em todo o Brasil',
   empresaCnpj: '37.481.999/0001-48',
   empresaEndereco: 'Av. Baltazar de Oliveira Garcia, 2478',
   email: 'fariasdigitalnaweb@gmail.com',
@@ -422,7 +422,7 @@ Obrigado!`,
   intentItems: [
     {
       titulo: 'Presença no Google',
-      descricao: 'Aparecer quando o cliente pesquisa seu serviço na região.',
+      descricao: 'Aparecer quando o cliente pesquisa seu serviço no Google.',
       href: '/#site-vs-instagram',
     },
     {
@@ -531,7 +531,7 @@ Obrigado!`,
 
   seo: {
     ogImage: HUB_DOMINIO + '/assets/img/og-image.png',
-    descriptionDefault: 'Sites, e-commerce, automação de WhatsApp e imagens aéreas com drone em Porto Alegre e região. MEI com Nota Fiscal.',
+    descriptionDefault: 'Sites, e-commerce, automação de WhatsApp e imagens aéreas com drone. MEI com Nota Fiscal.',
     geo: {
       region: 'BR-RS',
       placename: 'Porto Alegre',
@@ -563,28 +563,28 @@ Obrigado!`,
     ],
     paginas: {
       home: {
-        title: 'Farias Digital | Landing Pages e Sites em Porto Alegre',
-        description: 'Landing pages a partir de R$ 300, sites institucionais, e-commerce e automação WhatsApp em Porto Alegre e região. MEI · Nota Fiscal · Orçamento grátis.',
+        title: 'Farias Digital | Landing Pages e Sites Profissionais',
+        description: 'Landing pages a partir de R$ 300, sites institucionais, e-commerce e automação WhatsApp. MEI · Nota Fiscal · Orçamento grátis.',
       },
       sites: {
-        title: 'Landing Page e Criação de Sites em Porto Alegre | Farias Digital',
-        description: 'Landing pages a partir de R$ 300 · Sites institucionais a partir de R$ 1.490. E-commerce, automação WhatsApp e SEO básico. Porto Alegre e região metropolitana.',
+        title: 'Landing Page e Criação de Sites | Farias Digital',
+        description: 'Landing pages a partir de R$ 300 · Sites institucionais a partir de R$ 1.490. E-commerce, automação WhatsApp e SEO básico.',
       },
       drone: {
-        title: 'Drone para Imóveis e Empresas em Porto Alegre | Farias Digital',
-        description: 'Fotos e vídeos aéreos 4K com drone DJI para imóveis, Airbnb, obras e eventos. A partir de R$ 650. Nota Fiscal. Porto Alegre e região.',
+        title: 'Drone para Imóveis e Empresas | Farias Digital',
+        description: 'Fotos e vídeos aéreos 4K com drone DJI para imóveis, Airbnb, obras e eventos. A partir de R$ 650. Nota Fiscal.',
       },
       sobre: {
-        title: 'Sobre a Farias Digital | Tiago Farias — MEI, Porto Alegre',
-        description: 'Tiago Farias — desenvolvedor web sênior e operador de drone certificado em Porto Alegre. 10+ anos em Laravel, APIs e integrações. MEI com emissão de Nota Fiscal.',
+        title: 'Sobre a Farias Digital | Tiago Farias — MEI',
+        description: 'Tiago Farias — desenvolvedor web sênior e operador de drone certificado. 10+ anos em Laravel, APIs e integrações. MEI com emissão de Nota Fiscal.',
       },
       portfolio: {
         title: 'Portfólio de Sites e Landing Pages | Farias Digital',
-        description: 'Exemplos de landing pages por segmento e projetos em produção. Personalização a partir de R$ 300. Porto Alegre e região.',
+        description: 'Exemplos de landing pages por segmento e projetos em produção. Personalização a partir de R$ 300.',
       },
       faq: {
         title: 'Perguntas Frequentes — Sites e Landing Pages | Farias Digital',
-        description: 'Dúvidas sobre preços, prazos, SEO, domínio e hospedagem. Landing pages a partir de R$ 300 em Porto Alegre.',
+        description: 'Dúvidas sobre preços, prazos, SEO, domínio e hospedagem. Landing pages a partir de R$ 300.',
       },
       'por-que-site': {
         title: 'Por que ter site além do Instagram | Farias Digital',
@@ -593,7 +593,7 @@ Obrigado!`,
     },
     faq: [
       {
-        pergunta: 'Quanto custa um site profissional em Porto Alegre?',
+        pergunta: 'Quanto custa um site profissional?',
         resposta: 'Landing pages personalizadas começam a partir de R$ 300,00 — ideal para presença rápida no Google com WhatsApp integrado. Sites institucionais com múltiplas seções começam a partir de R$ 1.490. E-commerce e projetos com integrações são orçados conforme escopo.',
       },
       {
