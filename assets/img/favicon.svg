@@ -1,3 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" role="img" aria-label="Farias Digital">
-  <image width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD5UlEQVR42u2Xz4scVRDHP/W6e3pnZsfMjutiQjDuTURQEUQJKBj1oLeQgxjRIHjwEFQQlKAH8eBFFoSIkqNecvGmQswf4HowISCLhyhGDepmd5P9Mbs7M9399dA9Mz0zPbvBy3rYxzy653W9qu+r+lZVt4XVhtjD4djjsQ9gH8CeA/C7N0lnCykGrFhSabYKYRjpz+jmsAEavxvl7sw8XFAeBIDUM5IX76pWF4BAJpxAZj2ZPLydhwb0jwmB5WZ+rX/pG7KchOX+qdCLkgae+H3xzAPGWEeq5+gRWMUHNQ1HcAScP7KszKE2uEm5aNvYM2pgvXee2yHhoLG+lkGzNqJRhaFTjxkqkhRjPKCRUKdMdy4jYXc17mux4TMmQIA5AyVYkgyCGEoVf3zCGJhD5qCztUtqDY+oryWsYlE0xCHbCQAYLk0xrwStdXjhPfTyGfj7FiQexAYdy3QZeAYeMAGUHSTr8ONFOPsh2vwNhTUsahdCtu77QNRqoiTOXOrAedDZhGffJXnzI/gn865yVwEBUMqMh9l9FTicrtmp1+HC5zBxB9ZppWFxHn5YKQCgODVuHkRb8PwcyUtvwdXMa26IZ15Gh0oGoAsiBDZiOOjBE2BPnoDvv8LCKkTtFEBpDADDpbEyQ7PPwMp12FwCC1LDfla7FENzEU7Nw7WLcOkzqB1KkT16Ep14DdYTmHVQB3vEgfMx53BmeBkAwmpDYbUhzw/lPF+eV5LzQ1lQkUE6p6dltYas0pCVp2RBTRbWZZNH5ECuK5dNB7LH3hBfSJzdFr9I9vSr6bOgLC+YUNfu2FJsLuPnmW/Q1zfQuWX06TKaW0Fza+jLm3DPg2jmcfR2Rq5wCsp3okoD5j+BhQ1ohfAH6KFjhWnrFzdpB601eOVj9NRzcCGLa5LNGtgHL8LCt+idDrbUzErAdspCC1Jbf15BtaOwCOHEXXQKyrdf2Ie62fLAcfgZbPkanD8OrgSlCsSbcH0ejp6DRWDlam6rA7VTmgSHYanNwZkSM79f5wrgxA4eGG7oizfh3lmwCrZ4aTSLV5ehA8S1dHsnAtdGSRP38Gnq9SPUm5sca5b44fJ3KUhpoED3AZil5TPfUjfWYBFsaw18H/Mn+yi3b2HRNqwJWqto8gAEU5gXEt53krvvf5/6Xzc4NDHNgcsrLPx0HoIw61A2WohG3SBor0IngcBBaXLIYYKkCVEbnA/laTAPMw+LfWj+ShRntBFYWCbwyyNuth2/jCRSH1uPWKNgo8EKK6G4DX6Q62wBhissxf6OzdpcRv9xrccy1ueeG5gLb7t1+bu/v+029B/37X8X/E8A/AvvqZMT/ie+0QAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Farias Digital">
+  <defs>
+    <linearGradient id="fd-grad" x1="5" y1="4" x2="27" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="#070b12"/>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="8" fill="rgba(34,211,238,0.07)" stroke="url(#fd-grad)" stroke-width="1.25"/>
+  <text x="16" y="21.5" text-anchor="middle" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="800" letter-spacing="-0.06em" fill="url(#fd-grad)">FD</text>
 </svg>

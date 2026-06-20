@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" role="img" aria-label="Farias Digital">
+  <defs>
+    <linearGradient id="fd-grad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="fd-text" x1="56" y1="12" x2="220" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="12" fill="rgba(34,211,238,0.07)" stroke="url(#fd-grad)" stroke-width="1.5"/>
+  <text x="24" y="31" text-anchor="middle" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="18" font-weight="800" letter-spacing="-0.06em" fill="url(#fd-grad)">FD</text>
+  <text x="58" y="31" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.03em" fill="#f8fafc">Farias</text>
+  <text x="132" y="31" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.03em" fill="url(#fd-text)">Digital</text>
+</svg>

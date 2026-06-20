@@ -90,8 +90,8 @@
   }
 
   function renderMarcaLogo(el) {
-    var fullSrc = HubConfig.marcaLogoFull || HubConfig.marcaLogo;
-    var iconSrc = HubConfig.marcaLogoIcon || '/assets/img/logo-icon.png';
+    var fullSrc = HubConfig.marcaLogoFull;
+    var iconSrc = HubConfig.marcaLogoIcon || '/assets/img/logo-icon.svg';
     var alt = HubConfig.marcaLogoAlt || HubConfig.marca || 'Farias Digital';
     var marca = HubConfig.marca || 'Farias Digital';
     el.textContent = '';
@@ -117,7 +117,20 @@
     icon.setAttribute('aria-hidden', 'true');
     var text = document.createElement('span');
     text.className = 'logo__text';
-    text.textContent = marca;
+    var parts = marca.trim().split(/\s+/);
+    if (parts.length > 1) {
+      var brand = document.createElement('span');
+      brand.className = 'logo__text-brand';
+      brand.textContent = parts[0];
+      var accent = document.createElement('span');
+      accent.className = 'logo__text-accent';
+      accent.textContent = parts.slice(1).join(' ');
+      text.appendChild(brand);
+      text.appendChild(document.createTextNode(' '));
+      text.appendChild(accent);
+    } else {
+      text.textContent = marca;
+    }
     el.appendChild(icon);
     el.appendChild(text);
   }
