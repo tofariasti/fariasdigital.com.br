@@ -261,6 +261,12 @@ Obrigado!`,
       descricao: 'Landing page para farmácia com delivery, manipulação e agendamento via WhatsApp.',
     },
     {
+      titulo: 'PDV Pro — Sistema de Ponto de Venda',
+      segmento: 'Varejo',
+      url: 'https://tofariasti.github.io/landing-pdv/',
+      descricao: 'Sistema PDV para varejo com caixa rápido, estoque integrado, NFC-e e agendamento de demo via WhatsApp.',
+    },
+    {
       titulo: 'Psicóloga',
       segmento: 'Saúde',
       url: 'https://tofariasti.github.io/landing-page-psicologa/',
