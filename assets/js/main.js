@@ -13,19 +13,25 @@
   }
 
   function renderMarcaLogo(el) {
-    var src = HubConfig.marcaLogo || '/assets/img/logo-header.png';
+    var iconSrc = HubConfig.marcaLogoIcon || '/assets/img/logo-icon.svg';
     var alt = HubConfig.marcaLogoAlt || HubConfig.marca || 'Farias Digital';
+    var marca = HubConfig.marca || 'Farias Digital';
     el.textContent = '';
     el.setAttribute('aria-label', alt);
-    var img = document.createElement('img');
-    img.src = src;
-    img.alt = alt;
-    img.className = 'logo__img';
-    img.width = 180;
-    img.height = 48;
-    img.loading = 'eager';
-    img.decoding = 'async';
-    el.appendChild(img);
+    var icon = document.createElement('img');
+    icon.src = iconSrc;
+    icon.alt = '';
+    icon.className = 'logo__icon';
+    icon.width = 32;
+    icon.height = 32;
+    icon.loading = 'eager';
+    icon.decoding = 'async';
+    icon.setAttribute('aria-hidden', 'true');
+    var text = document.createElement('span');
+    text.className = 'logo__text';
+    text.textContent = marca;
+    el.appendChild(icon);
+    el.appendChild(text);
   }
 
   function buildWhatsAppUrl(key) {
@@ -169,6 +175,9 @@
       if (item.externo && item.href) {
         href = item.href;
         attrs += ' href="' + href + '" target="_blank" rel="noopener noreferrer"';
+      } else if (item.href) {
+        href = item.href;
+        attrs += ' href="' + href + '"';
       } else if (item.wa) {
         href = buildWhatsAppUrl(item.wa);
         attrs += ' href="' + href + '" target="_blank" rel="noopener noreferrer"';
@@ -216,6 +225,9 @@
         linkHtml = '<a href="' + svc.href + '" class="mini-service__link" target="_blank" rel="noopener noreferrer">Saiba mais →</a>';
       } else if (svc.wa) {
         linkHtml = '<a href="' + buildWhatsAppUrl(svc.wa) + '" class="mini-service__link" target="_blank" rel="noopener noreferrer">Saiba mais →</a>';
+      } else if (svc.href) {
+        var hrefAttr = svc.externo ? ' href="' + svc.href + '" target="_blank" rel="noopener noreferrer"' : ' href="' + svc.href + '"';
+        linkHtml = '<a' + hrefAttr + ' class="mini-service__link">' + (svc.externo ? 'Saiba mais →' : 'Saiba mais →') + '</a>';
       } else if (svc.anchor) {
         linkHtml = '<a href="' + svc.anchor + '" class="mini-service__link">Saiba mais →</a>';
       } else {
@@ -253,6 +265,7 @@
         '<div data-reveal="left">' +
           '<h2 class="section__title">' + cred.titulo + '</h2>' +
           '<p class="section__lead">' + cred.lead + '</p>' +
+          (cred.nota ? '<p class="credibility-note">' + cred.nota + '</p>' : '') +
           '<div class="credibility-sectors">' + sectorsHtml + '</div>' +
           '<p style="margin-top:1.5rem;">' +
             '<a href="' + (HubConfig.links.portfolio || '#') + '" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Ver portfólio técnico completo</a>' +

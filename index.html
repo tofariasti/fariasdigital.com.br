@@ -54,7 +54,9 @@
       <nav aria-label="Principal">
         <ul class="site-nav">
           <li><a href="/" class="is-active">Início</a></li>
-          <li><a href="sites/">Sites</a></li>
+          <li><a href="sites/">Pacotes</a></li>
+          <li><a href="portfolio/">Portfólio</a></li>
+          <li><a href="faq/">FAQ</a></li>
           <li><a href="https://techdrone360.com.br/" target="_blank" rel="noopener">Drone</a></li>
           <li><a href="sobre/">Sobre</a></li>
           <li><a href="#" data-wa="geral" class="btn btn--whatsapp">Vamos conversar</a></li>
@@ -67,7 +69,9 @@
     </div>
     <div class="container mobile-nav" id="mobile-nav" data-mobile-nav>
       <a href="/">Início</a>
-      <a href="sites/">Sites</a>
+      <a href="sites/">Pacotes</a>
+      <a href="portfolio/">Portfólio</a>
+      <a href="faq/">FAQ</a>
       <a href="https://techdrone360.com.br/" target="_blank" rel="noopener">Drone</a>
       <a href="sobre/">Sobre</a>
       <a href="#" data-wa="geral" class="btn btn--whatsapp btn--block">Vamos conversar</a>
@@ -80,21 +84,19 @@
       <div class="container hero__grid">
         <div class="hero__content">
           <span class="hero__label" data-reveal><span class="hero__label-dot" aria-hidden="true"></span>Farias Digital · Porto Alegre, RS</span>
-          <p class="hero__price-badge" data-reveal data-reveal-delay="1">Landing pages <strong>a partir de R$ 300</strong></p>
           <h1 class="hero__title" data-reveal data-reveal-delay="1">
             <span class="hero__title-line">Presença digital que</span>
             <span class="hero__title-line hero__title-line--accent">
               <span class="text-rotate" data-text-rotate data-words="converte.|aparece no Google.|gera clientes.|vende no WhatsApp.">converte.</span><span class="text-rotate__cursor" aria-hidden="true"></span>
             </span>
           </h1>
-          <p class="hero__subtitle" data-reveal data-reveal-delay="2">Sites, landing pages e e-commerce com foco em resultado — mais de 10 anos em sistemas web corporativos, atendimento direto e Nota Fiscal. Orçamento claro, entrega ágil.</p>
+          <p class="hero__subtitle" data-reveal data-reveal-delay="2">Hub digital para PMEs da região — explore pacotes, exemplos e respostas antes de pedir orçamento. Atendimento direto com quem desenvolve.</p>
           <div class="hero__actions" data-reveal data-reveal-delay="3">
-            <a href="#" data-wa="geral" class="btn btn--whatsapp btn--lg" data-magnetic>Pedir orçamento</a>
-            <a href="#portfolio" class="btn btn--outline btn--lg">Ver exemplos</a>
+            <a href="sites/" class="btn btn--primary btn--lg">Ver pacotes e preços</a>
+            <a href="portfolio/" class="btn btn--outline btn--lg">Ver exemplos</a>
           </div>
           <ul class="hero__trust" data-reveal data-reveal-delay="4">
-            <li>MEI · Nota Fiscal</li>
-            <li>10+ anos em tecnologia</li>
+            <li>40+ modelos por segmento</li>
             <li>Retorno em até 24h</li>
             <li>Porto Alegre e região</li>
           </ul>
@@ -163,221 +165,39 @@
       </div>
     </section>
 
-    <section class="section" id="servicos">
+    <section class="section" id="explore">
       <div class="container">
         <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Serviços</p>
-          <h2 class="section__title">Soluções completas <span class="highlight">para o seu negócio</span></h2>
-          <p class="section__lead">Sites, lojas virtuais, automação de atendimento no WhatsApp e captação aérea — tudo com foco em gerar contato e vender mais.</p>
+          <p class="section__eyebrow">Explore</p>
+          <h2 class="section__title">Tudo o que você precisa <span class="highlight">em páginas dedicadas</span></h2>
+          <p class="section__lead">Conteúdo organizado para você encontrar preços, exemplos e respostas sem rolar uma página enorme.</p>
         </header>
-        <div class="mini-services" id="servicos-root" data-reveal data-stagger></div>
-        <p style="text-align:center;margin-top:2rem;" data-reveal>
-          <a href="#" data-wa="geral" class="btn btn--whatsapp btn--lg">Pedir orçamento</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="pacotes">
-      <div class="container">
-        <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Pacotes</p>
-          <h2 class="section__title">Investimento transparente, <span class="highlight">escopo fechado</span></h2>
-          <p class="section__lead">Do modelo pronto à loja online — escolha o pacote ideal ou peça algo sob medida.</p>
-        </header>
-        <div class="package-grid" id="packages-root"></div>
-      </div>
-    </section>
-
-    <!-- Site vs Instagram — Seção de conversão -->
-    <section class="section section--dark site-vs-insta" id="site-vs-instagram">
-      <div class="container">
-        <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Instagram não é estratégia</p>
-          <h2 class="section__title">Por que sua empresa <span class="highlight">não pode depender só do Instagram</span></h2>
-          <p class="section__lead">O Instagram é importante. Mas se for sua única presença digital, você está perdendo clientes, dinheiro e controle sobre o seu negócio.</p>
-        </header>
-
-        <div class="comparison-table" data-reveal data-reveal-delay="1">
-          <div class="comparison-col comparison-col--danger">
-            <div class="comparison-col__header">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-              <h3>Só Instagram</h3>
-              <span class="comparison-tag comparison-tag--danger">Risco alto</span>
-            </div>
-            <ul class="comparison-list">
-              <li class="comparison-item comparison-item--bad">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-                <div>
-                  <strong>Não aparece no Google</strong>
-                  <p>97% das pessoas pesquisam no Google antes de comprar. Se você não tem site, não existe.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--bad">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-                <div>
-                  <strong>Você não é dono da audiência</strong>
-                  <p>Instagram pode banir, mudar regras ou sumir. Seu trabalho de anos pode desaparecer em um clique.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--bad">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-                <div>
-                  <strong>Alcance orgânico despencou</strong>
-                  <p>Menos de 10% dos seus seguidores veem seus posts. Instagram quer que você pague anúncios.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--bad">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-                <div>
-                  <strong>Link na bio não converte</strong>
-                  <p>Cliente tem que clicar no perfil, depois na bio, depois escolher. Você perde venda no caminho.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--bad">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-                <div>
-                  <strong>Amadores têm o mesmo visual que você</strong>
-                  <p>No Instagram, qualquer perfil parece igual. Não transmite autoridade nem diferencia sua marca.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--bad">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-                <div>
-                  <strong>Sem controle sobre vendas</strong>
-                  <p>Não há carrinho, pagamento automatizado, relatório de vendas ou automação de pós-venda.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="comparison-col comparison-col--success">
-            <div class="comparison-col__header">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-              </svg>
-              <h3>Site Profissional</h3>
-              <span class="comparison-tag comparison-tag--success">Controle total</span>
-            </div>
-            <ul class="comparison-list">
-              <li class="comparison-item comparison-item--good">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <div>
-                  <strong>Aparece no Google 24h por dia</strong>
-                  <p>Clientes encontram você quando precisam. SEO traz visitas grátis, sem depender de algoritmo.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--good">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <div>
-                  <strong>Você é dono do canal</strong>
-                  <p>Seu domínio, seu conteúdo, sua lista de clientes. Ninguém pode tirar isso de você.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--good">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <div>
-                  <strong>100% do público vê seu conteúdo</strong>
-                  <p>Não existe algoritmo cortando seu alcance. Quem acessa, vê tudo que você quer mostrar.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--good">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <div>
-                  <strong>Leva direto para a conversão</strong>
-                  <p>Botões de WhatsApp, formulários estratégicos e páginas que vendem. Menos cliques, mais venda.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--good">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <div>
-                  <strong>Transmite profissionalismo e confiança</strong>
-                  <p>Clientes levam mais a sério empresas com site. Design exclusivo posiciona você como referência.</p>
-                </div>
-              </li>
-              <li class="comparison-item comparison-item--good">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <div>
-                  <strong>Vende enquanto você dorme</strong>
-                  <p>Catálogo online, checkout automático, cupons, relatórios, integração com ERP e pagamento.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="reality-box" data-reveal>
-          <svg class="reality-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-            <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
-          </svg>
-          <div class="reality-box__content">
-            <h3>A verdade que ninguém te conta:</h3>
-            <p><strong>Instagram serve para engajamento.</strong> Site serve para <strong>vender</strong>. São complementares, não concorrentes. Empresas sérias têm os dois — mas o site é a base. É ali que o cliente decide contratar ou não.</p>
-          </div>
-        </div>
-
-        <div class="stats-proof" data-reveal data-reveal-delay="1">
-          <h3 class="stats-proof__title">Dados que comprovam:</h3>
-          <div class="stats-proof__grid">
-            <div class="stats-proof__item">
-              <strong data-count="81" data-count-suffix="%">0%</strong>
-              <p>das pessoas pesquisam online antes de visitar uma empresa física</p>
-              <cite>Google / Ipsos</cite>
-            </div>
-            <div class="stats-proof__item">
-              <strong data-count="75" data-count-suffix="%">0%</strong>
-              <p>julgam a credibilidade de uma empresa pelo design do site</p>
-              <cite>Stanford Web Credibility Research</cite>
-            </div>
-            <div class="stats-proof__item">
-              <strong data-count="70" data-count-suffix="%">0%</strong>
-              <p>dos brasileiros usam o Google para encontrar produtos e serviços locais</p>
-              <cite>Think with Google Brasil</cite>
-            </div>
-            <div class="stats-proof__item">
-              <strong data-count="93" data-count-suffix="%">0%</strong>
-              <p>das experiências online começam com um mecanismo de busca</p>
-              <cite>BrightEdge</cite>
-            </div>
-          </div>
-        </div>
-
-        <div class="inline-cta inline-cta--emphasis" data-reveal>
-          <p>Pare de perder clientes para quem tem site. <strong>Invista na ferramenta que realmente vende.</strong></p>
-          <a href="#" data-wa="geral" class="btn btn--whatsapp btn--lg">Quero um site que vende de verdade</a>
+        <div class="intent-grid" data-reveal>
+          <a href="sites/" class="intent-card" data-reveal data-reveal-delay="1">
+            <h3 class="intent-card__title">Pacotes e preços</h3>
+            <p class="intent-card__desc">Serviços, investimentos e processo de entrega — do orçamento à publicação.</p>
+            <span class="intent-card__link">Ver pacotes →</span>
+          </a>
+          <a href="portfolio/" class="intent-card" data-reveal data-reveal-delay="2">
+            <h3 class="intent-card__title">Portfólio e exemplos</h3>
+            <p class="intent-card__desc">40+ modelos por segmento e projetos em produção para avaliar antes de contratar.</p>
+            <span class="intent-card__link">Ver modelos →</span>
+          </a>
+          <a href="por-que-site/" class="intent-card" data-reveal data-reveal-delay="3">
+            <h3 class="intent-card__title">Por que ter site</h3>
+            <p class="intent-card__desc">Comparativo Instagram vs site — Google, conversão e controle do seu negócio.</p>
+            <span class="intent-card__link">Ler comparativo →</span>
+          </a>
+          <a href="faq/" class="intent-card" data-reveal data-reveal-delay="4">
+            <h3 class="intent-card__title">Perguntas frequentes</h3>
+            <p class="intent-card__desc">Preços, prazos, SEO, domínio, hospedagem e Nota Fiscal — respostas diretas.</p>
+            <span class="intent-card__link">Ver FAQ →</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Por que escolher — Pink Codes -->
+    <!-- Por que escolher -->
     <section class="section section--alt section--glow" id="por-que">
       <div class="container">
         <header class="section__header section__header--center" data-reveal>
@@ -393,12 +213,12 @@
               <span>Dedicação no seu projeto — atendimento direto comigo</span>
             </div>
             <div class="why-stat" data-stagger-item>
-              <strong data-count="10" data-count-suffix="+">0+</strong>
-              <span>Anos em tecnologia e sistemas web corporativos</span>
+              <strong data-count="40" data-count-suffix="+">0+</strong>
+              <span>Modelos por segmento para você avaliar antes de contratar</span>
             </div>
             <div class="why-stat" data-stagger-item>
-              <strong>MEI</strong>
-              <span>Emissão de Nota Fiscal para empresas e autônomos</span>
+              <strong>24h</strong>
+              <span>Retorno com proposta após o primeiro contato</span>
             </div>
             <div class="why-stat" data-stagger-item>
               <strong>4K</strong>
@@ -431,90 +251,16 @@
         </div>
 
         <div class="inline-cta" data-reveal>
-          <p>Ainda tem dúvida? Vamos conversar — sem compromisso.</p>
+          <p>Ainda tem dúvida? <a href="faq/">Veja o FAQ</a> ou <a href="por-que-site/">leia por que ter site</a>.</p>
           <a href="#" data-wa="geral" class="btn btn--whatsapp">Falar agora pelo WhatsApp</a>
         </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="portfolio">
-      <div class="container">
-        <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Portfólio</p>
-          <h2 class="section__title">Veja o que posso construir <span class="highlight">para o seu negócio</span></h2>
-          <p class="section__lead" data-portfolio-lead>Referências de layout, código e experiência no celular — para você avaliar a qualidade antes de pedir orçamento.</p>
-        </header>
-
-        <div class="portfolio-group" data-reveal>
-          <header class="portfolio-group__header">
-            <h3 class="portfolio-group__title" data-portfolio-grupo-projetos-titulo>Projetos em produção</h3>
-            <p class="portfolio-group__lead" data-portfolio-grupo-projetos-lead>Sites e aplicações web que desenvolvi — incluindo meu serviço de captação aérea.</p>
-          </header>
-          <div class="demo-grid" id="portfolio-projetos"></div>
-        </div>
-
-        <div class="portfolio-group" data-reveal>
-          <header class="portfolio-group__header">
-            <h3 class="portfolio-group__title" data-portfolio-grupo-demos-titulo>Landing pages por segmento</h3>
-            <p class="portfolio-group__lead" data-portfolio-grupo-demos-lead>Modelos prontos para você ver layout e responsividade. Ao contratar, personalizo com a identidade da sua empresa.</p>
-          </header>
-          <div id="pricing-callout-root"></div>
-          <div class="filter-bar" id="filter-bar-home" data-reveal></div>
-          <div class="demo-grid" id="portfolio-demos"></div>
-          <p style="text-align:center;margin-top:2rem;" data-reveal>
-            <a href="#" data-wa="pacoteLanding" class="btn btn--whatsapp btn--lg">Quero minha landing a partir de R$ 300</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Como funciona -->
-    <section class="section" id="como-funciona">
-      <div class="container">
-        <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Como funciona</p>
-          <h2 class="section__title">Do briefing à <span class="highlight">entrega final</span></h2>
-          <p class="section__lead">Processo transparente — proposta em até 48h, sem compromisso.</p>
-        </header>
-        <div class="steps" id="steps-root"></div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="credibilidade">
-      <div class="container">
-        <header class="section__header" data-reveal>
-          <p class="section__eyebrow">Experiência</p>
-        </header>
-        <div id="credibilidade-root"></div>
-      </div>
-    </section>
-
-    <section class="section" id="cases">
-      <div class="container">
-        <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Projetos reais</p>
-          <h2 class="section__title">Cases em <span class="highlight">produção</span></h2>
-          <p class="section__lead">Sites e aplicações que desenvolvi — referências de qualidade técnica e conversão.</p>
-        </header>
-        <div class="cases-grid" id="cases-root"></div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="faq">
-      <div class="container">
-        <header class="section__header section__header--center" data-reveal>
-          <p class="section__eyebrow">Perguntas frequentes</p>
-          <h2 class="section__title">Dúvidas sobre <span class="highlight">sites e drone</span> em Porto Alegre</h2>
-          <p class="section__lead">Respostas objetivas para quem está pesquisando solução digital ou captação aérea na região.</p>
-        </header>
-        <div class="faq-list" id="faq-root"></div>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container">
         <h2 class="cta-band__title" data-reveal>Vamos tirar seu projeto do papel?</h2>
-        <p class="cta-band__text" data-reveal data-reveal-delay="1">Landing page a partir de R$ 300 · Retorno em até 24h · Proposta sem compromisso.</p>
+        <p class="cta-band__text" data-reveal data-reveal-delay="1">Retorno em até 24h · Proposta sem compromisso · <a href="sites/" style="color:inherit;text-decoration:underline;">Ver pacotes e preços</a></p>
         <a href="#" data-wa="geral" class="btn btn--whatsapp btn--lg" data-reveal data-reveal-delay="2" data-magnetic>Falar no WhatsApp</a>
       </div>
     </section>
@@ -531,10 +277,10 @@
         <div data-reveal data-reveal-delay="1">
           <p class="footer__title">Navegação</p>
           <ul class="footer__links">
-            <li><a href="sites/">Sites e pacotes</a></li>
-            <li><a href="https://techdrone360.com.br/" target="_blank" rel="noopener">Captação com drone</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="sites/">Pacotes e preços</a></li>
+            <li><a href="portfolio/">Portfólio</a></li>
+            <li><a href="por-que-site/">Por que ter site</a></li>
+            <li><a href="faq/">Perguntas frequentes</a></li>
             <li><a href="sobre/">Sobre</a></li>
           </ul>
         </div>

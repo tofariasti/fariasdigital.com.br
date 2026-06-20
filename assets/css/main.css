@@ -340,9 +340,27 @@ a:hover { color: var(--color-accent); }
 .logo {
   display: inline-flex;
   align-items: center;
-  line-height: 0;
+  gap: 0.625rem;
+  line-height: 1.2;
   position: relative;
   flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo__icon {
+  display: block;
+  width: clamp(1.75rem, 4vw, 2rem);
+  height: clamp(1.75rem, 4vw, 2rem);
+  flex-shrink: 0;
+}
+
+.logo__text {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.4vw, 1.125rem);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  white-space: nowrap;
 }
 
 .logo__img {
@@ -2963,6 +2981,14 @@ a:hover { color: var(--color-accent); }
     grid-template-columns: 1fr 1.2fr;
     align-items: start;
   }
+}
+
+.credibility-note {
+  margin: 0 0 1rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: 1.55;
+  max-width: 52ch;
 }
 
 .credibility-sectors {

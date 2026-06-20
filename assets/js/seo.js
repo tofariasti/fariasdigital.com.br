@@ -22,7 +22,7 @@
       alternateName: HubConfig.nome,
       url: dominio,
       image: seo.ogImage,
-      logo: dominio + '/assets/img/logo.png',
+      logo: dominio + '/assets/img/logo-icon.svg',
       description: seo.descriptionDefault,
       email: HubConfig.email,
       telephone: '+55-51-99121-3724',
@@ -89,9 +89,22 @@
           publisher: { '@id': dominio + '/#business' },
         },
         businessEntity(),
+      ],
+    });
+  }
+
+  if (page === 'faq') {
+    injectJsonLd({
+      '@context': 'https://schema.org',
+      '@graph': [
+        businessEntity(),
+        breadcrumb([
+          { name: 'Início', url: dominio + '/' },
+          { name: 'Perguntas frequentes', url: dominio + '/faq/' },
+        ]),
         {
           '@type': 'FAQPage',
-          '@id': dominio + '/#faq',
+          '@id': dominio + '/faq/#faq',
           mainEntity: seo.faq.map(function (item) {
             return {
               '@type': 'Question',
@@ -107,6 +120,44 @@
     });
   }
 
+  if (page === 'portfolio') {
+    injectJsonLd({
+      '@context': 'https://schema.org',
+      '@graph': [
+        businessEntity(),
+        breadcrumb([
+          { name: 'Início', url: dominio + '/' },
+          { name: 'Portfólio', url: dominio + '/portfolio/' },
+        ]),
+        {
+          '@type': 'CollectionPage',
+          name: seo.paginas.portfolio.title,
+          description: seo.paginas.portfolio.description,
+          url: dominio + '/portfolio/',
+        },
+      ],
+    });
+  }
+
+  if (page === 'por-que-site') {
+    injectJsonLd({
+      '@context': 'https://schema.org',
+      '@graph': [
+        businessEntity(),
+        breadcrumb([
+          { name: 'Início', url: dominio + '/' },
+          { name: 'Por que ter site', url: dominio + '/por-que-site/' },
+        ]),
+        {
+          '@type': 'WebPage',
+          name: seo.paginas['por-que-site'].title,
+          description: seo.paginas['por-que-site'].description,
+          url: dominio + '/por-que-site/',
+        },
+      ],
+    });
+  }
+
   if (page === 'sites') {
     injectJsonLd({
       '@context': 'https://schema.org',
@@ -114,7 +165,7 @@
         businessEntity(),
         breadcrumb([
           { name: 'Início', url: dominio + '/' },
-          { name: 'Sites e lojas online', url: dominio + '/sites/' },
+          { name: 'Pacotes e preços', url: dominio + '/sites/' },
         ]),
         {
           '@type': 'Service',

@@ -11,8 +11,11 @@ Site hub para prospecção local: **sites/e-commerce** + **captação aérea** (
 
 | URL | Conteúdo |
 |-----|----------|
-| `/` | Home — dois serviços, exemplos, CTA |
-| `/sites/` | Pacotes web, processo, galeria de demos |
+| `/` | Home enxuta — hero, objetivos e links para as demais páginas |
+| `/sites/` | Serviços, pacotes, processo e link para portfólio |
+| `/portfolio/` | Exemplos por segmento, cases e credibilidade técnica |
+| `/por-que-site/` | Comparativo Instagram vs site profissional |
+| `/faq/` | Perguntas frequentes |
 | `/drone/` | Resumo + link para [techdrone360.com.br](https://techdrone360.com.br) |
 | `/sobre/` | MEI, NF, contato |
 
@@ -22,6 +25,9 @@ Site hub para prospecção local: **sites/e-commerce** + **captação aérea** (
 fariasdigital.com.br/
 ├── index.html
 ├── sites/index.html
+├── portfolio/index.html
+├── por-que-site/index.html
+├── faq/index.html
 ├── drone/index.html
 ├── sobre/index.html
 ├── assets/css/main.css

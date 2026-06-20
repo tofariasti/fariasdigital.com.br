@@ -98,10 +98,18 @@ body {
 }
 
 .flyer__logo {
-  height: 10mm;
-  width: auto;
+  height: 8mm;
+  width: 8mm;
   display: block;
   filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.5));
+}
+
+.flyer__brand-name {
+  font-size: 5.2mm;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f8fafc;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
 .flyer__bars {
