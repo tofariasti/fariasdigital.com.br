@@ -107,9 +107,19 @@
     );
 
     items.forEach(function (el) {
-      if (!el.classList.contains('is-visible')) {
-        observer.observe(el);
+      if (el.classList.contains('is-visible')) return;
+
+      var rect = el.getBoundingClientRect();
+      var inView = rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+      if (inView) {
+        el.classList.add('is-visible');
+        if (el.hasAttribute('data-stagger')) {
+          el.classList.add('is-staggered');
+        }
+        return;
       }
+
+      observer.observe(el);
     });
   }
 

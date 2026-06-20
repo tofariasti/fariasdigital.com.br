@@ -541,7 +541,11 @@ a:hover { color: var(--color-accent); }
 
 .hero--compact {
   min-height: auto;
-  padding-bottom: 3.5rem;
+  padding: calc(var(--header-h) + 2rem) 0 2.5rem;
+}
+
+.hero--compact + .section {
+  padding-top: 3.5rem;
 }
 
 .hero--compact .hero__title {
@@ -963,6 +967,11 @@ a:hover { color: var(--color-accent); }
 .section {
   position: relative;
   padding: 5.5rem 0;
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+
+.section--page-start {
+  padding-top: calc(var(--header-h) + 2.5rem);
 }
 
 .section--alt {
@@ -984,9 +993,21 @@ a:hover { color: var(--color-accent); }
   max-width: 56ch;
 }
 
+.section__header--compact {
+  margin-bottom: 2rem;
+}
+
 .section__header--center {
   text-align: center;
   margin-inline: auto;
+}
+
+.section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .section__eyebrow {
@@ -1007,7 +1028,11 @@ a:hover { color: var(--color-accent); }
   letter-spacing: var(--tracking-tight);
   margin: 0 0 0.85rem;
   line-height: var(--leading-snug);
-  text-wrap: balance;
+  text-wrap: pretty;
+}
+
+.section__title-line {
+  display: block;
 }
 
 .section__lead {
