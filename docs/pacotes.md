@@ -1,6 +1,6 @@
 # Pacotes comerciais — uso interno e site
 
-> Valores de referência para o hub e flyers. Ajuste em [`assets/js/config.js`](../assets/js/config.js).
+> Valores de referência para o hub e flyers. Hub React: [`src/data/hubConfig.ts`](../src/data/hubConfig.ts). API legada para demos: [`public/assets/js/config.js`](../public/assets/js/config.js).
 
 ---
 

@@ -48,6 +48,8 @@ Edite [`src/data/hubConfig.ts`](src/data/hubConfig.ts):
 - `demos` — links das landing pages de exemplo
 - `googleAnalyticsId` — GA4
 
+Demos externas consomem [`public/assets/js/config.js`](public/assets/js/config.js) — mantenha em sync com `hubConfig.ts` ao adicionar segmentos.
+
 Gerar PNG/ICO a partir dos SVGs:
 
 ```bash

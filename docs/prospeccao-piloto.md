@@ -14,7 +14,7 @@ Roteiro para testar distribuição local antes de imprimir em grande volume.
 
 ## Materiais
 
-- [ ] 50–100 flyers impressos ([`flyer/index.html`](../flyer/index.html) → PDF na gráfica)
+- [ ] 50–100 flyers impressos ([`public/flyer/index.html`](../public/flyer/index.html) → PDF na gráfica)
 - [ ] Site no ar em https://fariasdigital.com.br
 - [ ] WhatsApp Business com etiquetas: `web`, `drone`, `flyer-piloto`
 - [ ] Planilha simples (nome, endereço, data, nicho, follow-up feito?)

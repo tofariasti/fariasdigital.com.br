@@ -45,8 +45,8 @@ No GitHub Pages, marque **Enforce HTTPS** após o certificado ser emitido (pode 
 - [ ] Testar botões de WhatsApp (mensagens pré-preenchidas)
 - [ ] Cadastrar no [Google Search Console](https://search.google.com/search-console)
 - [ ] Criar perfil no [Google Meu Negócio](https://business.google.com) com link do site
-- [ ] Preencher `googleAnalyticsId` em [`assets/js/config.js`](../assets/js/config.js) se quiser métricas
+- [ ] Preencher `googleAnalyticsId` em [`src/data/hubConfig.ts`](../src/data/hubConfig.ts) (e espelhar em [`public/assets/js/config.js`](../public/assets/js/config.js) se outras landings usarem a API legada)
 
 ## Alternativa: hospedagem tradicional
 
-Envie os arquivos da raiz (`index.html`, `sites/`, `drone/`, `sobre/`, `assets/`) via FTP para `public_html` de qualquer plano compartilhado. Aponte o DNS A para o IP do provedor.
+Faça `npm run build` e envie o conteúdo de `dist/` via FTP para `public_html`. Aponte o DNS A para o IP do provedor.
