@@ -3,6 +3,7 @@ Thumbs.db
 *.swp
 *~
 node_modules/
+dist/
 test-results/
-package-lock.json
-package.json
+playwright-report/
+.vite/
