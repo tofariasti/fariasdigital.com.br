@@ -1,10 +1,12 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-const ROUTES = ['/', '/sites/', '/portfolio/', '/faq/', '/por-que-site/', '/drone/', '/sobre/']
+const ROUTES_PT = ['/', '/sites/', '/portfolio/', '/faq/', '/por-que-site/', '/drone/', '/sobre/']
+const ROUTES_EN = ROUTES_PT.map((r) => (r === '/' ? '/en/' : `/en${r}`))
+const ROUTES_ES = ROUTES_PT.map((r) => (r === '/' ? '/es/' : `/es${r}`))
 
 test.describe('Hub navigation', () => {
-  for (const route of ROUTES) {
+  for (const route of ROUTES_PT) {
     test(`loads ${route}`, async ({ page }) => {
       await page.goto(route)
       await expect(page.locator('header.site-header')).toBeVisible()
@@ -12,7 +14,23 @@ test.describe('Hub navigation', () => {
     })
   }
 
-  test('header navigation works', async ({ page }) => {
+  for (const route of ROUTES_EN) {
+    test(`loads EN ${route}`, async ({ page }) => {
+      await page.goto(route)
+      await expect(page.locator('header.site-header')).toBeVisible()
+      await expect(page.locator('main')).toBeVisible()
+    })
+  }
+
+  for (const route of ROUTES_ES) {
+    test(`loads ES ${route}`, async ({ page }) => {
+      await page.goto(route)
+      await expect(page.locator('header.site-header')).toBeVisible()
+      await expect(page.locator('main')).toBeVisible()
+    })
+  }
+
+  test('header navigation works (PT)', async ({ page }) => {
     await page.goto('/')
     const toggle = page.locator('.nav-toggle')
     if (await toggle.isVisible()) {
@@ -23,17 +41,29 @@ test.describe('Hub navigation', () => {
       await toggle.click({ force: true })
       await mobileNav.getByRole('link', { name: 'Portfólio', exact: true }).click()
     } else {
-      const nav = page.locator('nav[aria-label="Principal"]')
+      const nav = page.locator('nav[aria-label="Início"]')
       await nav.getByRole('link', { name: 'Pacotes', exact: true }).click()
       await expect(page).toHaveURL(/\/sites\/?$/)
       await nav.getByRole('link', { name: 'Portfólio', exact: true }).click()
     }
     await expect(page).toHaveURL(/\/portfolio\/?$/)
   })
+
+  test('EN language switch shows English nav', async ({ page }) => {
+    await page.goto('/en/')
+    await expect(page.getByRole('link', { name: 'Packages', exact: true })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Portfolio', exact: true })).toBeVisible()
+  })
+
+  test('ES language switch shows Spanish nav', async ({ page }) => {
+    await page.goto('/es/')
+    await expect(page.getByRole('link', { name: 'Paquetes', exact: true })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Portafolio', exact: true })).toBeVisible()
+  })
 })
 
 test.describe('Hub a11y', () => {
-  for (const route of ['/', '/sites/', '/portfolio/', '/faq/']) {
+  for (const route of ['/', '/en/', '/es/', '/sites/', '/portfolio/', '/faq/']) {
     test(`${route} passes axe`, async ({ page }) => {
       await page.goto(route)
       const results = await new AxeBuilder({ page })
@@ -54,10 +84,17 @@ test.describe('Responsiveness', () => {
     await expect(page.locator('#mobile-nav')).toHaveClass(/is-open/)
   })
 
-  test('portfolio filter works on tablet', async ({ page }) => {
+  test('portfolio filter works on tablet (PT)', async ({ page }) => {
     await page.setViewportSize({ width: 768, height: 1024 })
     await page.goto('/portfolio/')
     await page.getByRole('button', { name: 'Saúde' }).click()
+    await expect(page.locator('.demo-card').first()).toBeVisible()
+  })
+
+  test('portfolio filter works on tablet (EN)', async ({ page }) => {
+    await page.setViewportSize({ width: 768, height: 1024 })
+    await page.goto('/en/portfolio/')
+    await page.getByRole('button', { name: 'Health' }).click()
     await expect(page.locator('.demo-card').first()).toBeVisible()
   })
 
