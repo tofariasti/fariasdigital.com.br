@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyer Tiago Farias — impressão A6</title>
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="flyer.css">
+</head>
+<body>
+  <div class="instrucoes no-print">
+    <h1>Flyer A6 — frente e verso</h1>
+    <p>
+      <strong>Impressão:</strong> Ctrl+P → papel A6 (105×148 mm) ou A4 com 4 flyers por folha.<br>
+      <strong>Gráfica:</strong> exporte PDF com “Gráficos de fundo” ativado. Papel couché 150g ou 180g, frente e verso.<br>
+      <strong>Quantidade piloto:</strong> 50–100 unidades.
+    </p>
+    <p>URL do QR: <code>https://fariasdigital.com.br</code></p>
+  </div>
+
+  <!-- FRENTE -->
+  <section class="sheet frente" aria-label="Frente do flyer">
+    <header class="frente__header">
+      <h1 class="frente__nome">Farias Digital</h1>
+      <p class="frente__sub">Sites, e-commerce, automação WhatsApp<br>e imagens aéreas · Brasil inteiro</p>
+    </header>
+
+    <div class="frente__grid">
+      <div class="frente__bloco">
+        <svg class="frente__icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21h8M12 17v4"/>
+        </svg>
+        <h2>Sites, e-commerce e WhatsApp</h2>
+        <p>Landing, loja online e automação de atendimento — feito para o celular.</p>
+      </div>
+      <div class="frente__bloco">
+        <svg class="frente__icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <h2>Fotos e vídeos aéreos profissionais</h2>
+        <p>Imóveis, obras, Airbnb e eventos — material pronto para anúncio.</p>
+      </div>
+    </div>
+
+    <footer class="frente__footer">
+      MEI · Nota Fiscal · Atendimento em todo o Brasil
+    </footer>
+  </section>
+
+  <!-- VERSO -->
+  <section class="sheet verso" aria-label="Verso do flyer">
+    <div class="verso__top">
+      <div class="verso__qr">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=8&data=https%3A%2F%2Ffariasdigital.com.br"
+          width="280"
+          height="280"
+          alt="QR Code fariasdigital.com.br"
+        >
+      </div>
+      <div class="verso__cta">
+        <h2>Veja exemplos e peça orçamento</h2>
+        <p class="verso__site">fariasdigital.com.br</p>
+        <a class="verso__wa" href="https://wa.me/5551991213724?text=Ol%C3%A1!%20Vi%20o%20flyer%20e%20gostaria%20de%20um%20or%C3%A7amento.%20Vi%20os%20exemplos%20em%20fariasdigital.com.br.">
+          <img src="../assets/img/whatsapp-icon.svg" alt="" width="20" height="20" aria-hidden="true">
+          (51) 99121-3724
+        </a>
+      </div>
+    </div>
+
+    <ul class="verso__bullets">
+      <li>Orçamento sem compromisso</li>
+      <li>Atendimento direto comigo — sem intermediário</li>
+      <li>Projetos reais — veja no site antes de contratar</li>
+    </ul>
+
+    <div class="verso__exemplos" aria-label="Miniaturas de exemplos">
+      <div class="verso__exemplo" style="background:linear-gradient(135deg,#ff3366,#ff6b9d);">
+        <span>Pet shop</span>
+      </div>
+      <div class="verso__exemplo" style="background:linear-gradient(135deg,#c45c26,#8b4513);">
+        <span>Loja / móveis</span>
+      </div>
+      <div class="verso__exemplo verso__exemplo--drone">
+        <span>Drone · imóveis</span>
+      </div>
+    </div>
+
+    <p class="verso__nf">MEI · Emissão de Nota Fiscal · Atendimento em todo o Brasil</p>
+  </section>
+
+  <div class="instrucoes no-print" style="margin-top:12mm;">
+    <p><strong>Especificação para gráfica:</strong></p>
+    <ul style="margin-left:1.2em;">
+      <li>Formato: A6 (10,5 × 14,8 cm)</li>
+      <li>Papel: couché 150g ou 180g</li>
+      <li>Impressão: 4×4 cores, frente e verso</li>
+      <li>Acabamento: corte reto (sem verniz localizado na 1ª tiragem)</li>
+      <li>Arquivo: exportar este HTML como PDF (Chrome → Imprimir → Salvar como PDF)</li>
+    </ul>
+  </div>
+</body>
+</html>

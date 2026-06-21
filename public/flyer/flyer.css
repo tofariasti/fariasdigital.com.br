@@ -1,0 +1,279 @@
+/* Flyer A6 (105 × 148 mm) — frente e verso para impressão */
+
+@page {
+  size: 105mm 148mm;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #e2e8f0;
+  color: #0f172a;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.sheet {
+  width: 105mm;
+  height: 148mm;
+  margin: 8mm auto;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  page-break-after: always;
+}
+
+@media print {
+  body { background: #fff; }
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+  }
+  .no-print { display: none !important; }
+}
+
+/* —— FRENTE —— */
+.frente {
+  background: linear-gradient(160deg, #0d6e6e 0%, #0a5555 55%, #0f172a 100%);
+  color: #fff;
+  padding: 7mm 8mm 6mm;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.frente__header {
+  text-align: center;
+  margin-bottom: 5mm;
+}
+
+.frente__nome {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.frente__sub {
+  font-size: 8.5pt;
+  opacity: 0.92;
+  margin-top: 2mm;
+  line-height: 1.35;
+}
+
+.frente__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4mm;
+  flex: 1;
+}
+
+.frente__bloco {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 4mm;
+  padding: 5mm 4mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.frente__icone {
+  width: 11mm;
+  height: 11mm;
+  margin-bottom: 3mm;
+  opacity: 0.95;
+}
+
+.frente__bloco h2 {
+  font-size: 9.5pt;
+  font-weight: 700;
+  margin-bottom: 2mm;
+  line-height: 1.2;
+}
+
+.frente__bloco p {
+  font-size: 7.5pt;
+  line-height: 1.35;
+  opacity: 0.9;
+}
+
+.frente__footer {
+  text-align: center;
+  margin-top: 4mm;
+  padding-top: 3mm;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 7.5pt;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* —— VERSO —— */
+.verso {
+  padding: 7mm 8mm;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+
+.verso__top {
+  display: flex;
+  gap: 5mm;
+  align-items: flex-start;
+  margin-bottom: 4mm;
+}
+
+.verso__qr img {
+  width: 28mm;
+  height: 28mm;
+  display: block;
+}
+
+.verso__cta h2 {
+  font-family: Georgia, serif;
+  font-size: 13pt;
+  color: #0d6e6e;
+  margin-bottom: 2mm;
+  line-height: 1.15;
+}
+
+.verso__site {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 3mm;
+}
+
+.verso__wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 2mm;
+  background: #25d366;
+  color: #fff;
+  padding: 2.5mm 4mm;
+  border-radius: 3mm;
+  font-size: 9pt;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.verso__wa img,
+.verso__wa svg {
+  width: 5mm;
+  height: 5mm;
+  flex-shrink: 0;
+}
+
+.verso__wa img {
+  filter: brightness(0) invert(1);
+}
+
+.verso__wa svg {
+  fill: currentColor;
+}
+
+.verso__bullets {
+  list-style: none;
+  margin: 4mm 0;
+  flex: 1;
+}
+
+.verso__bullets li {
+  position: relative;
+  padding-left: 5mm;
+  margin-bottom: 2.5mm;
+  font-size: 8pt;
+  line-height: 1.35;
+  color: #334155;
+}
+
+.verso__bullets li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #0d6e6e;
+  font-weight: 700;
+}
+
+.verso__exemplos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5mm;
+  margin-bottom: 3mm;
+}
+
+.verso__exemplo {
+  border-radius: 2mm;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  aspect-ratio: 4/3;
+  background: #f1f5f9;
+  position: relative;
+}
+
+.verso__exemplo span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 23, 42, 0.75);
+  color: #fff;
+  font-size: 5.5pt;
+  padding: 1.5mm;
+  text-align: center;
+}
+
+.verso__exemplo--drone {
+  background: linear-gradient(135deg, #1e3a5f, #0d6e6e);
+}
+
+.verso__exemplo--drone span {
+  background: rgba(13, 110, 110, 0.85);
+}
+
+.verso__nf {
+  text-align: center;
+  font-size: 7pt;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-top: 2mm;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Instruções na tela */
+.instrucoes {
+  max-width: 105mm;
+  margin: 0 auto 12mm;
+  padding: 4mm;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 9pt;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.instrucoes h1 {
+  font-size: 11pt;
+  margin-bottom: 2mm;
+  color: #0f172a;
+}
+
+.instrucoes code {
+  background: #f1f5f9;
+  padding: 0 4px;
+  border-radius: 4px;
+}
