@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useHubConfig } from '../../i18n/useHubConfig'
 import { useLocale } from '../../i18n/LocaleContext'
-import { LOCALES } from '../../i18n/types'
+import { LOCALES, type Locale } from '../../i18n/types'
 import { uiCopy } from '../../data/uiCopy'
 import { WhatsAppButton } from '../ui/WhatsAppButton'
 
@@ -36,9 +36,32 @@ function Logo() {
   )
 }
 
+function LangSwitcher({ onSelect }: { onSelect?: () => void }) {
+  const { t, locale, setLocale } = useLocale()
+
+  return (
+    <div className="lang-switch" role="group" aria-label={t(uiCopy.lang.group)}>
+      {LOCALES.map((lang) => (
+        <button
+          key={lang}
+          type="button"
+          className={`lang-btn${locale === lang ? ' lang-btn--active' : ''}`}
+          aria-pressed={locale === lang}
+          onClick={() => {
+            setLocale(lang as Locale)
+            onSelect?.()
+          }}
+        >
+          {lang.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  )
+}
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const { t, pathFor, locale, setLocale } = useLocale()
+  const { t, pathFor } = useLocale()
   const config = useHubConfig()
 
   const navItems = [
@@ -54,7 +77,7 @@ export function Header() {
     <header className="site-header">
       <div className="container site-header__inner">
         <Logo />
-        <nav aria-label={t(uiCopy.nav.home)}>
+        <nav className="site-header__nav" aria-label={t(uiCopy.nav.home)}>
           <ul className="site-nav">
             {navItems.map((item) => (
               <li key={item.label}>
@@ -69,36 +92,26 @@ export function Header() {
                 )}
               </li>
             ))}
-            <li className="lang-switch" role="group" aria-label={t(uiCopy.lang.group)}>
-              {LOCALES.map((lang) => (
-                <button
-                  key={lang}
-                  type="button"
-                  className={`lang-btn${locale === lang ? ' lang-btn--active' : ''}`}
-                  aria-pressed={locale === lang}
-                  onClick={() => setLocale(lang)}
-                >
-                  {lang.toUpperCase()}
-                </button>
-              ))}
-            </li>
-            <li>
-              <WhatsAppButton waKey="geral">{t(uiCopy.cta.chat)}</WhatsAppButton>
-            </li>
           </ul>
         </nav>
-        <button
-          type="button"
-          className="nav-toggle"
-          aria-expanded={mobileOpen}
-          aria-controls="mobile-nav"
-          onClick={() => setMobileOpen((o) => !o)}
-        >
-          <span className="sr-only">{t(uiCopy.cta.menu)}</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-        </button>
+        <div className="site-header__actions">
+          <LangSwitcher />
+          <WhatsAppButton waKey="geral" className="btn btn--whatsapp site-header__whatsapp">
+            {t(uiCopy.cta.chat)}
+          </WhatsAppButton>
+          <button
+            type="button"
+            className="nav-toggle"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
+            onClick={() => setMobileOpen((o) => !o)}
+          >
+            <span className="sr-only">{t(uiCopy.cta.menu)}</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
       </div>
       <div className={`container mobile-nav${mobileOpen ? ' is-open' : ''}`} id="mobile-nav">
         {navItems.map((item) =>
@@ -124,22 +137,6 @@ export function Header() {
             </NavLink>
           ),
         )}
-        <div className="lang-switch lang-switch--mobile" role="group" aria-label={t(uiCopy.lang.group)}>
-          {LOCALES.map((lang) => (
-            <button
-              key={lang}
-              type="button"
-              className={`lang-btn${locale === lang ? ' lang-btn--active' : ''}`}
-              aria-pressed={locale === lang}
-              onClick={() => {
-                setLocale(lang)
-                setMobileOpen(false)
-              }}
-            >
-              {lang.toUpperCase()}
-            </button>
-          ))}
-        </div>
         <WhatsAppButton waKey="geral" className="btn btn--whatsapp btn--block">
           {t(uiCopy.cta.chat)}
         </WhatsAppButton>
