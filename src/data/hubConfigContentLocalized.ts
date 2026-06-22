@@ -480,6 +480,17 @@ export const demosLocalized = [
       ),
     },
     {
+      titulo: L('Bubble Wash Lavanderia', 'Bubble Wash Lavanderia', 'Bubble Wash Lavanderia'),
+      segmento: segmentLocalized.servicos,
+      url: 'https://tofariasti.github.io/landing-lavanderia/',
+      badge: L('Landing + Admin', 'Landing + Admin', 'Landing + Admin'),
+      descricao: L(
+        'Landing de conversão (simulador de orçamento, coleta & entrega, WhatsApp) + painel demo para clientes, pedidos e tabela de serviços — sem backend.',
+        'Conversion landing (price calculator, pickup & delivery, WhatsApp) + demo panel for customers, orders and service pricing — no backend.',
+        'Landing de conversión (simulador de presupuesto, recogida y entrega, WhatsApp) + panel demo para clientes, pedidos y tabla de servicios — sin backend.',
+      ),
+    },
+    {
       titulo: L('Ótica Visão Clara', 'Ótica Visão Clara', 'Ótica Visão Clara'),
       segmento: segmentLocalized.saude,
       url: 'https://tofariasti.github.io/landing-otica/',

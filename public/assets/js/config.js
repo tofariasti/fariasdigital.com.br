@@ -319,6 +319,13 @@ Obrigado!`,
       descricao: 'Landing page de conversão (IMC, WhatsApp, depoimentos) + painel administrativo demo para pacientes e planos alimentares — sem backend.',
     },
     {
+      titulo: 'Bubble Wash Lavanderia',
+      segmento: 'Serviços',
+      url: 'https://tofariasti.github.io/landing-lavanderia/',
+      badge: 'Landing + Admin',
+      descricao: 'Landing de conversão (simulador de orçamento, coleta & entrega, WhatsApp) + painel demo para clientes, pedidos e tabela de serviços — sem backend.',
+    },
+    {
       titulo: 'Ótica Visão Clara',
       segmento: 'Saúde',
       url: 'https://tofariasti.github.io/landing-otica/',
