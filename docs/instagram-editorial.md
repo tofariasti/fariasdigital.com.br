@@ -99,7 +99,7 @@ Segmentos do site em `segmentsLocalized.ts`. Abaixo: demos **prioritários** par
 | ★ | Oficina Mecânica | https://tofariasti.github.io/oficinamecanica/ |
 | ★ | Autopeças | https://tofariasti.github.io/dkautopecas/ |
 | ★ | Estética Automotiva | https://tofariasti.github.io/landing-estetica-automotiva/ |
-| | Concessionária | https://tofariasti.github.io/performance-hyosung/ |
+| | Oficina de motos | https://tofariasti.github.io/performance-hyosung/ |
 | | Oficina de radiadores | https://tofariasti.github.io/radiadores-vitoria/ |
 | | Locadora de Veículos | https://tofariasti.github.io/locadora-veiculos-landing/ |
 
@@ -365,6 +365,7 @@ Código: `src/utils/portfolioSegment.ts` · testes: `src/test/portfolioSegment.t
 | Mensagens WhatsApp | `public/assets/js/config.js` → `mensagensWhatsApp` |
 | URL WA por demo | `src/utils/whatsapp.ts` → `buildDemoWhatsAppUrl` |
 | Pacotes e preços | `docs/pacotes.md` |
+| Prompts ChatGPT Images | `docs/instagram-prompts.md` |
 | Prospecção local | `docs/prospeccao-piloto.md` |
 
 ---

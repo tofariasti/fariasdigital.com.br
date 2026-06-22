@@ -186,10 +186,10 @@ Obrigado!`,
       descricao: 'Catálogo, Shopee e contato rápido.',
     },
     {
-      titulo: 'Concessionária',
+      titulo: 'Oficina de motos',
       segmento: 'Automotivo',
       url: 'https://tofariasti.github.io/performance-hyosung/',
-      descricao: 'Modelos, financiamento e WhatsApp.',
+      descricao: 'Revisão, performance e WhatsApp.',
     },
     {
       titulo: 'Oficina de radiadores',

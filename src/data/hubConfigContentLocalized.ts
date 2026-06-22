@@ -177,17 +177,17 @@ export const demosLocalized = [
     },
     {
       titulo: L(
-        'Concessionária',
-        'Concessionária',
-        'Concessionária',
+        'Oficina de motos',
+        'Motorcycle workshop',
+        'Taller de motos',
       ),
       segmento: segmentLocalized.automotivo,
       url: 'https://tofariasti.github.io/performance-hyosung/',
       heroFeatured: true,
       descricao: L(
-        'Modelos, financiamento e WhatsApp.',
-        'Models, financing and WhatsApp.',
-        'Modelos, financiamiento y WhatsApp.',
+        'Revisão, performance e WhatsApp.',
+        'Maintenance, performance and WhatsApp.',
+        'Revisión, performance y WhatsApp.',
       ),
     },
     {
