@@ -56,6 +56,11 @@ export function Footer() {
                   TechDrone360
                 </a>
               </li>
+              <li>
+                <a href={config.links.portfolio} target="_blank" rel="noopener noreferrer">
+                  {t(uiCopy.common.technicalPortfolio)}
+                </a>
+              </li>
             </ul>
           </AnimatedSection>
         </div>
