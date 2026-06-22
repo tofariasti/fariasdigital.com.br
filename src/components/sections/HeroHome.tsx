@@ -9,6 +9,7 @@ import { useReducedMotion } from '../../hooks/useReducedMotion'
 import {
   demoSlugFromUrl,
   filterHeroDemos,
+  getHeroDemoChips,
   HERO_DEMO_ROTATE_MS,
   pickRandomDemoIndex,
 } from '../../utils/heroDemo'
@@ -47,6 +48,18 @@ export function HeroHome({
   const rotateWords = t(uiCopy.hero.rotateWords)
   const activeDemo = heroDemos[demoIndex] ?? heroDemos[0]
   const demoSlug = activeDemo ? demoSlugFromUrl(activeDemo.url) : 'demo'
+  const demoTypeLabels = useMemo(
+    () => ({
+      landing: t(uiCopy.hero.preview.typeLanding),
+      ecommerce: t(uiCopy.hero.preview.typeEcommerce),
+      catalog: t(uiCopy.hero.preview.typeCatalog),
+      portal: t(uiCopy.hero.preview.typePortal),
+      landingAdmin: t(uiCopy.hero.preview.typeLandingAdmin),
+      leadsWhatsApp: t(uiCopy.common.leadsWhatsApp),
+    }),
+    [t],
+  )
+  const demoChips = activeDemo ? getHeroDemoChips(activeDemo, demoTypeLabels) : []
 
   useEffect(() => {
     if (reduced || compact) return
@@ -186,9 +199,33 @@ export function HeroHome({
                 </AnimatePresence>
               </div>
             </div>
-            <div className="hero-visual__chips">
-              <span className="preview-chip preview-chip--success">{t(uiCopy.common.visualReference)}</span>
-              <span className="preview-chip preview-chip--accent">{t(uiCopy.common.leadsWhatsApp)}</span>
+            <div className="hero-demo-caption" aria-live="polite">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeDemo.url}
+                  className="hero-demo-caption__inner"
+                  initial={reduced ? false : { opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={reduced ? undefined : { opacity: 0, y: -8 }}
+                  transition={{ duration: 0.35 }}
+                >
+                  <p className="hero-demo-caption__meta">
+                    <span className="hero-demo-caption__title">{activeDemo.titulo}</span>
+                    <span className="hero-demo-caption__segment">{activeDemo.segmento}</span>
+                  </p>
+                  <p className="hero-demo-caption__desc">{activeDemo.descricao}</p>
+                  <div className="hero-demo-caption__chips">
+                    {demoChips.map((chip) => (
+                      <span
+                        key={chip.variant}
+                        className={`hero-demo-caption__chip hero-demo-caption__chip--${chip.variant}`}
+                      >
+                        {chip.label}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </AnimatedSection>
         )}

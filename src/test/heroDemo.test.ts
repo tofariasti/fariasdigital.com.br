@@ -3,6 +3,9 @@ import { hubConfig } from '../data/hubConfig'
 import {
   demoSlugFromUrl,
   filterHeroDemos,
+  getDemoTypeLabel,
+  getHeroDemoChips,
+  inferDemoKind,
   pickRandomDemoIndex,
 } from '../utils/heroDemo'
 
@@ -38,5 +41,33 @@ describe('heroDemo', () => {
     const heroDemos = filterHeroDemos(hubConfig.demos)
     expect(heroDemos).toHaveLength(12)
     expect(heroDemos.map((demo) => demo.url).sort()).toEqual([...HERO_FEATURED_URLS].sort())
+  })
+
+  it('infers demo kinds for hero captions', () => {
+    const byUrl = (url: string) => hubConfig.demos.find((demo) => demo.url === url)!
+
+    expect(inferDemoKind(byUrl('https://tofariasti.github.io/ecommerce/'))).toBe('ecommerce')
+    expect(inferDemoKind(byUrl('https://tofariasti.github.io/cardapio-digital/'))).toBe('catalog')
+    expect(inferDemoKind(byUrl('https://tofariasti.github.io/landing-classificados/'))).toBe('portal')
+    expect(inferDemoKind(byUrl('https://tofariasti.github.io/landing-nutricionista/'))).toBe('landing-admin')
+    expect(inferDemoKind(byUrl('https://tofariasti.github.io/landing-barbearia/'))).toBe('landing')
+  })
+
+  it('builds hero chips with type and WhatsApp labels', () => {
+    const labels = {
+      landing: 'Landing page',
+      ecommerce: 'E-commerce',
+      catalog: 'Catálogo digital',
+      portal: 'Portal / classificados',
+      landingAdmin: 'Landing + Admin',
+      leadsWhatsApp: 'Leads via WhatsApp',
+    }
+    const nutricionista = hubConfig.demos.find((demo) => demo.url.includes('landing-nutricionista'))!
+
+    expect(getDemoTypeLabel(nutricionista, labels)).toBe('Landing + Admin')
+    expect(getHeroDemoChips(nutricionista, labels)).toEqual([
+      { label: 'Landing + Admin', variant: 'type' },
+      { label: 'Leads via WhatsApp', variant: 'whatsapp' },
+    ])
   })
 })

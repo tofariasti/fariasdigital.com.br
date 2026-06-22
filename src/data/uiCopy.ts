@@ -128,6 +128,13 @@ export const uiCopy = {
     landingTag: L('Landing page', 'Landing page', 'Landing page'),
     institutionalTag: L('Site institucional', 'Business website', 'Sitio institucional'),
     from300: L('a partir de R$ 300', 'from R$ 300', 'desde R$ 300'),
+    preview: {
+      typeLanding: L('Landing page', 'Landing page', 'Landing page'),
+      typeEcommerce: L('E-commerce', 'E-commerce', 'E-commerce'),
+      typeCatalog: L('Catálogo digital', 'Digital catalog', 'Catálogo digital'),
+      typePortal: L('Portal / classificados', 'Classifieds portal', 'Portal / clasificados'),
+      typeLandingAdmin: L('Landing + Admin', 'Landing + Admin', 'Landing + Admin'),
+    },
     from1490: L('a partir de R$ 1.490', 'from R$ 1,490', 'desde R$ 1.490'),
   },
   home: {

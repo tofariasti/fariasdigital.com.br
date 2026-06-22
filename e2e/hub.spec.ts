@@ -133,6 +133,37 @@ test.describe('Responsiveness', () => {
     await expect(page.locator('.hero-visual')).toBeVisible()
     await expect(page.locator('.browser-preview')).toBeVisible()
   })
+
+  test('hero preview rotates curated demos', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 })
+    await page.goto('/')
+
+    const iframe = page.locator('.browser-preview__screen iframe')
+    await expect(iframe).toBeVisible()
+
+    const initialSrc = await iframe.getAttribute('src')
+    expect(initialSrc).toMatch(/^https:\/\/tofariasti\.github\.io\//)
+    expect(initialSrc).not.toContain('amo-patas')
+
+    const urlBar = page.locator('.browser-preview__url')
+    await expect(urlBar).toContainText('.demo · fariasdigital.com.br')
+
+    const caption = page.locator('.hero-demo-caption')
+    await expect(caption).toBeVisible()
+    await expect(caption.locator('.hero-demo-caption__title')).not.toBeEmpty()
+    await expect(caption.locator('.hero-demo-caption__desc')).not.toBeEmpty()
+    await expect(caption.locator('.hero-demo-caption__chip')).toHaveCount(2)
+
+    await page.waitForTimeout(7000)
+
+    await expect
+      .poll(async () => iframe.getAttribute('src'), { timeout: 15_000 })
+      .not.toBe(initialSrc)
+
+    const nextSrc = await iframe.getAttribute('src')
+    expect(nextSrc).toMatch(/^https:\/\/tofariasti\.github\.io\//)
+    expect(nextSrc).not.toContain('amo-patas')
+  })
 })
 
 test.describe('Assets and links', () => {
