@@ -68,6 +68,8 @@ export const uiCopy = {
     learnMore: L('Saiba mais →', 'Learn more →', 'Saber más →'),
     seeOptions: L('Ver opções →', 'See options →', 'Ver opciones →'),
     filterAll: L('Todos', 'All', 'Todos'),
+    filterBySegment: L('Filtrar por segmento', 'Filter by industry', 'Filtrar por segmento'),
+    filterModels: L('modelos', 'templates', 'modelos'),
     notIncluded: L('Não inclui:', 'Not included:', 'No incluye:'),
     diffTag: L('Diferencial', 'Differentiator', 'Diferencial'),
     affordableInvestment: L('Investimento acessível', 'Affordable investment', 'Inversión accesible'),

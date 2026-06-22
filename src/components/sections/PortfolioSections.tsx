@@ -1,7 +1,8 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useHubConfig } from '../../i18n/useHubConfig'
 import { useLocale } from '../../i18n/LocaleContext'
 import { uiCopy } from '../../data/uiCopy'
+import { segmentLocalized } from '../../data/segmentsLocalized'
 import { buildDemoWhatsAppUrl } from '../../utils/whatsapp'
 import { AnimatedSection } from '../ui/AnimatedSection'
 import { WhatsAppButton } from '../ui/WhatsAppButton'
@@ -66,12 +67,26 @@ function DemoCard({ demo, index }: { demo: Demo; index: number }) {
 export function DemoGrid() {
   const config = useHubConfig()
   const { t } = useLocale()
+  const barRef = useRef<HTMLDivElement>(null)
+
+  const segmentOrder = useMemo(
+    () => Object.values(segmentLocalized).map((seg) => t(seg)),
+    [t],
+  )
+
+  const counts = useMemo(() => {
+    const map = new Map<string, number>()
+    config.demos.forEach((d) => {
+      map.set(d.segmento, (map.get(d.segmento) ?? 0) + 1)
+    })
+    return map
+  }, [config.demos])
 
   const segmentos = useMemo(() => {
-    const set = new Set<string>(['todos'])
-    config.demos.forEach((d) => set.add(d.segmento))
-    return [...set]
-  }, [config.demos])
+    const available = new Set(config.demos.map((d) => d.segmento))
+    const ordered = segmentOrder.filter((seg) => available.has(seg))
+    return ['todos', ...ordered]
+  }, [config.demos, segmentOrder])
 
   const [filter, setFilter] = useState('todos')
 
@@ -80,20 +95,55 @@ export function DemoGrid() {
       ? config.demos
       : config.demos.filter((d) => d.segmento === filter)
 
+  useEffect(() => {
+    const bar = barRef.current
+    if (!bar) return
+    const active = bar.querySelector<HTMLButtonElement>('.filter-btn.is-active')
+    active?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+  }, [filter])
+
   return (
     <>
-      <div className="filter-bar">
-        {segmentos.map((seg) => (
-          <button
-            key={seg}
-            type="button"
-            className={`filter-btn${filter === seg ? ' is-active' : ''}`}
-            onClick={() => setFilter(seg)}
-          >
-            {seg === 'todos' ? t(uiCopy.common.filterAll) : seg}
-          </button>
-        ))}
+      <div className="filter-bar-wrap">
+        <div
+          ref={barRef}
+          className="filter-bar"
+          role="tablist"
+          aria-label={t(uiCopy.common.filterBySegment)}
+        >
+          {segmentos.map((seg) => {
+            const isActive = filter === seg
+            const count = seg === 'todos' ? config.demos.length : (counts.get(seg) ?? 0)
+            const label = seg === 'todos' ? t(uiCopy.common.filterAll) : seg
+
+            return (
+              <button
+                key={seg}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
+                className={`filter-btn${isActive ? ' is-active' : ''}`}
+                onClick={() => setFilter(seg)}
+              >
+                <span className="filter-btn__label">{label}</span>
+                <span className="filter-btn__count" aria-hidden="true">
+                  {count}
+                </span>
+              </button>
+            )
+          })}
+        </div>
       </div>
+      <p className="filter-meta" aria-live="polite">
+        <span className="filter-meta__count">{filtered.length}</span>{' '}
+        {t(uiCopy.common.filterModels)}
+        {filter !== 'todos' && (
+          <>
+            {' '}
+            <span className="filter-meta__segment">· {filter}</span>
+          </>
+        )}
+      </p>
       <div className="demo-grid">
         {filtered.map((demo, i) => (
           <DemoCard key={demo.url} demo={demo} index={i} />
