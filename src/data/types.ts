@@ -37,6 +37,7 @@ export interface Demo {
   descricao: string
   badge?: string
   preview?: boolean
+  heroFeatured?: boolean
   stack?: string[]
 }
 

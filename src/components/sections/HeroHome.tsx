@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useHubConfig } from '../../i18n/useHubConfig'
@@ -6,6 +6,12 @@ import { useLocale } from '../../i18n/LocaleContext'
 import { uiCopy } from '../../data/uiCopy'
 import { AnimatedSection } from '../ui/AnimatedSection'
 import { useReducedMotion } from '../../hooks/useReducedMotion'
+import {
+  demoSlugFromUrl,
+  filterHeroDemos,
+  HERO_DEMO_ROTATE_MS,
+  pickRandomDemoIndex,
+} from '../../utils/heroDemo'
 
 interface HeroHomeProps {
   compact?: boolean
@@ -30,11 +36,17 @@ export function HeroHome({
   const { t, pathFor } = useLocale()
   const reduced = useReducedMotion()
   const [wordIndex, setWordIndex] = useState(0)
+  const heroDemos = useMemo(() => filterHeroDemos(config.demos), [config.demos])
+  const [demoIndex, setDemoIndex] = useState(() =>
+    heroDemos.length ? Math.floor(Math.random() * heroDemos.length) : 0,
+  )
 
   const resolvedLabel = label ?? t(uiCopy.hero.defaultLabel)
   const resolvedTitleLines = titleLines ?? [t(uiCopy.hero.defaultTitle1), t(uiCopy.hero.rotateWords)[0]] as [string, string]
   const resolvedSubtitle = subtitle ?? t(uiCopy.hero.defaultSubtitle)
   const rotateWords = t(uiCopy.hero.rotateWords)
+  const activeDemo = heroDemos[demoIndex] ?? heroDemos[0]
+  const demoSlug = activeDemo ? demoSlugFromUrl(activeDemo.url) : 'demo'
 
   useEffect(() => {
     if (reduced || compact) return
@@ -43,6 +55,14 @@ export function HeroHome({
     }, 3200)
     return () => window.clearInterval(id)
   }, [compact, reduced, rotateWords.length])
+
+  useEffect(() => {
+    if (reduced || compact || heroDemos.length < 2) return
+    const id = window.setInterval(() => {
+      setDemoIndex((i) => pickRandomDemoIndex(i, heroDemos.length))
+    }, HERO_DEMO_ROTATE_MS)
+    return () => window.clearInterval(id)
+  }, [compact, reduced, heroDemos.length])
 
   const accentWord = compact ? resolvedTitleLines[1] : rotateWords[wordIndex]
 
@@ -122,7 +142,7 @@ export function HeroHome({
           )}
         </div>
 
-        {showPreview && !compact && (
+        {showPreview && !compact && activeDemo && (
           <AnimatedSection delay={2} direction="right" className="hero-visual">
             <div className="hero-orbit" aria-hidden="true">
               <span className="hero-orbit__ring hero-orbit__ring--1">
@@ -137,16 +157,33 @@ export function HeroHome({
                 <span className="hero-mockup__dot hero-mockup__dot--y" />
                 <span className="hero-mockup__dot hero-mockup__dot--g" />
                 <span className="browser-preview__url">
-                  amo-patas.demo · {config.dominioHost}
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={demoSlug}
+                      initial={reduced ? false : { opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={reduced ? undefined : { opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {demoSlug}.demo · {config.dominioHost}
+                    </motion.span>
+                  </AnimatePresence>
                 </span>
               </div>
               <div className="browser-preview__screen">
-                <iframe
-                  src="https://tofariasti.github.io/amo-patas/"
-                  title="Demo Amo Patas"
-                  loading="lazy"
-                  tabIndex={-1}
-                />
+                <AnimatePresence mode="wait">
+                  <motion.iframe
+                    key={activeDemo.url}
+                    src={activeDemo.url}
+                    title={`Demo ${activeDemo.titulo}`}
+                    loading="lazy"
+                    tabIndex={-1}
+                    initial={reduced ? false : { opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={reduced ? undefined : { opacity: 0 }}
+                    transition={{ duration: 0.35 }}
+                  />
+                </AnimatePresence>
               </div>
             </div>
             <div className="hero-visual__chips">

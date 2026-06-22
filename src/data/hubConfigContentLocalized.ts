@@ -154,6 +154,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.varejo,
       url: 'https://tofariasti.github.io/bazar_do_alemao/',
+      heroFeatured: true,
       descricao: L(
         'Ofertas, Instagram e horário de funcionamento.',
         'Deals, Instagram and opening hours.',
@@ -182,6 +183,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.automotivo,
       url: 'https://tofariasti.github.io/performance-hyosung/',
+      heroFeatured: true,
       descricao: L(
         'Modelos, financiamento e WhatsApp.',
         'Models, financing and WhatsApp.',
@@ -420,6 +422,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.saude,
       url: 'https://tofariasti.github.io/landing-dentista/',
+      heroFeatured: true,
       descricao: L(
         'Serviços, depoimentos, antes/depois e agendamento pelo WhatsApp.',
         'Services, testimonials, before/after and booking via WhatsApp.',
@@ -434,6 +437,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.saude,
       url: 'https://tofariasti.github.io/landing-farmacia/',
+      heroFeatured: true,
       descricao: L(
         'Landing page para farmácia com delivery, manipulação e agendamento via WhatsApp.',
         'Pharmacy landing page with delivery, compounding and booking via WhatsApp.',
@@ -472,6 +476,7 @@ export const demosLocalized = [
       titulo: L('Nutricionista', 'Nutricionista', 'Nutricionista'),
       segmento: segmentLocalized.saude,
       url: 'https://tofariasti.github.io/landing-nutricionista/',
+      heroFeatured: true,
       badge: L('Landing + Admin', 'Landing + Admin', 'Landing + Admin'),
       descricao: L(
         'Landing page de conversão (IMC, WhatsApp, depoimentos) + painel administrativo demo para pacientes e planos alimentares — sem backend.',
@@ -523,6 +528,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.imoveis,
       url: 'https://tofariasti.github.io/landing-classificados/',
+      heroFeatured: true,
       descricao: L(
         'Portal de classificados com anúncios por categoria, destaques e contato via WhatsApp.',
         'Classifieds portal with ads by category, featured listings and contact via WhatsApp.',
@@ -537,6 +543,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.ecommerce,
       url: 'https://tofariasti.github.io/ecommerce/',
+      heroFeatured: true,
       descricao: L(
         'Loja virtual completa com produtos, categorias, ofertas, depoimentos e pedidos via WhatsApp.',
         'Full online store with products, categories, deals, testimonials and orders via WhatsApp.',
@@ -551,6 +558,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.ecommerce,
       url: 'https://tofariasti.github.io/catalogo-digital/',
+      heroFeatured: true,
       descricao: L(
         'Catálogo de produtos premium com filtros por categoria, animações suaves e integração WhatsApp.',
         'Premium product catalog with category filters, smooth animations and WhatsApp integration.',
@@ -565,6 +573,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.gastronomia,
       url: 'https://tofariasti.github.io/cardapio-digital/',
+      heroFeatured: true,
       descricao: L(
         'Menu interativo com filtros por categoria, galeria de pratos e pedidos/reservas via WhatsApp.',
         'Interactive menu with category filters, dish gallery and orders/reservations via WhatsApp.',
@@ -607,6 +616,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.varejo,
       url: 'https://tofariasti.github.io/supermercado-landing/',
+      heroFeatured: true,
       descricao: L(
         'Ofertas da semana, departamentos, entrega agendada ou retirada na loja via WhatsApp.',
         'Weekly deals, departments, scheduled delivery or in-store pickup via WhatsApp.',
@@ -621,6 +631,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.servicos,
       url: 'https://tofariasti.github.io/landing-barbearia/',
+      heroFeatured: true,
       descricao: L(
         'Cortes premium, barba, galeria de trabalhos e agendamento estruturado via WhatsApp.',
         'Premium cuts, beard, work gallery and structured booking via WhatsApp.',
@@ -649,6 +660,7 @@ export const demosLocalized = [
       ),
       segmento: segmentLocalized.esporte,
       url: 'https://tofariasti.github.io/landing-lutas/',
+      heroFeatured: true,
       descricao: L(
         'Modalidades, planos, professores e agendamento de aula experimental via WhatsApp.',
         'Disciplines, plans, instructors and trial class booking via WhatsApp.',
