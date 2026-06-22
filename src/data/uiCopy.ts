@@ -57,7 +57,7 @@ export const uiCopy = {
   },
   breadcrumb: {
     home: L('Início', 'Home', 'Inicio'),
-    sites: L('Pacotes e preços', 'Packages & pricing', 'Paquetes y precios'),
+    pacotes: L('Pacotes e preços', 'Packages & pricing', 'Paquetes y precios'),
     portfolio: L('Portfólio', 'Portfolio', 'Portafolio'),
     faq: L('Perguntas frequentes', 'FAQ', 'Preguntas frecuentes'),
     'por-que-site': L('Por que ter site', 'Why have a website', 'Por qué tener sitio web'),

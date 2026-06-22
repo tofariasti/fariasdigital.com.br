@@ -23,8 +23,10 @@ function localeRoutes(prefix: string): ReactElement[] {
 
   return [
     <Route key={`${key}-home`} path={p('/')} element={<HomePage />} />,
-    <Route key={`${key}-sites`} path={p('/sites')} element={<Navigate to={p('/sites/')} replace />} />,
-    <Route key={`${key}-sites-index`} path={p('/sites/')} element={<SitesPage />} />,
+    <Route key={`${key}-pacotes`} path={p('/pacotes')} element={<Navigate to={p('/pacotes/')} replace />} />,
+    <Route key={`${key}-pacotes-index`} path={p('/pacotes/')} element={<SitesPage />} />,
+    <Route key={`${key}-sites-legacy`} path={p('/sites')} element={<Navigate to={p('/pacotes/')} replace />} />,
+    <Route key={`${key}-sites-legacy-index`} path={p('/sites/')} element={<Navigate to={p('/pacotes/')} replace />} />,
     <Route key={`${key}-portfolio`} path={p('/portfolio')} element={<Navigate to={p('/portfolio/')} replace />} />,
     <Route key={`${key}-portfolio-index`} path={p('/portfolio/')} element={<PortfolioPage />} />,
     <Route key={`${key}-faq`} path={p('/faq')} element={<Navigate to={p('/faq/')} replace />} />,

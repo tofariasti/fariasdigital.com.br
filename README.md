@@ -15,7 +15,7 @@ React 19 · TypeScript · Vite · React Router · Framer Motion · GitHub Pages
 | URL | Conteúdo |
 |-----|----------|
 | `/` | Home — hero, comparativo, serviços e CTAs |
-| `/sites/` | Serviços, pacotes, processo |
+| `/pacotes/` | Serviços, pacotes, processo |
 | `/portfolio/` | 40+ demos por segmento e cases |
 | `/por-que-site/` | Comparativo Instagram vs site |
 | `/faq/` | Perguntas frequentes |
@@ -85,7 +85,7 @@ Playwright cobre 7 rotas, axe-core (iframe excluído), links, imagens e responsi
 ## Acessibilidade
 
 Checklist em [`docs/a11y-checklist.md`](docs/a11y-checklist.md).  
-Testes axe-core em `/`, `/sites/`, `/portfolio/`, `/faq/`.
+Testes axe-core em `/`, `/pacotes/`, `/portfolio/`, `/faq/`.
 
 ## Estrutura
 

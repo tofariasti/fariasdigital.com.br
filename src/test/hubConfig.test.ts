@@ -19,7 +19,7 @@ describe('hubConfig', () => {
   })
 
   it('has SEO pages for all routes', () => {
-    const keys = ['home', 'sites', 'portfolio', 'faq', 'por-que-site', 'drone', 'sobre'] as const
+    const keys = ['home', 'pacotes', 'portfolio', 'faq', 'por-que-site', 'drone', 'sobre'] as const
     keys.forEach((key) => {
       expect(hubConfig.seo.paginas[key].title).toBeTruthy()
       expect(hubConfig.seo.paginas[key].description).toBeTruthy()

@@ -102,7 +102,7 @@ export function HeroHome({
           <AnimatedSection delay={3}>
             {actions ?? (
               <div className="hero__actions">
-                <Link to={pathFor('/sites/')} className="btn btn--primary btn--lg">
+                <Link to={pathFor('/pacotes/')} className="btn btn--primary btn--lg">
                   {t(uiCopy.cta.viewPackages)}
                 </Link>
                 <Link to={pathFor('/portfolio/')} className="btn btn--outline btn--lg">

@@ -14,7 +14,7 @@ export function SitesPage() {
 
   return (
     <>
-      <PageMeta page="sites" />
+      <PageMeta page="pacotes" />
       <HeroHome
         compact
         label={t(uiCopy.sites.label)}

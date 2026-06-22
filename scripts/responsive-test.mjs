@@ -22,7 +22,7 @@ const VIEWPORTS = [
 
 const PAGES = [
   { path: '/', slug: 'home' },
-  { path: '/sites/', slug: 'sites' },
+  { path: '/pacotes/', slug: 'pacotes' },
   { path: '/drone/', slug: 'drone' },
   { path: '/sobre/', slug: 'sobre' },
 ];

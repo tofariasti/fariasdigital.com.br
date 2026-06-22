@@ -66,7 +66,7 @@ export function Header() {
 
   const navItems = [
     { to: pathFor('/'), label: t(uiCopy.nav.home), end: true },
-    { to: pathFor('/sites/'), label: t(uiCopy.nav.packages) },
+    { to: pathFor('/pacotes/'), label: t(uiCopy.nav.packages) },
     { to: pathFor('/portfolio/'), label: t(uiCopy.nav.portfolio) },
     { to: pathFor('/faq/'), label: t(uiCopy.nav.faq) },
     { to: config.links.techdrone360, label: t(uiCopy.nav.drone), external: true as const },

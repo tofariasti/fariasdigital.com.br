@@ -105,7 +105,7 @@ Oi, [NOME]! Só passando pra saber se chegou a ver o site de exemplos (fariasdig
 | Resultado | Ação |
 |-----------|------|
 | Muita dúvida "o que você faz?" | Simplificar frente do flyer; um serviço em destaque por versão |
-| Cliques no site mas sem WhatsApp | Reforçar CTA e preço "a partir de" na página /sites |
+| Cliques no site mas sem WhatsApp | Reforçar CTA e preço "a partir de" na página /pacotes |
 | Só interesse em drone | Segunda tiragem com verso drone em imobiliárias |
 | Só interesse em site | Distribuir mais em comércio; reduzir ênfase drone no flyer |
 

@@ -63,7 +63,7 @@ export function HomePage() {
               {t(uiCopy.home.stopLosingClients)}{' '}
               <strong>{t(uiCopy.home.investInTool)}</strong>
             </p>
-            <Link to={pathFor('/sites/')} className="btn btn--primary btn--lg">
+            <Link to={pathFor('/pacotes/')} className="btn btn--primary btn--lg">
               {t(uiCopy.cta.viewPackages)}
             </Link>
           </AnimatedSection>
@@ -85,7 +85,7 @@ export function HomePage() {
           />
           <MiniServices />
           <AnimatedSection className="servicos-home-cta">
-            <Link to={pathFor('/sites/')} className="btn btn--outline btn--lg">
+            <Link to={pathFor('/pacotes/')} className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewPackages)}
             </Link>
             <WhatsAppButton waKey="geral" className="btn btn--whatsapp btn--lg">
@@ -129,7 +129,7 @@ export function HomePage() {
           />
           <div className="intent-grid">
             <AnimatedSection delay={1}>
-              <Link to={pathFor('/sites/')} className="intent-card">
+              <Link to={pathFor('/pacotes/')} className="intent-card">
                 <h3 className="intent-card__title">{t(uiCopy.home.cardPackagesTitle)}</h3>
                 <p className="intent-card__desc">{t(uiCopy.home.cardPackagesDesc)}</p>
                 <span className="intent-card__link">{t(uiCopy.home.cardPackagesLink)}</span>
@@ -183,7 +183,7 @@ export function HomePage() {
         text={
           <>
             {t(uiCopy.home.ctaTextBefore)}
-            <Link to={pathFor('/sites/')} style={{ color: 'inherit', textDecoration: 'underline' }}>
+            <Link to={pathFor('/pacotes/')} style={{ color: 'inherit', textDecoration: 'underline' }}>
               {t(uiCopy.cta.viewPackages)}
             </Link>
           </>

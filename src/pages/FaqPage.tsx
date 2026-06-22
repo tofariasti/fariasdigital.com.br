@@ -26,7 +26,7 @@ export function FaqPage() {
         <div className="container">
           <FaqList />
           <AnimatedSection style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link to={pathFor('/sites/')} className="btn btn--outline btn--lg">
+            <Link to={pathFor('/pacotes/')} className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewPackages)}
             </Link>
             <WhatsAppButton waKey="geral" className="btn btn--whatsapp btn--lg">

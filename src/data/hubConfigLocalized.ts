@@ -219,7 +219,7 @@ Para agilizar:
           'Landing pages desde R$ 300, sitios institucionales, e-commerce y automatización WhatsApp. Factura oficial · Presupuesto gratis.',
         ),
       },
-      sites: {
+      pacotes: {
         title: L(
           'Landing Page e Criação de Sites | Farias Digital',
           'Landing Pages & Website Development | Farias Digital',

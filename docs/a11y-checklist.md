@@ -39,5 +39,5 @@
 ## Testes automatizados
 
 - Vitest: utilitários WhatsApp, config, SEO
-- Playwright + axe-core: home, sites, portfolio, FAQ
+- Playwright + axe-core: home, pacotes, portfolio, FAQ
 - Viewports: 390px, 768px, 1280px (via projetos Playwright)

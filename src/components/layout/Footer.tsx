@@ -30,7 +30,7 @@ export function Footer() {
           <AnimatedSection delay={1}>
             <p className="footer__title">{t(uiCopy.footer.nav)}</p>
             <ul className="footer__links">
-              <li><Link to={pathFor('/sites/')}>{t(uiCopy.nav.packagesFull)}</Link></li>
+              <li><Link to={pathFor('/pacotes/')}>{t(uiCopy.nav.packagesFull)}</Link></li>
               <li><Link to={pathFor('/portfolio/')}>{t(uiCopy.nav.portfolio)}</Link></li>
               <li><Link to={pathFor('/por-que-site/')}>{t(uiCopy.nav.whySite)}</Link></li>
               <li><Link to={pathFor('/faq/')}>{t(uiCopy.nav.faqFull)}</Link></li>

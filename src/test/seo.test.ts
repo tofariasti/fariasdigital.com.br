@@ -3,9 +3,9 @@ import { buildJsonLd, getPageMeta } from '../utils/seo'
 
 describe('seo utils', () => {
   it('returns canonical URLs with trailing slash for subpages', () => {
-    expect(getPageMeta('sites', 'pt').canonical).toBe('https://fariasdigital.com.br/sites/')
+    expect(getPageMeta('pacotes', 'pt').canonical).toBe('https://fariasdigital.com.br/pacotes/')
     expect(getPageMeta('home', 'pt').canonical).toBe('https://fariasdigital.com.br/')
-    expect(getPageMeta('sites', 'en').canonical).toBe('https://fariasdigital.com.br/en/sites/')
+    expect(getPageMeta('pacotes', 'en').canonical).toBe('https://fariasdigital.com.br/en/pacotes/')
   })
 
   it('builds home JSON-LD graph', () => {

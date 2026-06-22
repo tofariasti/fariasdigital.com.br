@@ -7,7 +7,7 @@ async function expectHubPage(page: import('@playwright/test').Page, route: strin
   await expect(page.locator('main')).toBeVisible()
 }
 
-const ROUTES_PT = ['/', '/sites/', '/portfolio/', '/faq/', '/por-que-site/', '/drone/', '/sobre/']
+const ROUTES_PT = ['/', '/pacotes/', '/portfolio/', '/faq/', '/por-que-site/', '/drone/', '/sobre/']
 const ROUTES_EN = ROUTES_PT.map((r) => (r === '/' ? '/en/' : `/en${r}`))
 const ROUTES_ES = ROUTES_PT.map((r) => (r === '/' ? '/es/' : `/es${r}`))
 
@@ -30,6 +30,12 @@ test.describe('Hub navigation', () => {
     })
   }
 
+  test('legacy /sites/ redirects to /pacotes/', async ({ page }) => {
+    await page.goto('/sites/')
+    await expect(page).toHaveURL(/\/pacotes\/?$/)
+    await expect(page.locator('main')).toBeVisible()
+  })
+
   test('header navigation works (PT)', async ({ page }) => {
     await page.goto('/')
     const toggle = page.locator('.nav-toggle')
@@ -37,13 +43,13 @@ test.describe('Hub navigation', () => {
       await toggle.click({ force: true })
       const mobileNav = page.locator('#mobile-nav')
       await mobileNav.getByRole('link', { name: 'Pacotes', exact: true }).click()
-      await expect(page).toHaveURL(/\/sites\/?$/)
+      await expect(page).toHaveURL(/\/pacotes\/?$/)
       await toggle.click({ force: true })
       await mobileNav.getByRole('link', { name: 'Portfólio', exact: true }).click()
     } else {
       const nav = page.locator('nav[aria-label="Início"]')
       await nav.getByRole('link', { name: 'Pacotes', exact: true }).click()
-      await expect(page).toHaveURL(/\/sites\/?$/)
+      await expect(page).toHaveURL(/\/pacotes\/?$/)
       await nav.getByRole('link', { name: 'Portfólio', exact: true }).click()
     }
     await expect(page).toHaveURL(/\/portfolio\/?$/)
@@ -65,7 +71,7 @@ test.describe('Hub navigation', () => {
 })
 
 test.describe('Hub a11y', () => {
-  for (const route of ['/', '/en/', '/es/', '/sites/', '/portfolio/', '/faq/']) {
+  for (const route of ['/', '/en/', '/es/', '/pacotes/', '/portfolio/', '/faq/']) {
     test(`${route} passes axe`, async ({ page }) => {
       await page.goto(route)
       const results = await new AxeBuilder({ page })
@@ -160,7 +166,7 @@ test.describe('Assets and links', () => {
   })
 
   test('whatsapp links use wa.me', async ({ page }) => {
-    await page.goto('/sites/')
+    await page.goto('/pacotes/')
     const waLinks = page.locator('a[href*="wa.me"]')
     await expect(waLinks.first()).toBeAttached()
     const href = await waLinks.first().getAttribute('href')

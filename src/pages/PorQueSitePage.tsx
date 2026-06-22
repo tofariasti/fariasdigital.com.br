@@ -64,7 +64,7 @@ export function PorQueSitePage() {
             <p className="cta-band__text">{t(uiCopy.porQueSite.ctaText)}</p>
           </AnimatedSection>
           <AnimatedSection delay={2} className="hero__actions" style={{ justifyContent: 'center', marginBottom: 0 }}>
-            <Link to={pathFor('/sites/')} className="btn btn--outline btn--lg">
+            <Link to={pathFor('/pacotes/')} className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewPackagesShort)}
             </Link>
             <WhatsAppButton waKey="geral" className="btn btn--whatsapp btn--lg">

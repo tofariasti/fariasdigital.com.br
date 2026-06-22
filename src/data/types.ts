@@ -10,7 +10,7 @@ export type WhatsAppKey =
 
 export type SeoPageKey =
   | 'home'
-  | 'sites'
+  | 'pacotes'
   | 'portfolio'
   | 'faq'
   | 'por-que-site'
