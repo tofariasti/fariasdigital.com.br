@@ -14,6 +14,7 @@ const HubConfig = {
   marcaLogoAlt: 'Farias Digital',
   whatsappIcon: '/assets/img/whatsapp-icon.svg',
   nomeCompleto: 'Tiago O. de Farias',
+  fotoPerfil: '/assets/img/tiago-farias.png',
   dominio: HUB_DOMINIO,
   dominioHost: HUB_DOMINIO_HOST,
   cidadeRegiao: 'Atendimento em todo o Brasil',

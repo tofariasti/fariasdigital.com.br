@@ -73,9 +73,15 @@ export function SobrePage() {
       <section className="section section--alt">
         <div className="container about-grid">
           <AnimatedSection direction="left" className="about-card">
-            <div className="about-card__initials" aria-hidden="true">
-              TF
-            </div>
+            <img
+              className="about-card__photo"
+              src={config.fotoPerfil}
+              alt={config.nomeCompleto}
+              width={84}
+              height={84}
+              loading="lazy"
+              decoding="async"
+            />
             <h2 style={{ fontFamily: 'var(--font-display)', margin: '0 0 0.5rem' }}>
               {config.nomeCompleto}
             </h2>

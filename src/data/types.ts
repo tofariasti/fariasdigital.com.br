@@ -106,6 +106,7 @@ export interface HubConfigType {
   marcaLogoAlt: string
   whatsappIcon: string
   nomeCompleto: string
+  fotoPerfil: string
   dominio: string
   dominioHost: string
   cidadeRegiao: string
