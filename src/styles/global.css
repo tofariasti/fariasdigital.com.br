@@ -604,52 +604,26 @@ a:hover { color: var(--color-accent); }
   max-width: 18ch;
 }
 
-.hero-visual--portrait {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 280px;
+.hero-aside {
+  align-self: center;
 }
 
-.hero-portrait {
-  position: relative;
-  z-index: 2;
-  width: min(100%, 280px);
-  aspect-ratio: 1;
-  border-radius: 24px;
-  padding: 3px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45), 0 0 80px var(--color-primary-glow);
-  animation: mockup-float 8s ease-in-out infinite;
+.hero-aside__name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  letter-spacing: var(--tracking-tight);
 }
 
-.hero-portrait__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 21px;
-  object-fit: cover;
-  background: var(--color-surface-solid);
+.hero-aside__role {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--color-muted);
 }
 
-.hero-visual--portrait .hero-visual__chips .preview-chip--tech {
-  right: -2%;
-  bottom: 8%;
-}
-
-@media (min-width: 960px) {
-  .hero-visual--portrait {
-    justify-content: flex-end;
-  }
-
-  .hero-portrait:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 32px 100px rgba(0, 0, 0, 0.55), 0 0 100px var(--color-primary-glow);
-  }
-
-  .hero-portrait {
-    transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s;
-  }
+.hero-aside .hero-pills {
+  margin: 1.25rem 0 0;
 }
 
 .hero__grid {

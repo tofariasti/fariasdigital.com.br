@@ -70,32 +70,16 @@ export function SobrePage() {
             </AnimatedSection>
           </div>
 
-          <AnimatedSection delay={2} direction="right" className="hero-visual hero-visual--portrait">
-            <div className="hero-orbit" aria-hidden="true">
-              <span className="hero-orbit__ring hero-orbit__ring--1">
-                <span className="hero-orbit__dot" />
-              </span>
-              <span className="hero-orbit__ring hero-orbit__ring--2" />
-            </div>
-            <div className="hero-visual__glow" />
-            <div className="hero-portrait">
-              <img
-                className="hero-portrait__img"
-                src={config.fotoPerfil}
-                alt={config.nomeCompleto}
-                width={280}
-                height={280}
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-            <div className="hero-visual__chips">
-              <span className="preview-chip preview-chip--accent">Laravel & APIs</span>
-              <span className="preview-chip preview-chip--success">{t(uiCopy.nav.drone)} DJI</span>
-              <span className="preview-chip preview-chip--tech">
-                {t(uiCopy.common.mei)} · {t(uiCopy.common.notaFiscal)}
-              </span>
-            </div>
+          <AnimatedSection delay={2} direction="right" className="about-card hero-aside">
+            <h2 className="hero-aside__name">{config.nomeCompleto}</h2>
+            <p className="hero-aside__role">
+              {t(uiCopy.common.webDeveloper)} · {config.cidadeRegiao}
+            </p>
+            <ul className="hero-pills">
+              {t(uiCopy.sobre.heroTags).map((tag) => (
+                <li key={tag}>{tag}</li>
+              ))}
+            </ul>
           </AnimatedSection>
         </div>
       </section>

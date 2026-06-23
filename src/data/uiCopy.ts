@@ -341,6 +341,11 @@ export const uiCopy = {
     whyMobileText: L('onde seu cliente realmente está', 'where your customer actually is', 'donde su cliente realmente está'),
     whyRemote: L('Atendimento remoto', 'Remote service', 'Atención remota'),
     whyRemoteText: L('projetos para todo o Brasil, com comunicação direta pelo WhatsApp', 'projects across Brazil, with direct WhatsApp communication', 'proyectos para todo Brasil, con comunicación directa por WhatsApp'),
+    heroTags: L(
+      ['Laravel & APIs', '10+ anos', 'Drone DJI', 'MEI · Nota Fiscal'],
+      ['Laravel & APIs', '10+ years', 'DJI Drone', 'MEI · Invoice'],
+      ['Laravel y APIs', '10+ años', 'Dron DJI', 'MEI · Factura'],
+    ),
   },
   drone: {
     label: L('TechDrone360', 'TechDrone360', 'TechDrone360'),
