@@ -7,6 +7,9 @@ export type WhatsAppKey =
   | 'pacoteLoja'
   | 'pacoteAutomacao'
   | 'pacoteDrone'
+  | 'computador'
+  | 'pacoteFormatacao'
+  | 'pacoteManutencao'
 
 export type SeoPageKey =
   | 'home'
@@ -15,6 +18,7 @@ export type SeoPageKey =
   | 'faq'
   | 'por-que-site'
   | 'drone'
+  | 'computadores'
   | 'sobre'
 
 export interface Pacote {
@@ -141,6 +145,9 @@ export interface HubConfigType {
     inclui: string[]
     mensagemWhatsApp: WhatsAppKey
   }
+  pacotesComputador: Pacote[]
+  processoComputador: ProcessoStep[]
+  faqComputador: FaqItem[]
   portfolio: {
     titulo: string
     tituloHighlight: string

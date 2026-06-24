@@ -7,6 +7,7 @@ import { PortfolioPage } from './pages/PortfolioPage'
 import { FaqPage } from './pages/FaqPage'
 import { PorQueSitePage } from './pages/PorQueSitePage'
 import { DronePage } from './pages/DronePage'
+import { ComputadoresPage } from './pages/ComputadoresPage'
 import { SobrePage } from './pages/SobrePage'
 import { useAnalytics } from './hooks/useAnalytics'
 import { LocaleProvider } from './i18n/LocaleContext'
@@ -35,6 +36,8 @@ function localeRoutes(prefix: string): ReactElement[] {
     <Route key={`${key}-por-que-site-index`} path={p('/por-que-site/')} element={<PorQueSitePage />} />,
     <Route key={`${key}-drone`} path={p('/drone')} element={<Navigate to={p('/drone/')} replace />} />,
     <Route key={`${key}-drone-index`} path={p('/drone/')} element={<DronePage />} />,
+    <Route key={`${key}-computadores`} path={p('/computadores')} element={<Navigate to={p('/computadores/')} replace />} />,
+    <Route key={`${key}-computadores-index`} path={p('/computadores/')} element={<ComputadoresPage />} />,
     <Route key={`${key}-sobre`} path={p('/sobre')} element={<Navigate to={p('/sobre/')} replace />} />,
     <Route key={`${key}-sobre-index`} path={p('/sobre/')} element={<SobrePage />} />,
   ]

@@ -7,7 +7,7 @@ async function expectHubPage(page: import('@playwright/test').Page, route: strin
   await expect(page.locator('main')).toBeVisible()
 }
 
-const ROUTES_PT = ['/', '/pacotes/', '/portfolio/', '/faq/', '/por-que-site/', '/drone/', '/sobre/']
+const ROUTES_PT = ['/', '/pacotes/', '/portfolio/', '/faq/', '/por-que-site/', '/drone/', '/computadores/', '/sobre/']
 const ROUTES_EN = ROUTES_PT.map((r) => (r === '/' ? '/en/' : `/en${r}`))
 const ROUTES_ES = ROUTES_PT.map((r) => (r === '/' ? '/es/' : `/es${r}`))
 

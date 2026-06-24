@@ -34,6 +34,7 @@ export function Footer() {
               <li><Link to={pathFor('/portfolio/')}>{t(uiCopy.nav.portfolio)}</Link></li>
               <li><Link to={pathFor('/por-que-site/')}>{t(uiCopy.nav.whySite)}</Link></li>
               <li><Link to={pathFor('/faq/')}>{t(uiCopy.nav.faqFull)}</Link></li>
+              <li><Link to={pathFor('/computadores/')}>{t(uiCopy.nav.computers)}</Link></li>
               <li><Link to={pathFor('/sobre/')}>{t(uiCopy.nav.about)}</Link></li>
             </ul>
           </AnimatedSection>

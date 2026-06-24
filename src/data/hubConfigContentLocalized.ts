@@ -98,6 +98,119 @@ export const pacoteDroneLocalized = {
   mensagemWhatsApp: 'pacoteDrone',
 }
 
+export const pacotesComputadorLocalized = [
+  {
+    id: 'manutencao',
+    nome: L('Manutenção Preventiva', 'Preventive Maintenance', 'Mantenimiento Preventivo'),
+    preco: L('a partir de R$ 80', 'from R$ 80', 'desde R$ 80'),
+    publico: L('PC lento, aquecendo ou com poeira acumulada', 'Slow PC, overheating or dust buildup', 'PC lento, calentando o con polvo acumulado'),
+    inclui: [
+      L('Limpeza interna e troca de pasta térmica', 'Internal cleaning and thermal paste replacement', 'Limpieza interna y cambio de pasta térmica'),
+      L('Otimização de inicialização e programas', 'Startup and program optimization', 'Optimización de inicio y programas'),
+      L('Verificação de HD/SSD e memória RAM', 'HD/SSD and RAM check', 'Verificación de HD/SSD y memoria RAM'),
+      L('Relatório do que foi feito', 'Report of work performed', 'Informe de lo realizado'),
+    ],
+    naoInclui: L('peças e licenças de software', 'parts and software licenses', 'piezas y licencias de software'),
+    mensagemWhatsApp: 'pacoteManutencao',
+  },
+  {
+    id: 'formatacao',
+    nome: L('Formatação Completa', 'Full Format & Reinstall', 'Formateo Completo'),
+    preco: L('a partir de R$ 120', 'from R$ 120', 'desde R$ 120'),
+    badge: L('Mais pedido', 'Most requested', 'Más pedido'),
+    destaque: true,
+    publico: L('Windows lento, travando ou cheio de programas', 'Slow, freezing Windows or too many programs', 'Windows lento, colgando o lleno de programas'),
+    inclui: [
+      L('Formatação e instalação limpa do Windows', 'Clean Windows format and installation', 'Formateo e instalación limpia de Windows'),
+      L('Drivers, atualizações e programas essenciais', 'Drivers, updates and essential programs', 'Drivers, actualizaciones y programas esenciales'),
+      L('Orientação de backup antes do serviço', 'Backup guidance before service', 'Orientación de respaldo antes del servicio'),
+      L('Testes de estabilidade antes da entrega', 'Stability tests before handoff', 'Pruebas de estabilidad antes de la entrega'),
+    ],
+    naoInclui: L('licença Windows (se necessário)', 'Windows license (if needed)', 'licencia Windows (si es necesaria)'),
+    mensagemWhatsApp: 'pacoteFormatacao',
+  },
+  {
+    id: 'completo',
+    nome: L('Pacote Resgate', 'Rescue Package', 'Paquete Rescate'),
+    preco: L('a partir de R$ 180', 'from R$ 180', 'desde R$ 180'),
+    publico: L('Quem precisa formatar sem perder arquivos importantes', 'Those who need a format without losing important files', 'Quien necesita formatear sin perder archivos importantes'),
+    inclui: [
+      L('Backup dos arquivos importantes (documentos, fotos)', 'Backup of important files (documents, photos)', 'Respaldo de archivos importantes (documentos, fotos)'),
+      L('Formatação completa + otimização', 'Full format + optimization', 'Formateo completo + optimización'),
+      L('Instalação de programas que você usa no dia a dia', 'Installation of programs you use daily', 'Instalación de programas que usa a diario'),
+      L('Configuração de impressora e Wi-Fi', 'Printer and Wi-Fi setup', 'Configuración de impresora y Wi-Fi'),
+    ],
+    naoInclui: null,
+    mensagemWhatsApp: 'computador',
+  },
+]
+
+export const processoComputadorLocalized = [
+  {
+    passo: '1',
+    titulo: L('Você chama no WhatsApp', 'You message on WhatsApp', 'Usted escribe por WhatsApp'),
+    texto: L('Descreva o problema (lentidão, vírus, tela azul). Respondo em até 24h com orientação inicial.', 'Describe the issue (slowness, virus, blue screen). I reply within 24h with initial guidance.', 'Describa el problema (lentitud, virus, pantalla azul). Respondo en hasta 24h con orientación inicial.'),
+  },
+  {
+    passo: '2',
+    titulo: L('Diagnóstico e orçamento', 'Diagnosis and quote', 'Diagnóstico y presupuesto'),
+    texto: L('Combinamos o melhor serviço (manutenção, formatação ou pacote completo) com valor fechado — sem surpresas.', 'We pick the best service (maintenance, format or full package) with a fixed price — no surprises.', 'Definimos el mejor servicio (mantenimiento, formateo o paquete completo) con precio cerrado — sin sorpresas.'),
+  },
+  {
+    passo: '3',
+    titulo: L('Coleta ou atendimento', 'Pickup or on-site service', 'Recogida o atención'),
+    texto: L('Atendo em Porto Alegre e região metropolitana. Também faço suporte remoto quando o caso permite.', 'I serve Porto Alegre and metro area. Remote support when the case allows.', 'Atiendo en Porto Alegre y región metropolitana. También soporte remoto cuando el caso lo permite.'),
+  },
+  {
+    passo: '4',
+    titulo: L('Entrega testada', 'Tested handoff', 'Entrega probada'),
+    texto: L('Computador devolvido funcionando, com orientação do que foi feito e dicas para manter a performance.', 'Computer returned working, with a summary of work done and tips to keep performance.', 'Computadora devuelta funcionando, con resumen de lo hecho y consejos para mantener el rendimiento.'),
+  },
+]
+
+export const faqComputadorLocalized = [
+  {
+    pergunta: L('Quanto tempo demora uma formatação?', 'How long does a format take?', '¿Cuánto demora un formateo?'),
+    resposta: L(
+      'Em média de 3 a 6 horas, dependendo do estado do equipamento e da quantidade de programas a instalar. Manutenção preventiva costuma levar 1 a 2 horas.',
+      'On average 3 to 6 hours, depending on the machine state and programs to install. Preventive maintenance usually takes 1 to 2 hours.',
+      'En promedio de 3 a 6 horas, según el estado del equipo y programas a instalar. El mantenimiento preventivo suele llevar 1 a 2 horas.',
+    ),
+  },
+  {
+    pergunta: L('Vou perder meus arquivos na formatação?', 'Will I lose my files when formatting?', '¿Perderé mis archivos al formatear?'),
+    resposta: L(
+      'Na formatação simples, sim — por isso oriento backup antes. No Pacote Resgate faço backup dos arquivos importantes (documentos, fotos) antes de formatar.',
+      'With a simple format, yes — that is why I guide backup first. With the Rescue Package I back up important files (documents, photos) before formatting.',
+      'En el formateo simple, sí — por eso oriento respaldo antes. En el Paquete Rescate hago respaldo de archivos importantes (documentos, fotos) antes de formatear.',
+    ),
+  },
+  {
+    pergunta: L('Você atende em domicílio?', 'Do you offer on-site service?', '¿Atiende a domicilio?'),
+    resposta: L(
+      'Sim, em Porto Alegre e região metropolitana (Canoas, Novo Hamburgo, Gravataí, entre outras). Também posso buscar e devolver o equipamento — combine pelo WhatsApp.',
+      'Yes, in Porto Alegre and metro area (Canoas, Novo Hamburgo, Gravataí, among others). I can also pick up and return the machine — arrange via WhatsApp.',
+      'Sí, en Porto Alegre y región metropolitana (Canoas, Novo Hamburgo, Gravataí, entre otras). También puedo buscar y devolver el equipo — coordinamos por WhatsApp.',
+    ),
+  },
+  {
+    pergunta: L('Qual versão do Windows você instala?', 'Which Windows version do you install?', '¿Qué versión de Windows instala?'),
+    resposta: L(
+      'Windows 10 ou 11 conforme o hardware suportar. Se precisar de licença oficial, oriento a compra — não incluo licença nos pacotes base.',
+      'Windows 10 or 11 depending on hardware support. If you need an official license, I guide the purchase — license is not included in base packages.',
+      'Windows 10 u 11 según lo que soporte el hardware. Si necesita licencia oficial, oriento la compra — la licencia no está incluida en los paquetes base.',
+    ),
+  },
+  {
+    pergunta: L('Emite nota fiscal?', 'Do you issue an official invoice?', '¿Emite factura oficial?'),
+    resposta: L(
+      'Sim. Sou MEI e emito Nota Fiscal para pessoa física e jurídica.',
+      'Yes. I am a registered sole proprietor (MEI) and issue official invoices for individuals and companies.',
+      'Sí. Soy MEI y emito factura oficial para persona física y jurídica.',
+    ),
+  },
+]
+
 export const portfolioLocalized = {
   titulo: L('Veja o que posso construir', 'See what I can build', 'Vea lo que puedo construir'),
   tituloHighlight: L('para o seu negócio', 'for your business', 'para su negocio'),
@@ -769,6 +882,7 @@ export const servicosLocalized = [
   { id: 'whatsapp', titulo: L('Automação WhatsApp', 'WhatsApp automation', 'Automatización WhatsApp'), descricao: L('Formulários inteligentes, mensagens prontas e fluxos que agilizam o atendimento.', 'Smart forms, ready messages and flows that speed up support.', 'Formularios inteligentes, mensajes listos y flujos que agilizan la atención.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'pacoteAutomacao' },
   { id: 'integracoes', titulo: L('Integrações & APIs', 'Integrations & APIs', 'Integraciones y APIs'), descricao: L('Pagamento online, ERP, marketplaces e sistemas Laravel sob medida.', 'Online payment, ERP, marketplaces and custom Laravel systems.', 'Pago online, ERP, marketplaces y sistemas Laravel a medida.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'site' },
   { id: 'drone', titulo: L('Imagens aéreas', 'Aerial imagery', 'Imágenes aéreas'), descricao: L('Fotos e vídeos com drone para imóveis, obras e empresas.', 'Drone photos and videos for real estate, construction and businesses.', 'Fotos y videos con dron para inmuebles, obras y empresas.'), preco: L('a partir de R$ 650', 'from R$ 650', 'desde R$ 650'), href: 'https://techdrone360.com.br/', externo: true },
+  { id: 'computadores', titulo: L('Manutenção de PC', 'PC maintenance', 'Mantenimiento de PC'), descricao: L('Formatação, limpeza, remoção de vírus e upgrade SSD/RAM.', 'Format, cleaning, virus removal and SSD/RAM upgrade.', 'Formateo, limpieza, eliminación de virus y upgrade SSD/RAM.'), preco: L('a partir de R$ 80', 'from R$ 80', 'desde R$ 80'), href: '/computadores/' },
 ]
 
 export const credibilidadeLocalized = {

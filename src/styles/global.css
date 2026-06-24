@@ -1130,6 +1130,20 @@ a:hover { color: var(--color-accent); }
 
 @media (min-width: 768px) {
   .service-grid { grid-template-columns: 1fr 1fr; }
+  .service-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+.service-card--alert {
+  border-color: rgba(248, 113, 113, 0.25);
+}
+
+.service-card--alert::before {
+  background: linear-gradient(135deg, rgba(248, 113, 113, 0.1), transparent 55%);
+  opacity: 1;
+}
+
+.service-card--alert:hover {
+  border-color: rgba(248, 113, 113, 0.45);
 }
 
 .service-card {

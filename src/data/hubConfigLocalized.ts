@@ -7,6 +7,9 @@ import {
   demosLocalized,
   intentItemsLocalized,
   pacoteDroneLocalized,
+  pacotesComputadorLocalized,
+  processoComputadorLocalized,
+  faqComputadorLocalized,
   pacotesWebLocalized,
   portfolioLocalized,
   pricingLandingLocalized,
@@ -135,6 +138,45 @@ Para agilizar:
       'Hi! I am interested in the Real Estate Drone package (aerial photos + video). I would like a quote.',
       '¡Hola! Me interesa el paquete Dron Inmobiliario (fotos + video aéreo). Me gustaría un presupuesto.',
     ),
+    computador: L(
+      `Olá! Vi o site ${HUB_DOMINIO_HOST}/computadores/ e preciso de ajuda com meu computador.
+
+Para agilizar:
+• Problema: (lento / vírus / tela azul / não liga / outro)
+• Marca e modelo (se souber):
+• Precisa de backup de arquivos? (sim/não)
+• Cidade/bairro:
+
+Obrigado!`,
+      `Hi! I saw ${HUB_DOMINIO_HOST}/computadores/ and need help with my computer.
+
+To speed things up:
+• Issue: (slow / virus / blue screen / won't boot / other)
+• Brand and model (if known):
+• Need file backup? (yes/no)
+• City/neighborhood:
+
+Thank you!`,
+      `¡Hola! Vi el sitio ${HUB_DOMINIO_HOST}/computadores/ y necesito ayuda con mi computadora.
+
+Para agilizar:
+• Problema: (lento / virus / pantalla azul / no enciende / otro)
+• Marca y modelo (si sabe):
+• ¿Necesita respaldo de archivos? (sí/no)
+• Ciudad/barrio:
+
+¡Gracias!`,
+    ),
+    pacoteFormatacao: L(
+      'Olá! Tenho interesse no pacote Formatação Completa (a partir de R$ 120). Gostaria de um orçamento.',
+      'Hi! I am interested in the Full Format package (from R$ 120). I would like a quote.',
+      '¡Hola! Me interesa el paquete Formateo Completo (desde R$ 120). Me gustaría un presupuesto.',
+    ),
+    pacoteManutencao: L(
+      'Olá! Tenho interesse no pacote Manutenção Preventiva (a partir de R$ 80). Gostaria de um orçamento.',
+      'Hi! I am interested in the Preventive Maintenance package (from R$ 80). I would like a quote.',
+      '¡Hola! Me interesa el paquete Mantenimiento Preventivo (desde R$ 80). Me gustaría un presupuesto.',
+    ),
   },
 
   links: {
@@ -151,6 +193,12 @@ Para agilizar:
   pacotesWeb: pacotesWebLocalized,
 
   pacoteDrone: pacoteDroneLocalized,
+
+  pacotesComputador: pacotesComputadorLocalized,
+
+  processoComputador: processoComputadorLocalized,
+
+  faqComputador: faqComputadorLocalized,
 
   portfolio: portfolioLocalized,
 
@@ -242,6 +290,18 @@ Para agilizar:
           'Fotos e vídeos aéreos 4K com drone DJI para imóveis, Airbnb, obras e eventos. A partir de R$ 650. Nota Fiscal.',
           '4K aerial photos and videos with DJI drone for real estate, Airbnb, construction and events. From R$ 650. Official invoice.',
           'Fotos y videos aéreos 4K con dron DJI para inmuebles, Airbnb, obras y eventos. Desde R$ 650. Factura oficial.',
+        ),
+      },
+      computadores: {
+        title: L(
+          'Formatação e Manutenção de Computadores | Farias Digital',
+          'Computer Format & Maintenance | Farias Digital',
+          'Formateo y Mantenimiento de Computadoras | Farias Digital',
+        ),
+        description: L(
+          'Formatação Windows, limpeza, remoção de vírus e upgrade SSD. A partir de R$ 80. Porto Alegre e região. Nota Fiscal.',
+          'Windows format, cleaning, virus removal and SSD upgrade. From R$ 80. Porto Alegre and metro area. Official invoice.',
+          'Formateo Windows, limpieza, eliminación de virus y upgrade SSD. Desde R$ 80. Porto Alegre y región. Factura oficial.',
         ),
       },
       sobre: {
