@@ -34,10 +34,23 @@ export const LOCALE_PREFIX: Record<Locale, string> = {
 }
 
 export function localizedPath(path: string, locale: Locale): string {
-  const normalized = path.startsWith('/') ? path : `/${path}`
+  const raw = path.startsWith('/') ? path : `/${path}`
+  const hashIndex = raw.indexOf('#')
+  const pathPart = hashIndex >= 0 ? raw.slice(0, hashIndex) : raw
+  const hashPart = hashIndex >= 0 ? raw.slice(hashIndex) : ''
+
   const prefix = LOCALE_PREFIX[locale]
-  if (normalized === '/') return prefix ? `${prefix}/` : '/'
-  if (prefix === '') return normalized.endsWith('/') ? normalized : `${normalized}/`
-  const segment = normalized.startsWith('/') ? normalized : `/${normalized}`
-  return `${prefix}${segment}`.replace(/\/+/g, '/')
+
+  let normalizedPath: string
+  if (pathPart === '/' || pathPart === '') {
+    normalizedPath = prefix ? `${prefix}/` : '/'
+  } else if (prefix === '') {
+    normalizedPath = pathPart.endsWith('/') ? pathPart : `${pathPart}/`
+  } else {
+    const segment = pathPart.startsWith('/') ? pathPart : `/${pathPart}`
+    normalizedPath = `${prefix}${segment}`.replace(/\/+/g, '/')
+    if (!normalizedPath.endsWith('/')) normalizedPath += '/'
+  }
+
+  return `${normalizedPath}${hashPart}`
 }

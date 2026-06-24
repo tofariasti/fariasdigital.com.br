@@ -53,7 +53,7 @@ export function IntentGrid({ items }: { items?: IntentItem[] }) {
           )
         }
 
-        const rawHref = item.href ?? item.anchor ?? '#pacotes'
+        const rawHref = item.href ?? item.anchor ?? '/pacotes/#pacotes'
         const href = rawHref.startsWith('http') ? rawHref : pathFor(rawHref)
         const isExternal = href.startsWith('http')
         return (
