@@ -3,6 +3,7 @@ export type WhatsAppKey =
   | 'site'
   | 'drone'
   | 'pacoteLanding'
+  | 'pacoteLandingAdmin'
   | 'pacotePresenca'
   | 'pacoteLoja'
   | 'pacoteAutomacao'

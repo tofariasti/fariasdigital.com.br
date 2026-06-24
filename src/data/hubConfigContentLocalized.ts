@@ -7,9 +7,9 @@ export const pricingLandingLocalized = {
   precoCurto: L('R$ 300', 'R$ 300', 'R$ 300'),
   titulo: L('Landing pages personalizadas', 'Custom landing pages', 'Landing pages personalizadas'),
   lead: L(
-    'Escolha o modelo do seu segmento e adapto com sua marca, textos e WhatsApp.',
-    'Pick a template for your industry and I customize it with your brand, copy and WhatsApp.',
-    'Elija el modelo de su segmento y lo adapto con su marca, textos y WhatsApp.',
+    'Escolha o modelo do seu segmento — com ou sem painel para você atualizar sozinha.',
+    'Pick a template for your industry — with or without a panel you can update yourself.',
+    'Elija el modelo de su segmento — con o sin panel para actualizar usted mismo.',
   ),
 }
 
@@ -31,9 +31,29 @@ export const pacotesWebLocalized = [
     ],
     naoInclui: L('Domínio, hospedagem e fotos profissionais (podem ser orçados à parte)', 'Domain, hosting and professional photos (can be quoted separately)', 'Dominio, hosting y fotos profesionales (se pueden presupuestar aparte)'),
     mensagemWhatsApp: 'pacoteLanding',
-    destaque: true,
-    badge: L('Mais pedido', 'Most requested', 'Más pedido'),
+    badge: L('Entrada', 'Starter', 'Entrada'),
     valorPercebido: L('Menos que 1 mês de anúncio no Instagram', 'Less than 1 month of Instagram ads', 'Menos que 1 mes de anuncio en Instagram'),
+  },
+  {
+    id: 'landing-painel',
+    nome: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'),
+    preco: L('a partir de R$ 590', 'from R$ 590', 'desde R$ 590'),
+    publico: L(
+      'Quem quer autonomia para atualizar preços, textos e fotos — como no Instagram',
+      'Those who want autonomy to update prices, copy and photos — like on Instagram',
+      'Quien quiere autonomía para actualizar precios, textos y fotos — como en Instagram',
+    ),
+    inclui: [
+      L('Tudo da Landing Page personalizada', 'Everything in the custom Landing Page', 'Todo de la Landing Page personalizada'),
+      L('Painel simples no celular: textos, preços, fotos, horário e WhatsApp', 'Simple mobile panel: copy, prices, photos, hours and WhatsApp', 'Panel simple en el celular: textos, precios, fotos, horario y WhatsApp'),
+      L('Você edita sozinha o que muda toda semana — sem chamar o desenvolvedor', 'You edit weekly changes yourself — without calling the developer', 'Usted edita sola lo que cambia cada semana — sin llamar al desarrollador'),
+      L('Treinamento rápido na entrega + suporte humano quando precisar', 'Quick training at handoff + human support when needed', 'Capacitación rápida en la entrega + soporte humano cuando lo necesite'),
+    ],
+    naoInclui: L('Domínio e hospedagem (podem ser orçados à parte)', 'Domain and hosting (can be quoted separately)', 'Dominio y hosting (se pueden presupuestar aparte)'),
+    mensagemWhatsApp: 'pacoteLandingAdmin',
+    destaque: true,
+    badge: L('Recomendado', 'Recommended', 'Recomendado'),
+    valorPercebido: L('Autonomia de Instagram + site que vende no Google', 'Instagram-level autonomy + a website that sells on Google', 'Autonomía de Instagram + sitio que vende en Google'),
   },
   {
     id: 'site-institucional',
@@ -834,6 +854,7 @@ export const comparativoInstagramLocalized = {
     'Instagram es importante. Pero si es su única presencia digital, está perdiendo clientes, dinero y control sobre su negocio.',
   ),
   instagram: [
+    { titulo: L('Publica e edita sozinho', 'Publish and edit on your own', 'Publica y edita solo'), texto: L('Foto, legenda e story em minutos — direto do celular, sem depender de ninguém. Essa facilidade é real e vale muito.', 'Photo, caption and story in minutes — straight from your phone, no one else needed. That ease is real and valuable.', 'Foto, leyenda e story en minutos — directo del celular, sin depender de nadie. Esa facilidad es real y vale mucho.') },
     { titulo: L('Não aparece no Google', 'Does not appear on Google', 'No aparece en Google'), texto: L('97% das pessoas pesquisam no Google antes de comprar. Se você não tem site, não existe.', '97% of people search on Google before buying. Without a website, you do not exist.', '97% de las personas buscan en Google antes de comprar. Sin sitio web, no existe.') },
     { titulo: L('Você não é dono da audiência', 'You do not own the audience', 'No es dueño de la audiencia'), texto: L('Instagram pode banir, mudar regras ou sumir. Seu trabalho de anos pode desaparecer em um clique.', 'Instagram can ban, change rules or disappear. Years of work can vanish in one click.', 'Instagram puede banear, cambiar reglas o desaparecer. Años de trabajo pueden desaparecer en un clic.') },
     { titulo: L('Alcance orgânico despencou', 'Organic reach has plummeted', 'El alcance orgánico cayó'), texto: L('Menos de 10% dos seus seguidores veem seus posts. Instagram quer que você pague anúncios.', 'Less than 10% of followers see your posts. Instagram wants you to pay for ads.', 'Menos del 10% de sus seguidores ven sus publicaciones. Instagram quiere que pague anuncios.') },
@@ -843,6 +864,7 @@ export const comparativoInstagramLocalized = {
   ],
   site: [
     { titulo: L('Aparece no Google 24h por dia', 'Visible on Google 24/7', 'Aparece en Google 24h al día'), texto: L('Clientes encontram você quando precisam. SEO traz visitas grátis, sem depender de algoritmo.', 'Customers find you when they need you. SEO brings free visits without relying on algorithms.', 'Los clientes lo encuentran cuando lo necesitan. SEO trae visitas gratis, sin depender del algoritmo.') },
+    { titulo: L('Você atualiza sem depender de dev', 'You update without relying on a dev', 'Usted actualiza sin depender del dev'), texto: L('Com o pacote Landing + Painel, muda preços, textos e fotos do celular — a autonomia do Instagram aplicada ao que vende.', 'With the Landing + Panel package, change prices, copy and photos from your phone — Instagram-level autonomy for what actually sells.', 'Con el paquete Landing + Panel, cambia precios, textos y fotos desde el celular — la autonomía de Instagram aplicada a lo que vende.') },
     { titulo: L('Você é dono do canal', 'You own the channel', 'Es dueño del canal'), texto: L('Seu domínio, seu conteúdo, sua lista de clientes. Ninguém pode tirar isso de você.', 'Your domain, your content, your customer list. No one can take that away.', 'Su dominio, su contenido, su lista de clientes. Nadie puede quitárselo.') },
     { titulo: L('100% do público vê seu conteúdo', '100% of visitors see your content', '100% del público ve su contenido'), texto: L('Não existe algoritmo cortando seu alcance. Quem acessa, vê tudo que você quer mostrar.', 'No algorithm cutting your reach. Visitors see everything you want to show.', 'No hay algoritmo cortando su alcance. Quien accede, ve todo lo que quiere mostrar.') },
     { titulo: L('Leva direto para a conversão', 'Leads straight to conversion', 'Lleva directo a la conversión'), texto: L('Botões de WhatsApp, formulários estratégicos e páginas que vendem. Menos cliques, mais venda.', 'WhatsApp buttons, strategic forms and pages that sell. Fewer clicks, more sales.', 'Botones de WhatsApp, formularios estratégicos y páginas que venden. Menos clics, más venta.') },
@@ -852,9 +874,9 @@ export const comparativoInstagramLocalized = {
   quote: {
     titulo: L('A verdade que ninguém te conta:', 'The truth no one tells you:', 'La verdad que nadie le cuenta:'),
     texto: L(
-      '<strong>Instagram serve para engajamento.</strong> Site serve para <strong>vender</strong>. São complementares, não concorrentes. Empresas sérias têm os dois — mas o site é a base. É ali que o cliente decide contratar ou não.',
-      '<strong>Instagram is for engagement.</strong> A website is for <strong>selling</strong>. They complement each other. Serious businesses have both — but the website is the foundation. That is where customers decide to hire you.',
-      '<strong>Instagram sirve para engagement.</strong> El sitio sirve para <strong>vender</strong>. Son complementarios. Las empresas serias tienen ambos — pero el sitio es la base. Ahí el cliente decide contratar o no.',
+      '<strong>Instagram é onde você publica rápido.</strong> Site é onde o cliente <strong>decide contratar</strong> — e com o painel, você atualiza preços e textos com a mesma liberdade. Os dois juntos, não um no lugar do outro.',
+      '<strong>Instagram is where you post fast.</strong> Your website is where customers <strong>decide to hire you</strong> — and with the panel, you update prices and copy with the same freedom. Use both, not one instead of the other.',
+      '<strong>Instagram es donde publica rápido.</strong> El sitio es donde el cliente <strong>decide contratar</strong> — y con el panel, actualiza precios y textos con la misma libertad. Los dos juntos, no uno en lugar del otro.',
     ),
   },
   stats: [
@@ -868,6 +890,7 @@ export const comparativoInstagramLocalized = {
 }
 
 export const intentItemsLocalized = [
+  { titulo: L('Atualizar sozinha', 'Update on your own', 'Actualizar sola'), descricao: L('Painel simples para mudar preços, textos e fotos — sem depender do desenvolvedor.', 'Simple panel to change prices, copy and photos — without relying on the developer.', 'Panel simple para cambiar precios, textos y fotos — sin depender del desarrollador.'), href: '/pacotes/#pacotes' },
   { titulo: L('Presença no Google', 'Google visibility', 'Presencia en Google'), descricao: L('Aparecer quando o cliente pesquisa seu serviço no Google.', 'Show up when customers search for your service on Google.', 'Aparecer cuando el cliente busca su servicio en Google.'), href: '/#site-vs-instagram' },
   { titulo: L('Vender pelo WhatsApp', 'Sell via WhatsApp', 'Vender por WhatsApp'), descricao: L('Formulários e botões que levam o visitante direto para conversa.', 'Forms and buttons that take visitors straight to a conversation.', 'Formularios y botones que llevan al visitante directo a la conversación.'), href: '/pacotes/#pacotes' },
   { titulo: L('Loja online', 'Online store', 'Tienda online'), descricao: L('Catálogo de produtos com pedido ou orçamento pelo WhatsApp.', 'Product catalog with orders or quotes via WhatsApp.', 'Catálogo de productos con pedido o presupuesto por WhatsApp.'), href: '/pacotes/#pacotes' },
@@ -876,6 +899,7 @@ export const intentItemsLocalized = [
 ]
 
 export const servicosLocalized = [
+  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site que você mesma atualiza — preços, textos e fotos direto do celular.', 'A website you update yourself — prices, copy and photos from your phone.', 'Sitio que usted misma actualiza — precios, textos y fotos directo del celular.'), preco: L('a partir de R$ 590', 'from R$ 590', 'desde R$ 590'), href: '/pacotes/#pacotes' },
   { id: 'landing', titulo: L('Landing Pages', 'Landing Pages', 'Landing Pages'), descricao: L('Páginas estratégicas para captar leads e vender mais pelo WhatsApp.', 'Strategic pages to capture leads and sell more via WhatsApp.', 'Páginas estratégicas para captar leads y vender más por WhatsApp.'), preco: L('a partir de R$ 300', 'from R$ 300', 'desde R$ 300'), href: '/portfolio/' },
   { id: 'institucional', titulo: L('Sites institucionais', 'Business websites', 'Sitios institucionales'), descricao: L('Presença profissional com múltiplas seções, SEO e credibilidade.', 'Professional presence with multiple sections, SEO and credibility.', 'Presencia profesional con múltiples secciones, SEO y credibilidad.'), preco: L('a partir de R$ 1.490', 'from R$ 1,490', 'desde R$ 1.490'), href: '/pacotes/#pacotes' },
   { id: 'ecommerce', titulo: L('E-commerce', 'E-commerce', 'E-commerce'), descricao: L('Loja virtual, catálogo de produtos e pedidos pelo WhatsApp ou pagamento online.', 'Online store, product catalog and orders via WhatsApp or online payment.', 'Tienda virtual, catálogo de productos y pedidos por WhatsApp o pago online.'), preco: L('a partir de R$ 2.990', 'from R$ 2,990', 'desde R$ 2.990'), href: '/pacotes/#pacotes' },

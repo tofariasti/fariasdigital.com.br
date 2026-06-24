@@ -51,6 +51,7 @@ Para agilizar:
 
 Obrigado!`,
     pacoteLanding: 'Olá! Tenho interesse em uma landing page personalizada (a partir de R$ 300). Gostaria de um orçamento.',
+    pacoteLandingAdmin: 'Olá! Tenho interesse no pacote Landing + Painel (a partir de R$ 590) — quero atualizar textos e preços sozinha. Gostaria de um orçamento.',
     pacotePresenca: 'Olá! Tenho interesse no pacote Site Institucional (site completo com WhatsApp). Gostaria de um orçamento.',
     pacoteLoja: 'Olá! Tenho interesse no pacote Loja Essencial (e-commerce / catálogo online). Gostaria de um orçamento.',
     pacoteAutomacao: 'Olá! Tenho interesse em automação de WhatsApp (formulários, mensagens automáticas ou integração). Gostaria de um orçamento.',
@@ -70,7 +71,7 @@ Obrigado!`,
     preco: 'a partir de R$ 300,00',
     precoCurto: 'R$ 300',
     titulo: 'Landing pages personalizadas',
-    lead: 'Escolha o modelo do seu segmento e adapto com sua marca, textos e WhatsApp.',
+    lead: 'Escolha o modelo do seu segmento — com ou sem painel para você atualizar sozinha.',
   },
 
   pacotesWeb: [
@@ -87,8 +88,23 @@ Obrigado!`,
       ],
       naoInclui: 'Domínio, hospedagem e fotos profissionais (podem ser orçados à parte)',
       mensagemWhatsApp: 'pacoteLanding',
+      badge: 'Entrada',
+    },
+    {
+      id: 'landing-painel',
+      nome: 'Landing + Painel',
+      preco: 'a partir de R$ 590',
+      publico: 'Quem quer autonomia para atualizar preços, textos e fotos — como no Instagram',
+      inclui: [
+        'Tudo da Landing Page personalizada',
+        'Painel simples no celular: textos, preços, fotos, horário e WhatsApp',
+        'Você edita sozinha o que muda toda semana — sem chamar o desenvolvedor',
+        'Treinamento rápido na entrega + suporte humano quando precisar',
+      ],
+      naoInclui: 'Domínio e hospedagem (podem ser orçados à parte)',
+      mensagemWhatsApp: 'pacoteLandingAdmin',
       destaque: true,
-      badge: 'Melhor custo-benefício',
+      badge: 'Recomendado',
     },
     {
       id: 'site-institucional',
@@ -440,6 +456,7 @@ Obrigado!`,
     titulo: 'Por que sua empresa não pode depender só do Instagram',
     lead: 'O Instagram é importante. Mas se for sua única presença digital, você está perdendo clientes, dinheiro e controle sobre o seu negócio.',
     instagram: [
+      { titulo: 'Publica e edita sozinho', texto: 'Foto, legenda e story em minutos — direto do celular, sem depender de ninguém. Essa facilidade é real e vale muito.' },
       { titulo: 'Não aparece no Google', texto: '97% das pessoas pesquisam no Google antes de comprar. Se você não tem site, não existe.' },
       { titulo: 'Você não é dono da audiência', texto: 'Instagram pode banir, mudar regras ou sumir. Seu trabalho de anos pode desaparecer em um clique.' },
       { titulo: 'Alcance orgânico despencou', texto: 'Menos de 10% dos seus seguidores veem seus posts. Instagram quer que você pague anúncios.' },
@@ -449,6 +466,7 @@ Obrigado!`,
     ],
     site: [
       { titulo: 'Aparece no Google 24h por dia', texto: 'Clientes encontram você quando precisam. SEO traz visitas grátis, sem depender de algoritmo.' },
+      { titulo: 'Você atualiza sem depender de dev', texto: 'Com o pacote Landing + Painel, muda preços, textos e fotos do celular — a autonomia do Instagram aplicada ao que vende.' },
       { titulo: 'Você é dono do canal', texto: 'Seu domínio, seu conteúdo, sua lista de clientes. Ninguém pode tirar isso de você.' },
       { titulo: '100% do público vê seu conteúdo', texto: 'Não existe algoritmo cortando seu alcance. Quem acessa, vê tudo que você quer mostrar.' },
       { titulo: 'Leva direto para a conversão', texto: 'Botões de WhatsApp, formulários estratégicos e páginas que vendem. Menos cliques, mais venda.' },
@@ -457,7 +475,7 @@ Obrigado!`,
     ],
     quote: {
       titulo: 'A verdade que ninguém te conta:',
-      texto: '<strong>Instagram serve para engajamento.</strong> Site serve para <strong>vender</strong>. São complementares, não concorrentes. Empresas sérias têm os dois — mas o site é a base. É ali que o cliente decide contratar ou não.',
+      texto: '<strong>Instagram é onde você publica rápido.</strong> Site é onde o cliente <strong>decide contratar</strong> — e com o painel, você atualiza preços e textos com a mesma liberdade. Os dois juntos, não um no lugar do outro.',
     },
     stats: [
       { valor: 81, sufixo: '%', texto: 'das pessoas pesquisam online antes de visitar uma empresa física', fonte: 'Google / Ipsos' },
@@ -470,6 +488,11 @@ Obrigado!`,
   },
 
   intentItems: [
+    {
+      titulo: 'Atualizar sozinha',
+      descricao: 'Painel simples para mudar preços, textos e fotos — sem depender do desenvolvedor.',
+      href: '/pacotes/#pacotes',
+    },
     {
       titulo: 'Presença no Google',
       descricao: 'Aparecer quando o cliente pesquisa seu serviço no Google.',
@@ -499,6 +522,13 @@ Obrigado!`,
   ],
 
   servicos: [
+    {
+      id: 'landing-painel',
+      titulo: 'Landing + Painel',
+      descricao: 'Site que você mesma atualiza — preços, textos e fotos direto do celular.',
+      preco: 'a partir de R$ 590',
+      href: '/pacotes/#pacotes',
+    },
     {
       id: 'landing',
       titulo: 'Landing Pages',

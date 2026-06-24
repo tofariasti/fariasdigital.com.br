@@ -3420,6 +3420,12 @@ a:hover { color: var(--color-accent); }
   color: var(--color-primary);
 }
 
+.hero-pricing-tag--accent {
+  border-color: var(--color-border-bright);
+  background: rgba(34, 211, 238, 0.08);
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.12);
+}
+
 /* —— Service cards enhanced —— */
 .mini-service__price {
   display: inline-block;
