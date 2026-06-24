@@ -111,6 +111,7 @@ Material A6: [`public/flyer/index.html`](public/flyer/index.html)
 | Pacote | A partir de |
 |--------|-------------|
 | Landing Page | R$ 300 |
+| Landing + Painel | R$ 590 |
 | Site Institucional | R$ 1.490 |
 | Loja Essencial | R$ 2.990 |
 | Drone Imóvel | R$ 650 |

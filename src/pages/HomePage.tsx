@@ -26,7 +26,22 @@ export function HomePage() {
   return (
     <>
       <PageMeta page="home" />
-      <HeroHome />
+      <HeroHome
+        showPricingTags
+        actions={
+          <div className="hero__actions">
+            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+              {t(uiCopy.cta.wantLandingPanel)}
+            </WhatsAppButton>
+            <Link to={pathFor('/portfolio/')} className="btn btn--outline btn--lg">
+              {t(uiCopy.cta.viewExamples)}
+            </Link>
+            <Link to={pathFor('/pacotes/')} className="btn btn--ghost btn--lg">
+              {t(uiCopy.cta.viewPackagesShort)}
+            </Link>
+          </div>
+        }
+      />
       <div className="container">
         <ProofBar />
       </div>

@@ -25,15 +25,15 @@ export function SitesPage() {
         showPricingTags
         actions={
           <div className="hero__actions">
+            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+              {t(uiCopy.cta.wantLandingPanel)}
+            </WhatsAppButton>
             <a href="#pacotes" className="btn btn--primary btn--lg">
               {t(uiCopy.cta.viewPackagesShort)}
             </a>
             <a href="#servicos" className="btn btn--outline btn--lg">
               {t(uiCopy.anchors.services)}
             </a>
-            <WhatsAppButton waKey="site" className="btn btn--whatsapp btn--lg">
-              {t(uiCopy.cta.requestQuote)}
-            </WhatsAppButton>
           </div>
         }
       />

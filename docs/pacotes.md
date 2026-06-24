@@ -24,6 +24,29 @@
 
 **Diferença vs Site Institucional:** landing = 1 página com modelo pronto; institucional = múltiplas seções e mais conteúdo.
 
+**Diferença vs Landing + Painel:** landing simples não inclui painel — alterações posteriores via suporte.
+
+---
+
+## Web — Landing + Painel (recomendado)
+
+**Público:** quem quer autonomia para atualizar preços, textos e fotos — a facilidade do Instagram aplicada ao site que vende no Google.
+
+**Investimento:** a partir de **R$ 590**
+
+| Entregável | Detalhe |
+|------------|---------|
+| Landing page | Tudo do pacote Landing Page personalizada |
+| Painel no celular | Textos, preços, fotos, horário e WhatsApp |
+| Autonomia | Cliente edita o que muda toda semana — sem chamar o desenvolvedor |
+| Treinamento | Capacitação rápida na entrega + suporte humano quando precisar |
+
+**Não inclui:** domínio e hospedagem (podem ser orçados à parte).
+
+**Prazo típico:** 7–12 dias úteis após aprovação do escopo e recebimento do material.
+
+**Posicionamento comercial:** pacote destaque no hub — responde à objeção “site é difícil de atualizar”.
+
 ---
 
 ## Web — Site Institucional
