@@ -1597,6 +1597,15 @@ a:hover { color: var(--color-accent); }
   background: rgba(34, 211, 238, 0.18);
 }
 
+.filter-btn--accent {
+  border-color: rgba(34, 211, 238, 0.35);
+}
+
+.filter-btn--accent.is-active {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(167, 139, 250, 0.12));
+  border-color: rgba(34, 211, 238, 0.5);
+}
+
 .filter-btn:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
@@ -1692,6 +1701,24 @@ a:hover { color: var(--color-accent); }
 .demo-card__badge--modelo {
   color: var(--color-accent);
   border-color: rgba(167, 139, 250, 0.35);
+}
+
+.demo-card__badge--admin {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.95), rgba(167, 139, 250, 0.95));
+  border-color: transparent;
+  box-shadow: 0 4px 16px rgba(34, 211, 238, 0.25);
+}
+
+.demo-card--admin {
+  border-style: solid;
+  border-color: rgba(34, 211, 238, 0.35);
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.04), var(--color-surface));
+}
+
+.demo-card--admin:hover {
+  border-color: rgba(34, 211, 238, 0.55);
+  box-shadow: 0 0 32px rgba(34, 211, 238, 0.12);
 }
 
 .demo-card--modelo {
@@ -3345,6 +3372,59 @@ a:hover { color: var(--color-accent); }
   flex-direction: column;
   gap: 0.75rem;
   flex-shrink: 0;
+}
+
+.pricing-callout--panel {
+  border-color: rgba(167, 139, 250, 0.4);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.12), rgba(34, 211, 238, 0.08));
+}
+
+.panel-showcase {
+  margin: 2.5rem 0;
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.panel-showcase__hint {
+  margin: 0.75rem auto 0;
+  max-width: 52ch;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.panel-showcase__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.demo-grid--showcase {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .demo-grid--showcase {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .demo-grid--showcase {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .demo-grid--showcase > * {
+    flex: 0 0 min(88vw, 320px);
+    scroll-snap-align: start;
+  }
 }
 
 /* —— Hero premium —— */

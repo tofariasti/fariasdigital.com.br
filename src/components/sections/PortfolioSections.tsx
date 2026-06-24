@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useHubConfig } from '../../i18n/useHubConfig'
 import { useLocale } from '../../i18n/LocaleContext'
 import { uiCopy } from '../../data/uiCopy'
@@ -11,20 +11,43 @@ import {
   segmentSlugForLabel,
 } from '../../utils/portfolioSegment'
 import { filterDemosBySearch, normalizeSearchQuery } from '../../utils/portfolioSearch'
+import {
+  filterLandingAdminDemos,
+  isPanelFilterActive,
+  panelShowcaseDemos,
+  PORTFOLIO_PANEL_PARAM,
+} from '../../utils/portfolioPanel'
+import { isLandingAdminDemo } from '../../utils/heroDemo'
 import { AnimatedSection } from '../ui/AnimatedSection'
 import { WhatsAppButton } from '../ui/WhatsAppButton'
 import type { Demo } from '../../data/types'
 
-function DemoCard({ demo, index }: { demo: Demo; index: number }) {
+function DemoCard({
+  demo,
+  index,
+  highlight = false,
+}: {
+  demo: Demo
+  index: number
+  highlight?: boolean
+}) {
   const config = useHubConfig()
   const { t } = useLocale()
   const badge = demo.badge ?? config.portfolio.badgeDemo
+  const isAdmin = highlight || isLandingAdminDemo(demo)
   const hasIframe = demo.preview !== false && demo.url && !demo.url.includes('github.com')
 
   return (
-    <AnimatedSection delay={(index % 3) + 1} className="demo-card demo-card--modelo">
+    <AnimatedSection
+      delay={(index % 3) + 1}
+      className={`demo-card demo-card--modelo${isAdmin ? ' demo-card--admin' : ''}`}
+    >
       <div className={`demo-card__preview${hasIframe ? '' : ' demo-card__preview--project'}`}>
-        <span className="demo-card__badge demo-card__badge--modelo">{badge}</span>
+        <span
+          className={`demo-card__badge demo-card__badge--modelo${isAdmin ? ' demo-card__badge--admin' : ''}`}
+        >
+          {badge}
+        </span>
         {hasIframe ? (
           <iframe src={demo.url} title={`Preview ${demo.titulo}`} loading="lazy" tabIndex={-1} />
         ) : (
@@ -71,6 +94,51 @@ function DemoCard({ demo, index }: { demo: Demo; index: number }) {
   )
 }
 
+const PAINEL_FILTER = '__painel__' as const
+
+export function PanelProofShowcase() {
+  const config = useHubConfig()
+  const { t, pathFor } = useLocale()
+  const [, setSearchParams] = useSearchParams()
+  const demos = useMemo(() => panelShowcaseDemos(config.demos), [config.demos])
+  const p = config.portfolio
+
+  const scrollToAllWithPanel = () => {
+    setSearchParams({ [PORTFOLIO_PANEL_PARAM]: '1' }, { replace: true })
+    document.getElementById('demos-root')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  if (demos.length === 0) return null
+
+  return (
+    <section className="panel-showcase" id="painel-demos" aria-labelledby="panel-showcase-title">
+      <AnimatedSection className="portfolio-group__header">
+        <h2 className="portfolio-group__title" id="panel-showcase-title">
+          {p.grupoPainel.titulo}
+        </h2>
+        <p className="portfolio-group__lead">{p.grupoPainel.lead}</p>
+        <p className="panel-showcase__hint">{t(uiCopy.portfolio.panelHint)}</p>
+      </AnimatedSection>
+      <div className="demo-grid demo-grid--showcase">
+        {demos.map((demo, i) => (
+          <DemoCard key={demo.url} demo={demo} index={i} highlight />
+        ))}
+      </div>
+      <AnimatedSection className="panel-showcase__actions">
+        <button type="button" className="btn btn--outline" onClick={scrollToAllWithPanel}>
+          {t(uiCopy.portfolio.viewPanelDemos)}
+        </button>
+        <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+          {t(uiCopy.cta.wantLandingPanel)}
+        </WhatsAppButton>
+        <Link to={pathFor('/pacotes/')} className="btn btn--ghost">
+          {t(uiCopy.cta.viewPackagesShort)}
+        </Link>
+      </AnimatedSection>
+    </section>
+  )
+}
+
 export function DemoGrid() {
   const config = useHubConfig()
   const { t } = useLocale()
@@ -97,26 +165,42 @@ export function DemoGrid() {
     return map
   }, [config.demos])
 
+  const panelActive = isPanelFilterActive(searchParams)
+
+  const panelCount = useMemo(
+    () => filterLandingAdminDemos(config.demos).length,
+    [config.demos],
+  )
+
   const segmentos = useMemo(() => {
     const ordered = segmentOrder.filter((seg) => availableSegments.has(seg))
-    return ['todos', ...ordered]
+    return ['todos', PAINEL_FILTER, ...ordered]
   }, [availableSegments, segmentOrder])
 
   const filter = useMemo(() => {
+    if (panelActive) return PAINEL_FILTER
     const slug = searchParams.get(PORTFOLIO_SEGMENT_PARAM)
     if (!slug) return 'todos'
     const segment = resolveSegmentFromSlug(slug, t)
     if (!segment || !availableSegments.has(segment)) return 'todos'
     return segment
-  }, [availableSegments, searchParams, t])
+  }, [availableSegments, panelActive, searchParams, t])
 
   const filtered = useMemo(() => {
-    const bySegment =
-      filter === 'todos' ? config.demos : config.demos.filter((d) => d.segmento === filter)
-    return filterDemosBySearch(bySegment, searchQuery)
+    const base =
+      filter === PAINEL_FILTER
+        ? filterLandingAdminDemos(config.demos)
+        : filter === 'todos'
+          ? config.demos
+          : config.demos.filter((d) => d.segmento === filter)
+    return filterDemosBySearch(base, searchQuery)
   }, [config.demos, filter, searchQuery])
 
   const selectFilter = (seg: string) => {
+    if (seg === PAINEL_FILTER) {
+      setSearchParams({ [PORTFOLIO_PANEL_PARAM]: '1' }, { replace: true })
+      return
+    }
     if (seg === 'todos') {
       setSearchParams({}, { replace: true })
       return
@@ -165,8 +249,18 @@ export function DemoGrid() {
           >
             {segmentos.map((seg) => {
               const isActive = filter === seg
-              const count = seg === 'todos' ? config.demos.length : (counts.get(seg) ?? 0)
-              const label = seg === 'todos' ? t(uiCopy.common.filterAll) : seg
+              const count =
+                seg === 'todos'
+                  ? config.demos.length
+                  : seg === PAINEL_FILTER
+                    ? panelCount
+                    : (counts.get(seg) ?? 0)
+              const label =
+                seg === 'todos'
+                  ? t(uiCopy.common.filterAll)
+                  : seg === PAINEL_FILTER
+                    ? t(uiCopy.portfolio.panelFilter)
+                    : seg
 
               return (
                 <button
@@ -174,7 +268,7 @@ export function DemoGrid() {
                   type="button"
                   role="tab"
                   aria-selected={isActive}
-                  className={`filter-btn${isActive ? ' is-active' : ''}`}
+                  className={`filter-btn${isActive ? ' is-active' : ''}${seg === PAINEL_FILTER ? ' filter-btn--accent' : ''}`}
                   onClick={() => selectFilter(seg)}
                 >
                   <span className="filter-btn__label">{label}</span>
@@ -193,7 +287,9 @@ export function DemoGrid() {
         {filter !== 'todos' && (
           <>
             {' '}
-            <span className="filter-meta__segment">· {filter}</span>
+            <span className="filter-meta__segment">
+              · {filter === PAINEL_FILTER ? t(uiCopy.portfolio.panelFilter) : filter}
+            </span>
           </>
         )}
         {normalizedSearchQuery && (
@@ -222,25 +318,23 @@ export function DemoGrid() {
 }
 
 export function PricingCallout() {
-  const config = useHubConfig()
   const { t } = useLocale()
-  const pl = config.pricingLanding
 
   return (
-    <div className="pricing-callout">
+    <div className="pricing-callout pricing-callout--panel">
       <div className="pricing-callout__content">
-        <p className="pricing-callout__eyebrow">{t(uiCopy.common.affordableInvestment)}</p>
-        <h3 className="pricing-callout__title">{pl.titulo}</h3>
-        <p className="pricing-callout__price">{pl.preco}</p>
-        <p className="pricing-callout__lead">{pl.lead}</p>
+        <p className="pricing-callout__eyebrow">{t(uiCopy.hero.panelTag)}</p>
+        <h3 className="pricing-callout__title">{t(uiCopy.cta.wantLandingPanel)}</h3>
+        <p className="pricing-callout__price">{t(uiCopy.hero.from590)}</p>
+        <p className="pricing-callout__lead">{t(uiCopy.portfolio.panelHint)}</p>
       </div>
       <div className="pricing-callout__actions">
-        <WhatsAppButton waKey="pacoteLanding" className="btn btn--whatsapp btn--lg">
-          {t(uiCopy.cta.wantLanding)}
-        </WhatsAppButton>
-        <a href="#demos-root" className="btn btn--outline">
-          {t(uiCopy.cta.viewModels)}
+        <a href="#painel-demos" className="btn btn--primary btn--lg">
+          {t(uiCopy.portfolio.viewPanelDemos)}
         </a>
+        <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+          {t(uiCopy.cta.requestQuote)}
+        </WhatsAppButton>
       </div>
     </div>
   )

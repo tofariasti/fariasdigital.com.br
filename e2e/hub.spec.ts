@@ -145,6 +145,20 @@ test.describe('Responsiveness', () => {
     await expect(page.locator('.demo-card')).toHaveCount(0)
   })
 
+  test('portfolio highlights Landing + Painel demos (PT)', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 })
+    await page.goto('/portfolio/')
+    await expect(page.locator('#painel-demos')).toBeVisible()
+    await expect(page.locator('#painel-demos .demo-card--admin').first()).toBeVisible()
+    await expect(page.locator('#painel-demos .demo-card__title').first()).toHaveText(/Nutricionista|Ótica/)
+
+    await page.getByRole('tab', { name: 'Landing + Painel' }).click()
+    await expect(page).toHaveURL(/painel=1/)
+    await expect(page.getByRole('tab', { name: 'Landing + Painel' })).toHaveAttribute('aria-selected', 'true')
+    await expect(page.locator('#demos-root .demo-card--admin')).toHaveCount(6)
+    await expect(page.locator('#demos-root .demo-card__badge--admin').first()).toBeVisible()
+  })
+
   test('hero shows two columns at 1280px', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 800 })
     await page.goto('/')

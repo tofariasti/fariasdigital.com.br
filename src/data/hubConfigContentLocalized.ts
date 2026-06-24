@@ -240,11 +240,19 @@ export const portfolioLocalized = {
     'Referencias de layout, código y experiencia en celular — para evaluar la calidad antes de pedir presupuesto.',
   ),
   grupoDemos: {
-    titulo: L('Landing pages por segmento', 'Landing pages by industry', 'Landing pages por segmento'),
+    titulo: L('Todos os modelos por segmento', 'All templates by industry', 'Todos los modelos por segmento'),
     lead: L(
-      'Modelos prontos para você ver layout e responsividade. Ao contratar, personalizo com a identidade da sua empresa — a partir de R$ 300,00.',
-      'Ready-made templates to preview layout and responsiveness. When you hire, I customize with your brand — from R$ 300.',
-      'Modelos listos para ver layout y responsividad. Al contratar, personalizo con la identidad de su empresa — desde R$ 300.',
+      'Modelos prontos para avaliar layout e responsividade. Os com badge Landing + Admin incluem painel demo — é a prova do pacote Landing + Painel (a partir de R$ 590).',
+      'Ready-made templates to preview layout and responsiveness. Those with the Landing + Admin badge include a demo panel — proof of the Landing + Panel package (from R$ 590).',
+      'Modelos listos para evaluar layout y responsividad. Los con badge Landing + Admin incluyen panel demo — prueba del paquete Landing + Panel (desde R$ 590).',
+    ),
+  },
+  grupoPainel: {
+    titulo: L('Landing + Painel em ação', 'Landing + Panel in action', 'Landing + Panel en acción'),
+    lead: L(
+      'Abra o site e teste o painel no celular — preços, textos e fotos editáveis sem depender de desenvolvedor. É o que você leva no pacote a partir de R$ 590.',
+      'Open the site and try the panel on your phone — editable prices, copy and photos without relying on a developer. That is what you get in the package from R$ 590.',
+      'Abra el sitio y pruebe el panel en el celular — precios, textos y fotos editables sin depender del desarrollador. Es lo que incluye el paquete desde R$ 590.',
     ),
   },
   badgeDemo: L('Pronto para personalizar', 'Ready to customize', 'Listo para personalizar'),

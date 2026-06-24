@@ -54,6 +54,7 @@ export const uiCopy = {
     howIWork: L('Como trabalho', 'How I work', 'Cómo trabajo'),
     packages: L('Pacotes', 'Packages', 'Paquetes'),
     models: L('Modelos', 'Templates', 'Modelos'),
+    panelDemos: L('Painel demo', 'Panel demo', 'Panel demo'),
     cases: L('Projetos reais', 'Real projects', 'Proyectos reales'),
     credibility: L('Trajetória', 'Background', 'Trayectoria'),
     questions: L('Perguntas', 'Questions', 'Preguntas'),
@@ -295,9 +296,17 @@ export const uiCopy = {
   portfolio: {
     likedModel: L('Gostou de algum modelo?', 'Like a template?', '¿Le gustó algún modelo?'),
     likedModelText: L(
-      'Conte seu segmento — adapto o layout com sua marca, textos e WhatsApp.',
-      'Tell me your industry — I adapt the layout with your brand, copy and WhatsApp.',
-      'Cuente su segmento — adapto el layout con su marca, textos y WhatsApp.',
+      'Conte seu segmento — adapto o layout com sua marca, textos e WhatsApp. Com Landing + Painel, você mesma atualiza preços e fotos depois.',
+      'Tell me your industry — I adapt the layout with your brand, copy and WhatsApp. With Landing + Panel, you update prices and photos yourself later.',
+      'Cuente su segmento — adapto el layout con su marca, textos y WhatsApp. Con Landing + Panel, usted misma actualiza precios y fotos después.',
+    ),
+    panelFilter: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'),
+    viewAllModels: L('Ver todos os modelos', 'View all templates', 'Ver todos los modelos'),
+    viewPanelDemos: L('Ver modelos com painel', 'View templates with panel', 'Ver modelos con panel'),
+    panelHint: L(
+      'No preview do site, abra o menu do painel administrativo para simular a edição no celular.',
+      'In the site preview, open the admin panel menu to simulate editing on your phone.',
+      'En la vista previa del sitio, abra el menú del panel administrativo para simular la edición en el celular.',
     ),
     casesTitleBefore: L('Cases em ', 'Cases in ', 'Cases en '),
     casesTitleHighlight: L('produção', 'production', 'producción'),

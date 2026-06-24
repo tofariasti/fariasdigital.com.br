@@ -154,6 +154,7 @@ export interface HubConfigType {
     tituloHighlight: string
     lead: string
     grupoDemos: { titulo: string; lead: string }
+    grupoPainel: { titulo: string; lead: string }
     badgeDemo: string
   }
   demos: Demo[]

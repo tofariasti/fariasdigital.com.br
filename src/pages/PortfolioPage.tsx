@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import { PageMeta } from '../components/ui/PageMeta'
 import {
   DemoGrid,
+  PanelProofShowcase,
   PricingCallout,
   CasesGrid,
   CredibilitySection,
@@ -15,6 +16,7 @@ import { AnimatedSection } from '../components/ui/AnimatedSection'
 import { WhatsAppButton } from '../components/ui/WhatsAppButton'
 import { PageAnchors } from '../components/ui/PageAnchors'
 import { PORTFOLIO_SEGMENT_PARAM } from '../utils/portfolioSegment'
+import { PORTFOLIO_PANEL_PARAM } from '../utils/portfolioPanel'
 
 export function PortfolioPage() {
   const config = useHubConfig()
@@ -23,6 +25,10 @@ export function PortfolioPage() {
   const p = config.portfolio
 
   useEffect(() => {
+    if (searchParams.get(PORTFOLIO_PANEL_PARAM) === '1') {
+      document.getElementById('demos-root')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      return
+    }
     if (!searchParams.get(PORTFOLIO_SEGMENT_PARAM)) return
     document.getElementById('demos-root')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [searchParams])
@@ -48,20 +54,21 @@ export function PortfolioPage() {
             lead={p.lead}
           />
           <AnimatedSection className="section__actions">
-            <a href="#demos-root" className="btn btn--primary btn--lg">
+            <a href="#painel-demos" className="btn btn--primary btn--lg">
+              {t(uiCopy.portfolio.viewPanelDemos)}
+            </a>
+            <a href="#demos-root" className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewModels)}
             </a>
-            <a href="#cases" className="btn btn--outline btn--lg">
-              {t(uiCopy.anchors.cases)}
-            </a>
-            <WhatsAppButton waKey="pacoteLanding" className="btn btn--whatsapp btn--lg">
-              {t(uiCopy.cta.requestQuote)}
+            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+              {t(uiCopy.cta.wantLandingPanel)}
             </WhatsAppButton>
           </AnimatedSection>
 
           <PageAnchors
             className="page-anchors--center"
             items={[
+              { id: 'painel-demos', label: uiCopy.anchors.panelDemos },
               { id: 'demos-root', label: uiCopy.anchors.models },
               { id: 'cases', label: uiCopy.anchors.cases },
               { id: 'credibilidade', label: uiCopy.anchors.credibility },
@@ -69,19 +76,20 @@ export function PortfolioPage() {
           />
 
           <div className="portfolio-group">
+            <AnimatedSection>
+              <PricingCallout />
+            </AnimatedSection>
+            <PanelProofShowcase />
             <AnimatedSection className="portfolio-group__header">
               <h2 className="portfolio-group__title">{p.grupoDemos.titulo}</h2>
               <p className="portfolio-group__lead">{p.grupoDemos.lead}</p>
-            </AnimatedSection>
-            <AnimatedSection>
-              <PricingCallout />
             </AnimatedSection>
             <div id="demos-root">
               <DemoGrid />
             </div>
             <AnimatedSection style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <WhatsAppButton waKey="pacoteLanding" className="btn btn--whatsapp btn--lg">
-                {t(uiCopy.cta.wantLandingFrom300)}
+              <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+                {t(uiCopy.cta.wantLandingPanel)}
               </WhatsAppButton>
             </AnimatedSection>
           </div>
@@ -119,8 +127,8 @@ export function PortfolioPage() {
       <CtaBand
         title={t(uiCopy.portfolio.likedModel)}
         text={t(uiCopy.portfolio.likedModelText)}
-        waKey="pacoteLanding"
-        buttonLabel={t(uiCopy.cta.requestQuoteShort)}
+        waKey="pacoteLandingAdmin"
+        buttonLabel={t(uiCopy.cta.wantLandingPanel)}
       />
     </>
   )

@@ -38,6 +38,10 @@ export function filterHeroDemos(demos: Demo[]): Demo[] {
   return demos.filter((demo) => demo.heroFeatured)
 }
 
+export function isLandingAdminDemo(demo: Demo): boolean {
+  return inferDemoKind(demo) === 'landing-admin'
+}
+
 export function inferDemoKind(demo: Demo): HeroDemoKind {
   if (demo.badge?.toLowerCase().includes('admin')) return 'landing-admin'
 
