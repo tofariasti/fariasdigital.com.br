@@ -90,6 +90,13 @@ export interface CaseItem {
   url?: string
 }
 
+export interface TestimonialItem {
+  nome: string
+  cargo: string
+  texto: string
+  rating?: number
+}
+
 export interface ProcessoStep {
   passo: string
   titulo: string
@@ -180,6 +187,7 @@ export interface HubConfigType {
     marcos: CredibilidadeMarco[]
   }
   cases: CaseItem[]
+  testimonials: TestimonialItem[]
   processoWeb: ProcessoStep[]
   seo: {
     ogImage: string

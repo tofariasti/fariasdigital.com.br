@@ -325,7 +325,7 @@ export function PricingCallout() {
     <div className="pricing-callout pricing-callout--panel">
       <div className="pricing-callout__content">
         <p className="pricing-callout__eyebrow">{t(uiCopy.hero.panelTag)}</p>
-        <h3 className="pricing-callout__title">{t(uiCopy.cta.wantLandingPanel)}</h3>
+        <h2 className="pricing-callout__title">{t(uiCopy.cta.wantLandingPanel)}</h2>
         <p className="pricing-callout__price">{t(uiCopy.hero.from590)}</p>
         <p className="pricing-callout__lead">{t(uiCopy.portfolio.panelHint)}</p>
       </div>

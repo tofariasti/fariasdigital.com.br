@@ -14,7 +14,7 @@ React 19 · TypeScript · Vite · React Router · Framer Motion · GitHub Pages
 
 | URL | Conteúdo |
 |-----|----------|
-| `/` | Home — hero, comparativo, serviços e CTAs |
+| `/` | Home — hero, stats, modelos, segmentos, depoimentos e CTAs |
 | `/pacotes/` | Serviços, pacotes, processo |
 | `/portfolio/` | 40+ demos por segmento e cases |
 | `/por-que-site/` | Comparativo Instagram vs site |

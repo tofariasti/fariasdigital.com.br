@@ -9,13 +9,13 @@ export function CredibilityStrip() {
       <div className="container">
         <div className="credibility-strip__grid">
           {stats.map((stat) => (
-            <div key={stat.texto} className="credibility-strip__item">
-              <span className="credibility-strip__value">
+            <div key={stat.texto} className="credibility-strip__card">
+              <strong>
                 {stat.valor}
                 {stat.sufixo}
-              </span>
-              <p className="credibility-strip__text">{stat.texto}</p>
-              <span className="credibility-strip__source">{stat.fonte}</span>
+              </strong>
+              <span>{stat.texto}</span>
+              <cite className="credibility-strip__source">{stat.fonte}</cite>
             </div>
           ))}
         </div>

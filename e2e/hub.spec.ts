@@ -57,16 +57,28 @@ test.describe('Hub navigation', () => {
 
   test('EN language switch shows English nav', async ({ page }) => {
     await expectHubPage(page, '/en/')
-    const nav = page.locator('header.site-header nav.site-header__nav')
-    await expect(nav.getByRole('link', { name: 'Packages', exact: true })).toBeVisible()
-    await expect(nav.getByRole('link', { name: 'Portfolio', exact: true })).toBeVisible()
+    const toggle = page.locator('.nav-toggle')
+    if (await toggle.isVisible()) {
+      await toggle.evaluate((el) => (el as HTMLButtonElement).click())
+      await expect(page.locator('#mobile-nav').getByRole('link', { name: 'Packages', exact: true })).toBeVisible()
+    } else {
+      const nav = page.locator('header.site-header nav.site-header__nav')
+      await expect(nav.getByRole('link', { name: 'Packages', exact: true })).toBeVisible()
+      await expect(nav.getByRole('link', { name: 'Portfolio', exact: true })).toBeVisible()
+    }
   })
 
   test('ES language switch shows Spanish nav', async ({ page }) => {
     await expectHubPage(page, '/es/')
-    const nav = page.locator('header.site-header nav.site-header__nav')
-    await expect(nav.getByRole('link', { name: 'Paquetes', exact: true })).toBeVisible()
-    await expect(nav.getByRole('link', { name: 'Portafolio', exact: true })).toBeVisible()
+    const toggle = page.locator('.nav-toggle')
+    if (await toggle.isVisible()) {
+      await toggle.evaluate((el) => (el as HTMLButtonElement).click())
+      await expect(page.locator('#mobile-nav').getByRole('link', { name: 'Paquetes', exact: true })).toBeVisible()
+    } else {
+      const nav = page.locator('header.site-header nav.site-header__nav')
+      await expect(nav.getByRole('link', { name: 'Paquetes', exact: true })).toBeVisible()
+      await expect(nav.getByRole('link', { name: 'Portafolio', exact: true })).toBeVisible()
+    }
   })
 })
 
@@ -107,7 +119,7 @@ test.describe('Responsiveness', () => {
     await page.goto('/portfolio/?segmento=automotivo')
     await expect(page.getByRole('tab', { name: 'Automotivo' })).toHaveAttribute('aria-selected', 'true')
     await expect(page.locator('.filter-meta__segment')).toHaveText('· Automotivo')
-    await expect(page.locator('.demo-card')).toHaveCount(6)
+    await expect(page.locator('#demos-root .demo-card')).toHaveCount(6)
   })
 
   test('portfolio filter works on tablet (EN)', async ({ page }) => {
@@ -131,8 +143,8 @@ test.describe('Responsiveness', () => {
     await page.goto('/portfolio/')
     const search = page.getByRole('searchbox', { name: 'Buscar modelos' })
     await search.fill('barbearia')
-    await expect(page.locator('.demo-card')).toHaveCount(1)
-    await expect(page.locator('.demo-card__title')).toHaveText('Barbearia')
+    await expect(page.locator('#demos-root .demo-card')).toHaveCount(1)
+    await expect(page.locator('#demos-root .demo-card__title')).toHaveText('Barbearia')
     await expect(page.locator('.filter-meta__query')).toHaveText('· “barbearia”')
   })
 
@@ -142,7 +154,7 @@ test.describe('Responsiveness', () => {
     const search = page.getByRole('searchbox', { name: 'Buscar modelos' })
     await search.fill('barbearia')
     await expect(page.locator('.filter-empty')).toBeVisible()
-    await expect(page.locator('.demo-card')).toHaveCount(0)
+    await expect(page.locator('#demos-root .demo-card')).toHaveCount(0)
   })
 
   test('portfolio highlights Landing + Painel demos (PT)', async ({ page }) => {
@@ -165,6 +177,19 @@ test.describe('Responsiveness', () => {
     await expect(page.locator('.hero__grid')).toBeVisible()
     await expect(page.locator('.hero-visual')).toBeVisible()
     await expect(page.locator('.browser-preview')).toBeVisible()
+    await expect(page.locator('.hero-trust-icons')).toBeVisible()
+    await expect(page.locator('.stats-bar--hero')).toBeVisible()
+  })
+
+  test('homepage redesign sections are present', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 })
+    await page.goto('/')
+    await expect(page.locator('.stats-bar').first()).toBeVisible()
+    await expect(page.locator('.template-card').first()).toBeVisible()
+    await expect(page.locator('.industries-grid')).toBeVisible()
+    await expect(page.locator('.testimonial-card').first()).toBeVisible()
+    await expect(page.locator('#depoimentos')).toBeVisible()
+    await expect(page.locator('.cta-band__benefits li')).toHaveCount(4)
   })
 
   test('hero preview rotates curated demos', async ({ page }) => {

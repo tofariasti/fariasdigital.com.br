@@ -13,6 +13,8 @@ import {
   HERO_DEMO_ROTATE_MS,
   pickRandomDemoIndex,
 } from '../../utils/heroDemo'
+import { HeroTrustIcons } from './HeroTrustIcons'
+import { StatsBar } from './StatsBar'
 
 interface HeroHomeProps {
   compact?: boolean
@@ -150,11 +152,7 @@ export function HeroHome({
           </AnimatedSection>
           {!compact && (
             <AnimatedSection delay={4}>
-              <ul className="hero__trust">
-                <li>{t(uiCopy.hero.trustModels)}</li>
-                <li>{t(uiCopy.hero.trustResponse)}</li>
-                <li>{config.cidadeRegiao}</li>
-              </ul>
+              <HeroTrustIcons />
             </AnimatedSection>
           )}
         </div>
@@ -231,6 +229,7 @@ export function HeroHome({
                 </motion.div>
               </AnimatePresence>
             </div>
+            <StatsBar className="stats-bar--hero" />
           </AnimatedSection>
         )}
       </div>

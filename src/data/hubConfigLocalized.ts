@@ -16,6 +16,7 @@ import {
   processoWebLocalized,
   proofBarLocalized,
   servicosLocalized,
+  testimonialsLocalized,
 } from './hubConfigContentLocalized'
 
 const HUB_DOMINIO = 'https://fariasdigital.com.br';
@@ -220,6 +221,8 @@ Para agilizar:
   credibilidade: credibilidadeLocalized,
 
   cases: casesLocalized,
+
+  testimonials: testimonialsLocalized,
 
   processoWeb: processoWebLocalized,
 

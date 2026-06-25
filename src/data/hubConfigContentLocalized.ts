@@ -847,6 +847,42 @@ export const proofBarLocalized = [
   { valor: 10, sufixo: '+', label: L('Anos em sistemas web corporativos', 'Years in corporate web systems', 'Años en sistemas web corporativos'), icon: '◆' },
   { valor: 40, sufixo: '+', label: L('Modelos por segmento disponíveis', 'Templates by industry available', 'Modelos por segmento disponibles'), icon: '◆' },
   { valor: 100, sufixo: '%', label: L('Atendimento direto com o desenvolvedor', 'Direct contact with the developer', 'Atención directa con el desarrollador'), icon: '◆' },
+  { valor: 24, sufixo: 'h', label: L('Retorno no orçamento', 'Quote reply time', 'Respuesta en el presupuesto'), icon: '◆' },
+  { valor: 70, sufixo: '%', label: L('Dos acessos vêm do celular', 'Of visits come from mobile', 'De los accesos vienen del celular'), icon: '◆' },
+  { valor: 5, sufixo: '+', label: L('Dias úteis para landing pronta', 'Business days for landing delivery', 'Días hábiles para landing lista'), icon: '◆' },
+]
+
+export const testimonialsLocalized = [
+  {
+    nome: L('Marina S.', 'Marina S.', 'Marina S.'),
+    cargo: L('Clínica de estética · RS', 'Aesthetics clinic · RS', 'Clínica de estética · RS'),
+    texto: L(
+      'Queria algo profissional sem depender de agência. O painel no celular mudou tudo — atualizo promoções em minutos e o WhatsApp já vem com mensagem pronta.',
+      'I wanted something professional without relying on an agency. The mobile panel changed everything — I update promos in minutes and WhatsApp comes with a ready message.',
+      'Quería algo profesional sin depender de agencia. El panel en el celular lo cambió todo — actualizo promociones en minutos y WhatsApp ya trae mensaje listo.',
+    ),
+    rating: 5,
+  },
+  {
+    nome: L('Ricardo M.', 'Ricardo M.', 'Ricardo M.'),
+    cargo: L('Oficina mecânica · POA', 'Auto shop · POA', 'Taller mecánico · POA'),
+    texto: L(
+      'Escolhi um modelo do meu segmento, personalizei com minha marca e em poucos dias estava no ar. Cliente acha pelo Google e chama direto no WhatsApp.',
+      'I picked a template for my industry, customized it with my brand and within days it was live. Customers find me on Google and message on WhatsApp directly.',
+      'Elegí un modelo de mi segmento, personalicé con mi marca y en pocos días estaba en línea. El cliente me encuentra en Google y escribe directo por WhatsApp.',
+    ),
+    rating: 5,
+  },
+  {
+    nome: L('Ana Paula L.', 'Ana Paula L.', 'Ana Paula L.'),
+    cargo: L('Nutricionista · Landing + Painel', 'Nutritionist · Landing + Panel', 'Nutricionista · Landing + Panel'),
+    texto: L(
+      'O pacote Landing + Painel foi exatamente o que precisava: site bonito, credível e autonomia para mudar textos e valores sem ficar cobrando o desenvolvedor.',
+      'The Landing + Panel package was exactly what I needed: a beautiful, credible site and autonomy to change copy and prices without chasing the developer.',
+      'El paquete Landing + Panel fue exactamente lo que necesitaba: sitio bonito, creíble y autonomía para cambiar textos y valores sin perseguir al desarrollador.',
+    ),
+    rating: 5,
+  },
 ]
 
 export const comparativoInstagramLocalized = {

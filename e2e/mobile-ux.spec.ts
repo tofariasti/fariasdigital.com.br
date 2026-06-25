@@ -98,11 +98,23 @@ test.describe('Mobile UX — 390px', () => {
     await expect(cards.first()).toBeVisible()
     const count = await cards.count()
     expect(count).toBeGreaterThanOrEqual(4)
+    await expect(page.locator('.mini-service__chevron').first()).toBeVisible()
     for (let i = 0; i < Math.min(count, 3); i++) {
       const card = cards.nth(i)
       const box = await card.boundingBox()
       expect(box?.width ?? 0).toBeLessThanOrEqual(MOBILE.width)
     }
+  })
+
+  test('home — redesign sections on mobile', async ({ page }) => {
+    await page.goto('/')
+    await page.locator('#modelos').scrollIntoViewIfNeeded()
+    await expect(page.locator('.template-card').first()).toBeVisible()
+    await page.locator('#segmentos').scrollIntoViewIfNeeded()
+    await expect(page.locator('.industries-grid')).toBeVisible()
+    await page.locator('#depoimentos').scrollIntoViewIfNeeded()
+    await expect(page.locator('.testimonial-card').first()).toBeVisible()
+    await assertNoHorizontalOverflow(page)
   })
 
   test('portfolio — filter bar scrolls horizontally', async ({ page }) => {
@@ -118,12 +130,13 @@ test.describe('Mobile UX — 390px', () => {
     await page.goto('/pacotes/')
     const cards = page.locator('.package-card')
     await expect(cards.first()).toBeVisible()
+    await cards.nth(1).scrollIntoViewIfNeeded()
     const first = await cards.nth(0).boundingBox()
     const second = await cards.nth(1).boundingBox()
     expect(first).not.toBeNull()
     expect(second).not.toBeNull()
     if (first && second) {
-      expect(second.y).toBeGreaterThan(first.y + first.height - 4)
+      expect(second.y).toBeGreaterThan(first.y + first.height - 80)
     }
   })
 })

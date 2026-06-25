@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { PageMeta } from '../components/ui/PageMeta'
 import { HeroHome } from '../components/sections/HeroHome'
-import { ProofBar } from '../components/sections/ProofBar'
+import { StatsBar } from '../components/sections/StatsBar'
 import { CredibilityStrip } from '../components/sections/CredibilityStrip'
 import {
   ComparisonTable,
@@ -9,6 +9,9 @@ import {
 } from '../components/sections/ComparisonSection'
 import { MiniServices } from '../components/sections/MiniServices'
 import { IntentGrid } from '../components/sections/IntentGrid'
+import { TemplateShowcase } from '../components/sections/TemplateShowcase'
+import { IndustriesGrid } from '../components/sections/IndustriesGrid'
+import { TestimonialsSection } from '../components/sections/TestimonialsSection'
 import { Marquee, DiffGrid, CtaBand, SectionHeader } from '../components/sections/CtaBand'
 import { useHubConfig } from '../i18n/useHubConfig'
 import { useLocale } from '../i18n/LocaleContext'
@@ -43,9 +46,7 @@ export function HomePage() {
           </div>
         }
       />
-      <div className="container">
-        <ProofBar />
-      </div>
+      <StatsBar />
       <CredibilityStrip />
 
       <div className="container">
@@ -54,9 +55,12 @@ export function HomePage() {
           items={[
             { id: 'site-vs-instagram', label: uiCopy.anchors.comparison },
             { id: 'servicos', label: uiCopy.anchors.services },
+            { id: 'modelos', label: uiCopy.anchors.templates },
+            { id: 'segmentos', label: uiCopy.anchors.industries },
             { id: 'objetivos', label: uiCopy.anchors.goals },
             { id: 'explore', label: uiCopy.anchors.explore },
             { id: 'como-trabalho', label: uiCopy.anchors.howIWork },
+            { id: 'depoimentos', label: uiCopy.anchors.testimonials },
           ]}
         />
       </div>
@@ -124,13 +128,16 @@ export function HomePage() {
           </AnimatedSection>
         </div>
         <div className="section__next">
-          <a href="#objetivos" className="page-anchors__link">
-            {t(uiCopy.anchors.nextSection)} {t(uiCopy.anchors.goals)}
+          <a href="#modelos" className="page-anchors__link">
+            {t(uiCopy.anchors.nextSection)} {t(uiCopy.anchors.templates)}
           </a>
         </div>
       </section>
 
       <Marquee />
+
+      <TemplateShowcase />
+      <IndustriesGrid />
 
       <section className="section section--alt section--glow" id="objetivos">
         <div className="container">
@@ -221,9 +228,19 @@ export function HomePage() {
             <WhatsAppButton waKey="geral">{t(uiCopy.cta.talkNowWhatsApp)}</WhatsAppButton>
           </AnimatedSection>
         </div>
+        <div className="section__next">
+          <a href="#depoimentos" className="page-anchors__link">
+            {t(uiCopy.anchors.nextSection)} {t(uiCopy.anchors.testimonials)}
+          </a>
+        </div>
       </section>
 
+      <TestimonialsSection />
+
+      <StatsBar />
+
       <CtaBand
+        showBenefits
         title={t(uiCopy.home.ctaTitle)}
         text={
           <>

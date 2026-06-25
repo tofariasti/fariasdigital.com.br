@@ -10,6 +10,7 @@ interface CtaBandProps {
   text: ReactNode
   waKey?: WhatsAppKey
   buttonLabel?: string
+  showBenefits?: boolean
 }
 
 export function CtaBand({
@@ -17,8 +18,10 @@ export function CtaBand({
   text,
   waKey = 'geral',
   buttonLabel,
+  showBenefits = false,
 }: CtaBandProps) {
   const { t } = useLocale()
+  const benefits = uiCopy.ctaBand.benefits.map((b) => t(b))
 
   return (
     <section className="cta-band">
@@ -29,7 +32,16 @@ export function CtaBand({
         <AnimatedSection delay={1}>
           <p className="cta-band__text">{text}</p>
         </AnimatedSection>
-        <AnimatedSection delay={2}>
+        {showBenefits && (
+          <AnimatedSection delay={2}>
+            <ul className="cta-band__benefits">
+              {benefits.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </AnimatedSection>
+        )}
+        <AnimatedSection delay={showBenefits ? 3 : 2}>
           <WhatsAppButton waKey={waKey} className="btn btn--whatsapp btn--lg cta-band__btn">
             {buttonLabel ?? t(uiCopy.cta.whatsapp)}
           </WhatsAppButton>
