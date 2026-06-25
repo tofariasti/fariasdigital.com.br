@@ -39,9 +39,10 @@ export function PackageGrid() {
             <WhatsAppButton
               waKey={pkg.mensagemWhatsApp}
               href={buildWhatsAppUrl(pkg.mensagemWhatsApp)}
-              className="btn btn--whatsapp btn--block"
+              className={`btn btn--block${pkg.destaque ? ' btn--primary' : ' btn--whatsapp'}`}
             >
               {t(uiCopy.cta.requestQuote)}
+              {pkg.destaque && <span className="btn__arrow" aria-hidden="true">→</span>}
             </WhatsAppButton>
           </>
         )

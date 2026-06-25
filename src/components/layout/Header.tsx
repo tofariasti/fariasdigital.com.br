@@ -96,8 +96,9 @@ export function Header() {
         </nav>
         <div className="site-header__actions">
           <LangSwitcher />
-          <WhatsAppButton waKey="geral" className="btn btn--whatsapp site-header__whatsapp">
+          <WhatsAppButton waKey="geral" className="btn btn--primary site-header__whatsapp">
             {t(uiCopy.cta.chat)}
+            <span className="btn__arrow" aria-hidden="true">→</span>
           </WhatsAppButton>
           <button
             type="button"
@@ -137,9 +138,13 @@ export function Header() {
             </NavLink>
           ),
         )}
-        <WhatsAppButton waKey="geral" className="btn btn--whatsapp btn--block">
+        <WhatsAppButton waKey="geral" className="btn btn--primary btn--block">
           {t(uiCopy.cta.chat)}
+          <span className="btn__arrow" aria-hidden="true">→</span>
         </WhatsAppButton>
+        <div className="mobile-nav__lang">
+          <LangSwitcher onSelect={() => setMobileOpen(false)} />
+        </div>
       </div>
     </header>
   )

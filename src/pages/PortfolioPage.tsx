@@ -9,6 +9,7 @@ import {
   CredibilitySection,
 } from '../components/sections/PortfolioSections'
 import { CtaBand, SectionHeader } from '../components/sections/CtaBand'
+import { ProofBar } from '../components/sections/ProofBar'
 import { useHubConfig } from '../i18n/useHubConfig'
 import { useLocale } from '../i18n/LocaleContext'
 import { uiCopy } from '../data/uiCopy'
@@ -36,13 +37,18 @@ export function PortfolioPage() {
   return (
     <>
       <PageMeta page="portfolio" />
-      <section className="section section--alt section--page-start" id="exemplos">
+      <section className="section section--page-start portfolio-page" id="exemplos">
         <div className="container">
+          <AnimatedSection>
+            <span className="hero__label">
+              <span className="hero__label-dot" aria-hidden="true" />
+              {t(uiCopy.common.portfolioEyebrow)}
+            </span>
+          </AnimatedSection>
           <SectionHeader
             center
             compact
             titleAs="h1"
-            eyebrow={t(uiCopy.common.portfolioEyebrow)}
             title={
               <>
                 <span className="section__title-line">{p.titulo}</span>
@@ -53,17 +59,20 @@ export function PortfolioPage() {
             }
             lead={p.lead}
           />
-          <AnimatedSection className="section__actions">
+          <AnimatedSection className="section__actions section__actions--center">
             <a href="#painel-demos" className="btn btn--primary btn--lg">
               {t(uiCopy.portfolio.viewPanelDemos)}
+              <span className="btn__arrow" aria-hidden="true">→</span>
             </a>
             <a href="#demos-root" className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewModels)}
             </a>
-            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--ghost btn--lg">
               {t(uiCopy.cta.wantLandingPanel)}
             </WhatsAppButton>
           </AnimatedSection>
+
+          <ProofBar />
 
           <PageAnchors
             className="page-anchors--center"
@@ -84,19 +93,20 @@ export function PortfolioPage() {
               <h2 className="portfolio-group__title">{p.grupoDemos.titulo}</h2>
               <p className="portfolio-group__lead">{p.grupoDemos.lead}</p>
             </AnimatedSection>
-            <div id="demos-root">
+            <div id="demos-root" className="portfolio-demos">
               <DemoGrid />
             </div>
-            <AnimatedSection style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+            <AnimatedSection className="section__actions section__actions--center">
+              <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--primary btn--lg">
                 {t(uiCopy.cta.wantLandingPanel)}
+                <span className="btn__arrow" aria-hidden="true">→</span>
               </WhatsAppButton>
             </AnimatedSection>
           </div>
         </div>
       </section>
 
-      <section className="section" id="cases">
+      <section className="section section--alt section--glow portfolio-page" id="cases">
         <div className="container">
           <SectionHeader
             center
@@ -118,7 +128,7 @@ export function PortfolioPage() {
         </div>
       </section>
 
-      <section className="section section--alt" id="credibilidade">
+      <section className="section portfolio-page" id="credibilidade">
         <div className="container">
           <CredibilitySection />
         </div>

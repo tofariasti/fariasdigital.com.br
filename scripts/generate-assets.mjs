@@ -46,6 +46,7 @@ const page = await browser.newPage()
 await svgToPng(page, join(imgDir, 'og-image.svg'), 1200, 630, join(imgDir, 'og-image.png'))
 await svgToPng(page, join(imgDir, 'favicon.svg'), 32, 32, join(imgDir, 'favicon-32.png'))
 await svgToPng(page, join(imgDir, 'favicon.svg'), 16, 16, join(imgDir, 'favicon-16.png'))
+await svgToPng(page, join(imgDir, 'logo-icon.svg'), 180, 180, join(imgDir, 'apple-touch-icon.png'))
 pngToIco(join(imgDir, 'favicon-32.png'), join(root, 'public', 'favicon.ico'))
 
 await browser.close()

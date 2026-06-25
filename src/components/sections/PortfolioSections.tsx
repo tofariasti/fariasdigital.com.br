@@ -77,9 +77,6 @@ function DemoCard({
         <h3 className="demo-card__title">{demo.titulo}</h3>
         <p className="demo-card__desc">{demo.descricao}</p>
         <div className="demo-card__actions">
-          <a href={demo.url} className="btn btn--outline" target="_blank" rel="noopener noreferrer">
-            {t(uiCopy.cta.viewSite)}
-          </a>
           <a
             href={buildDemoWhatsAppUrl(demo.titulo)}
             className="btn btn--primary"
@@ -87,6 +84,9 @@ function DemoCard({
             rel="noopener noreferrer"
           >
             {t(uiCopy.cta.wantLikeThis)}
+          </a>
+          <a href={demo.url} className="btn btn--outline" target="_blank" rel="noopener noreferrer">
+            {t(uiCopy.cta.viewSite)}
           </a>
         </div>
       </div>
@@ -124,12 +124,13 @@ export function PanelProofShowcase() {
           <DemoCard key={demo.url} demo={demo} index={i} highlight />
         ))}
       </div>
-      <AnimatedSection className="panel-showcase__actions">
+      <AnimatedSection className="panel-showcase__actions section__actions--center">
         <button type="button" className="btn btn--outline" onClick={scrollToAllWithPanel}>
           {t(uiCopy.portfolio.viewPanelDemos)}
         </button>
-        <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+        <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--primary btn--lg">
           {t(uiCopy.cta.wantLandingPanel)}
+          <span className="btn__arrow" aria-hidden="true">→</span>
         </WhatsAppButton>
         <Link to={pathFor('/pacotes/')} className="btn btn--ghost">
           {t(uiCopy.cta.viewPackagesShort)}
@@ -218,7 +219,7 @@ export function DemoGrid() {
 
   return (
     <>
-      <div className="filter-toolbar">
+      <div className="filter-toolbar filter-toolbar--glass">
         <div className="filter-search">
           <svg
             className="filter-search__icon"
@@ -331,8 +332,9 @@ export function PricingCallout() {
       <div className="pricing-callout__actions">
         <a href="#painel-demos" className="btn btn--primary btn--lg">
           {t(uiCopy.portfolio.viewPanelDemos)}
+          <span className="btn__arrow" aria-hidden="true">→</span>
         </a>
-        <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+        <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--outline btn--lg">
           {t(uiCopy.cta.requestQuote)}
         </WhatsAppButton>
       </div>

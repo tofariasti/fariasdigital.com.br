@@ -25,13 +25,14 @@ export function SitesPage() {
         showPricingTags
         actions={
           <div className="hero__actions">
-            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--primary btn--lg">
               {t(uiCopy.cta.wantLandingPanel)}
+              <span className="btn__arrow" aria-hidden="true">→</span>
             </WhatsAppButton>
-            <a href="#pacotes" className="btn btn--primary btn--lg">
+            <a href="#pacotes" className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewPackagesShort)}
             </a>
-            <a href="#servicos" className="btn btn--outline btn--lg">
+            <a href="#servicos" className="btn btn--ghost btn--lg">
               {t(uiCopy.anchors.services)}
             </a>
           </div>
@@ -48,7 +49,7 @@ export function SitesPage() {
         />
       </div>
 
-      <section className="section section--alt section--glow">
+      <section className="section section--alt section--glow pacotes-page">
         <div className="container">
           <SectionHeader
             eyebrow={t(uiCopy.sites.audienceEyebrow)}
@@ -56,11 +57,23 @@ export function SitesPage() {
             lead={t(uiCopy.sites.audienceLead)}
           />
           <div className="service-grid">
-            <AnimatedSection delay={1} className="service-card">
+            <AnimatedSection delay={1} className="service-card service-card--alert">
+              <div className="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                  <path d="M12 9v4M12 17h.01" />
+                  <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                </svg>
+              </div>
               <h3 className="service-card__title">{t(uiCopy.sites.problemTitle)}</h3>
               <p className="service-card__text">{t(uiCopy.sites.problemText)}</p>
             </AnimatedSection>
             <AnimatedSection delay={2} className="service-card">
+              <div className="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                  <path d="M9 12 11 14 15 10" />
+                  <path d="M12 3 4 7v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V7l-8-4z" />
+                </svg>
+              </div>
               <h3 className="service-card__title">{t(uiCopy.sites.solutionTitle)}</h3>
               <p className="service-card__text">{t(uiCopy.sites.solutionText)}</p>
             </AnimatedSection>
@@ -90,7 +103,7 @@ export function SitesPage() {
         </div>
       </section>
 
-      <section className="section" id="pacotes">
+      <section className="section section--glow pacotes-page" id="pacotes">
         <div className="container">
           <SectionHeader
             center
@@ -122,11 +135,12 @@ export function SitesPage() {
             title={t(uiCopy.sites.referencesTitle)}
             lead={t(uiCopy.sites.referencesLead)}
           />
-          <AnimatedSection className="section__actions" style={{ textAlign: 'center' }}>
+          <AnimatedSection className="section__actions section__actions--center">
             <Link to={pathFor('/portfolio/')} className="btn btn--primary btn--lg">
               {t(uiCopy.cta.openFullPortfolio)}
+              <span className="btn__arrow" aria-hidden="true">→</span>
             </Link>
-            <WhatsAppButton waKey="pacoteLanding" className="btn btn--whatsapp btn--lg">
+            <WhatsAppButton waKey="pacoteLanding" className="btn btn--outline btn--lg">
               {t(uiCopy.cta.wantLanding)}
             </WhatsAppButton>
           </AnimatedSection>

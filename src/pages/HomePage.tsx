@@ -30,8 +30,9 @@ export function HomePage() {
         showPricingTags
         actions={
           <div className="hero__actions">
-            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--whatsapp btn--lg">
+            <WhatsAppButton waKey="pacoteLandingAdmin" className="btn btn--primary btn--lg">
               {t(uiCopy.cta.wantLandingPanel)}
+              <span className="btn__arrow" aria-hidden="true">→</span>
             </WhatsAppButton>
             <Link to={pathFor('/portfolio/')} className="btn btn--outline btn--lg">
               {t(uiCopy.cta.viewExamples)}
