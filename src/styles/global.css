@@ -4337,51 +4337,53 @@ a:hover { color: var(--color-accent); }
   margin: 8px auto 0;
   border-radius: 0 0 10px 10px;
   background: #0B0E14;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-phone__badge {
+  display: block;
+  margin: 0.35rem auto 0.45rem;
+  width: fit-content;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(0, 123, 255, 0.15);
+  border: 1px solid rgba(61, 155, 255, 0.35);
+  font-family: var(--font-display);
+  font-size: 0.42rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary-bright);
 }
 
 .hero-phone__screen {
-  padding: 0.65rem 0.55rem 0.85rem;
+  container-type: inline-size;
+  padding: 0 0.55rem 0.85rem;
 }
 
-.hero-phone__header {
-  height: 28px;
-  margin-bottom: 0.55rem;
-  border-radius: 8px;
-  background: linear-gradient(90deg, rgba(0, 123, 255, 0.45), rgba(14, 165, 233, 0.25));
+.hero-phone__frame {
+  width: 100%;
+  aspect-ratio: 390 / 680;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
-.hero-phone__line {
-  height: 6px;
-  margin-bottom: 0.4rem;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.12);
+.hero-phone__scale {
+  width: 390px;
+  height: 680px;
+  transform-origin: top left;
+  transform: scale(calc(100cqw / 390));
 }
 
-.hero-phone__line--short { width: 65%; }
-.hero-phone__line--mid { width: 82%; }
-
-.hero-phone__card {
-  margin-top: 0.55rem;
-  padding: 0.45rem;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 123, 255, 0.25);
-  background: rgba(0, 123, 255, 0.1);
-}
-
-.hero-phone__card-icon {
-  width: 18px;
-  height: 18px;
-  border-radius: 5px;
-  margin-bottom: 0.3rem;
-  background: var(--gradient-brand);
-}
-
-.hero-phone__card-label {
-  font-size: 0.45rem;
-  font-weight: 700;
-  color: #bfdbfe;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+.hero-phone__scale iframe {
+  width: 390px;
+  height: 680px;
+  border: 0;
+  pointer-events: none;
+  background: #fff;
 }
 
 @keyframes phone-float {
@@ -4678,8 +4680,27 @@ a:hover { color: var(--color-accent); }
 }
 
 @media (max-width: 640px) {
-  .hero-phone {
+  .hero-devices .browser-preview {
     display: none;
+  }
+
+  .hero-phone {
+    display: block;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(240px, 72vw);
+    margin: 0 auto;
+    animation: none;
+  }
+
+  .hero-phone__badge {
+    font-size: 0.55rem;
+  }
+
+  .hero-devices {
+    min-height: auto;
+    margin-top: 0.5rem;
   }
 }
 

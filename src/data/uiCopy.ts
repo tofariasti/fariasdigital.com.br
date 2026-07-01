@@ -189,6 +189,7 @@ export const uiCopy = {
       typeCatalog: L('Catálogo digital', 'Digital catalog', 'Catálogo digital'),
       typePortal: L('Portal / classificados', 'Classifieds portal', 'Portal / clasificados'),
       typeLandingAdmin: L('Landing + Admin', 'Landing + Admin', 'Landing + Admin'),
+      mobileView: L('Versão mobile', 'Mobile view', 'Vista móvil'),
     },
     from1490: L('a partir de R$ 1.490', 'from R$ 1,490', 'desde R$ 1.490'),
     appTag: L('Apps mobile', 'Mobile apps', 'Apps móviles'),

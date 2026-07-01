@@ -188,14 +188,24 @@ export function HeroHome({
               </div>
               <div className="hero-phone" aria-hidden="true">
                 <div className="hero-phone__notch" />
+                <span className="hero-phone__badge">{t(uiCopy.hero.preview.mobileView)}</span>
                 <div className="hero-phone__screen">
-                  <div className="hero-phone__header" />
-                  <div className="hero-phone__line hero-phone__line--mid" />
-                  <div className="hero-phone__line hero-phone__line--short" />
-                  <div className="hero-phone__line" />
-                  <div className="hero-phone__card">
-                    <div className="hero-phone__card-icon" />
-                    <div className="hero-phone__card-label">{t(uiCopy.hero.phoneAppLabel)}</div>
+                  <div className="hero-phone__frame">
+                    <div className="hero-phone__scale">
+                      <AnimatePresence mode="wait">
+                        <motion.iframe
+                          key={`mobile-${activeDemo.url}`}
+                          src={activeDemo.url}
+                          title={`${t(uiCopy.hero.preview.mobileView)} — ${activeDemo.titulo}`}
+                          loading="lazy"
+                          tabIndex={-1}
+                          initial={reduced ? false : { opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={reduced ? undefined : { opacity: 0 }}
+                          transition={{ duration: 0.35 }}
+                        />
+                      </AnimatePresence>
+                    </div>
                   </div>
                 </div>
               </div>
