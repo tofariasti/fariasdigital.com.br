@@ -6,24 +6,24 @@
     </linearGradient>
     <linearGradient id="fd-grad" x1="0" y1="0" x2="48" y2="48">
       <stop offset="0%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#007BFF"/>
     </linearGradient>
     <linearGradient id="accent-text" x1="0" y1="0" x2="420" y2="0">
       <stop offset="0%" stop-color="#60a5fa"/>
       <stop offset="50%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
     </linearGradient>
     <linearGradient id="cta-grad" x1="0" y1="0" x2="280" y2="0">
       <stop offset="0%" stop-color="#2563eb"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#007BFF"/>
     </linearGradient>
     <radialGradient id="orb-blue" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="orb-purple" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#9333ea" stop-opacity="0"/>
+    <radialGradient id="orb-accent" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#007BFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#007BFF" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
       <path d="M56 0H0V56" fill="none" stroke="rgba(59,130,246,0.07)" stroke-width="1"/>
@@ -40,7 +40,7 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <circle cx="1020" cy="100" r="220" fill="url(#orb-blue)"/>
-  <circle cx="140" cy="540" r="240" fill="url(#orb-purple)"/>
+  <circle cx="140" cy="540" r="240" fill="url(#orb-accent)"/>
   <circle cx="900" cy="480" r="120" fill="url(#orb-blue)" opacity="0.5"/>
 
   <rect x="64" y="120" width="480" height="390" rx="24" fill="rgba(15,21,36,0.72)" stroke="rgba(59,130,246,0.22)" stroke-width="1.5"/>
