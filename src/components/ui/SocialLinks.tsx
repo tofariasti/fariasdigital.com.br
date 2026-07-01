@@ -43,20 +43,20 @@ export function SocialLinks({ className }: SocialLinksProps) {
   ]
 
   return (
-    <div className={`social-links${className ? ` ${className}` : ''}`} role="list">
+    <ul className={`social-links${className ? ` ${className}` : ''}`}>
       {items.map((item) => (
-        <a
-          key={item.href}
-          href={item.href}
-          className="social-links__item"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={item.label}
-          role="listitem"
-        >
-          {item.icon}
-        </a>
+        <li key={item.href}>
+          <a
+            href={item.href}
+            className="social-links__item"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={item.label}
+          >
+            {item.icon}
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }

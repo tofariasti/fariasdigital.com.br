@@ -8,16 +8,16 @@ export function StatsBar({ className = '' }: StatsBarProps) {
   const config = useHubConfig()
 
   return (
-    <div className={`stats-bar${className ? ` ${className}` : ''}`} role="list">
+    <ul className={`stats-bar${className ? ` ${className}` : ''}`}>
       {config.heroStats.map((item) => (
-        <div key={item.label} className="stats-bar__item" role="listitem">
+        <li key={item.label} className="stats-bar__item">
           <span className="stats-bar__value">
             {item.valor}
             {item.sufixo}
           </span>
           <span className="stats-bar__label">{item.label}</span>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
