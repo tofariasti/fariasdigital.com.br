@@ -79,6 +79,12 @@ export interface ProofBarItem {
   icon?: string
 }
 
+export interface HeroStatItem {
+  valor: number
+  sufixo: string
+  label: string
+}
+
 export interface FaqItem {
   pergunta: string
   resposta: string
@@ -168,6 +174,7 @@ export interface HubConfigType {
   }
   demos: Demo[]
   proofBar: ProofBarItem[]
+  heroStats: HeroStatItem[]
   comparativoInstagram: {
     eyebrow: string
     titulo: string

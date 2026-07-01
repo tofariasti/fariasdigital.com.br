@@ -61,23 +61,26 @@
 }
 
 .stats-bar--hero {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
   overflow: hidden;
   background: rgba(18, 21, 28, 0.9);
+  flex-shrink: 0;
 }
 
 .stats-bar--hero .stats-bar__item {
-  padding: 0.85rem 0.65rem;
+  padding: 0.75rem 0.5rem;
 }
 
 .stats-bar--hero .stats-bar__value {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
 }
 
 .stats-bar--hero .stats-bar__label {
   font-size: 0.68rem;
+  max-width: 11ch;
+  margin-top: 0.3rem;
 }
 
 @media (min-width: 1024px) {
@@ -125,13 +128,21 @@
 }
 
 .hero-trust-icons__icon {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
   color: var(--color-primary-bright);
 }
 
 .hero-trust-icons__icon svg {
+  display: block;
   width: 16px;
   height: 16px;
+  max-width: 16px;
+  max-height: 16px;
   flex-shrink: 0;
 }
 

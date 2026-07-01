@@ -9,7 +9,7 @@ export function StatsBar({ className = '' }: StatsBarProps) {
 
   return (
     <div className={`stats-bar${className ? ` ${className}` : ''}`} role="list">
-      {config.proofBar.map((item) => (
+      {config.heroStats.map((item) => (
         <div key={item.label} className="stats-bar__item" role="listitem">
           <span className="stats-bar__value">
             {item.valor}

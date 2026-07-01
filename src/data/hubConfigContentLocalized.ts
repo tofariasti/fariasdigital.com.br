@@ -843,6 +843,15 @@ export const demosLocalized = [
     }
 ]
 
+export const heroStatsLocalized = [
+  { valor: 40, sufixo: '+', label: L('Modelos por segmento', 'Templates by industry', 'Modelos por segmento') },
+  { valor: 24, sufixo: 'h', label: L('Retorno no orçamento', 'Quote reply time', 'Respuesta en el presupuesto') },
+  { valor: 10, sufixo: '+', label: L('Anos em sistemas web', 'Years in web systems', 'Años en sistemas web') },
+  { valor: 100, sufixo: '%', label: L('Atendimento direto', 'Direct contact', 'Atención directa') },
+  { valor: 70, sufixo: '%', label: L('Acessos via celular', 'Mobile visits', 'Accesos por celular') },
+  { valor: 5, sufixo: '+', label: L('Dias úteis para landing', 'Business days for landing', 'Días hábiles para landing') },
+]
+
 export const proofBarLocalized = [
   { titulo: L('Entrega ágil', 'Fast delivery', 'Entrega ágil'), label: L('Prazo definido e processo eficiente — você sabe o que vai receber e quando.', 'Defined timeline and efficient process — you know what you will get and when.', 'Plazo definido y proceso eficiente — sabe qué recibirá y cuándo.'), icon: '⚡' },
   { titulo: L('Design moderno', 'Modern design', 'Diseño moderno'), label: L('Layouts profissionais que transmitem credibilidade e destacam sua marca.', 'Professional layouts that build credibility and highlight your brand.', 'Layouts profesionales que transmiten credibilidad y destacan su marca.'), icon: '◆' },

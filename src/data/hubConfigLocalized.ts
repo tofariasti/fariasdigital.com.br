@@ -14,6 +14,7 @@ import {
   portfolioLocalized,
   pricingLandingLocalized,
   processoWebLocalized,
+  heroStatsLocalized,
   proofBarLocalized,
   servicosLocalized,
   testimonialsLocalized,
@@ -211,6 +212,8 @@ Para agilizar:
   demos: demosLocalized,
 
   proofBar: proofBarLocalized,
+
+  heroStats: heroStatsLocalized,
 
   comparativoInstagram: comparativoInstagramLocalized,
 
