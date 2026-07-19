@@ -187,24 +187,37 @@ export function HeroHome({
                 </div>
               </div>
               <div className="hero-phone" aria-hidden="true">
-                <div className="hero-phone__notch" />
                 <span className="hero-phone__badge">{t(uiCopy.hero.preview.mobileView)}</span>
-                <div className="hero-phone__screen">
+                <div className="hero-phone__bezel">
+                  <div className="hero-phone__island" />
                   <div className="hero-phone__frame">
-                    <div className="hero-phone__scale">
-                      <AnimatePresence mode="wait">
-                        <motion.iframe
-                          key={`mobile-${activeDemo.url}`}
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={`mobile-${activeDemo.url}`}
+                        className="hero-phone__viewport"
+                        initial={reduced ? false : { opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={reduced ? undefined : { opacity: 0 }}
+                        transition={{ duration: 0.35 }}
+                      >
+                        <iframe
                           src={activeDemo.url}
                           title={`${t(uiCopy.hero.preview.mobileView)} — ${activeDemo.titulo}`}
                           loading="lazy"
                           tabIndex={-1}
-                          initial={reduced ? false : { opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={reduced ? undefined : { opacity: 0 }}
-                          transition={{ duration: 0.35 }}
                         />
-                      </AnimatePresence>
+                      </motion.div>
+                    </AnimatePresence>
+                    <div className="hero-phone__chrome">
+                      <div className="hero-phone__status">
+                        <span className="hero-phone__time">9:41</span>
+                        <span className="hero-phone__status-icons" aria-hidden="true">
+                          <span className="hero-phone__signal" />
+                          <span className="hero-phone__wifi" />
+                          <span className="hero-phone__battery" />
+                        </span>
+                      </div>
+                      <span className="hero-phone__home-bar" />
                     </div>
                   </div>
                 </div>
