@@ -32,13 +32,14 @@
 
 **Público:** quem quer autonomia real — painel 100% sob medida, não um pacote travado com funções inalteráveis.
 
-**Investimento:** a partir de **R$ 890** (base). Funcionalidades extras alteram o valor conforme a complexidade.
+**Investimento:** a partir de **R$ 890** (painel base). Com regras de negócio (ex.: **pet/creche**, reservas): a partir de **R$ 1.190**. Extras sobem conforme a complexidade.
 
 | Entregável | Detalhe |
 |------------|---------|
 | Landing page | Tudo do pacote Landing Page personalizada |
 | Painel customizável | Montado para o negócio (base típica: textos, preços, fotos, horário, WhatsApp) |
-| Sob medida | Reservas, tutores, catálogo avançado etc. sob consulta — sobem o preço |
+| Nicho pet / regras de negócio | Reservas, tutores, creche etc. — **a partir de R$ 1.190** |
+| Sob medida avançado | ERP, pagamentos, automações — sob consulta |
 | Treinamento | Capacitação rápida na entrega + suporte humano quando precisar |
 
 **Não inclui:** domínio e hospedagem (orçáveis à parte). Recursos avançados (ex.: reservas, ERP, pagamentos) mudam o investimento conforme escopo.

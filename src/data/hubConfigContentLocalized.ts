@@ -46,11 +46,11 @@ export const pacotesWebLocalized = [
     inclui: [
       L('Tudo da Landing Page personalizada', 'Everything in the custom Landing Page', 'Todo de la Landing Page personalizada'),
       L('Painel 100% customizável no celular — montado para o seu negócio', 'Fully customizable mobile panel — built for your business', 'Panel 100% personalizable en el celular — montado para su negocio'),
-      L('Base típica: textos, preços, fotos, horário e WhatsApp (pode incluir mais)', 'Typical base: copy, prices, photos, hours and WhatsApp (can include more)', 'Base típica: textos, precios, fotos, horario y WhatsApp (puede incluir más)'),
-      L('Funcionalidades extras sob consulta — o valor muda com a complexidade', 'Extra features on request — price scales with complexity', 'Funciones extra bajo consulta — el valor cambia con la complejidad'),
+      L('Base típica (a partir de R$ 890): textos, preços, fotos, horário e WhatsApp', 'Typical base (from R$ 890): copy, prices, photos, hours and WhatsApp', 'Base típica (desde R$ 890): textos, precios, fotos, horario y WhatsApp'),
+      L('Com regras de negócio (ex.: pet/creche, reservas): a partir de R$ 1.190', 'With business rules (e.g. pet/daycare, bookings): from R$ 1,190', 'Con reglas de negocio (ej.: pet/guardería, reservas): desde R$ 1.190'),
       L('Treinamento rápido na entrega + suporte humano quando precisar', 'Quick training at handoff + human support when needed', 'Capacitación rápida en la entrega + soporte humano cuando lo necesite'),
     ],
-    naoInclui: L('Domínio e hospedagem (orçáveis à parte). Recursos avançados (ex.: reservas, ERP, pagamentos) alteram o valor conforme escopo.', 'Domain and hosting (quoted separately). Advanced features (e.g. bookings, ERP, payments) change the price by scope.', 'Dominio y hosting (aparte). Funciones avanzadas (ej.: reservas, ERP, pagos) cambian el valor según el alcance.'),
+    naoInclui: L('Domínio e hospedagem (orçáveis à parte). Quanto mais complexo o painel, maior o investimento — alinhamos no orçamento.', 'Domain and hosting (quoted separately). The more complex the panel, the higher the investment — confirmed in the quote.', 'Dominio y hosting (aparte). Cuanto más complejo el panel, mayor la inversión — lo alineamos en el presupuesto.'),
     mensagemWhatsApp: 'pacoteLandingAdmin',
     destaque: true,
     badge: L('Recomendado', 'Recommended', 'Recomendado'),
@@ -251,9 +251,9 @@ export const portfolioLocalized = {
   grupoPainel: {
     titulo: L('Landing + Painel em ação', 'Landing + Panel in action', 'Landing + Panel en acción'),
     lead: L(
-      'Abra o site e teste um painel demo no celular. No projeto real o painel é 100% customizável — não é pacote travado; o valor a partir de R$ 890 sobe conforme as funcionalidades e a complexidade.',
-      'Open the site and try a demo panel on your phone. In a real project the panel is fully customizable — not a locked package; pricing from R$ 890 scales with features and complexity.',
-      'Abra el sitio y pruebe un panel demo en el celular. En el proyecto real el panel es 100% personalizable — no es un paquete cerrado; el valor desde R$ 890 sube según funciones y complejidad.',
+      'Abra o site e teste um painel demo no celular. Painel base a partir de R$ 890; com regras de negócio (ex.: pet/creche) a partir de R$ 1.190 — 100% customizável, sem pacote travado.',
+      'Open the site and try a demo panel on your phone. Base panel from R$ 890; with business rules (e.g. pet/daycare) from R$ 1,190 — fully customizable, not a locked package.',
+      'Abra el sitio y pruebe un panel demo en el celular. Panel base desde R$ 890; con reglas de negocio (ej.: pet/guardería) desde R$ 1.190 — 100% personalizable, sin paquete cerrado.',
     ),
   },
   badgeDemo: L('Pronto para personalizar', 'Ready to customize', 'Listo para personalizar'),
@@ -966,7 +966,7 @@ export const intentItemsLocalized = [
 ]
 
 export const servicosLocalized = [
-  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site + painel 100% customizável — o valor muda conforme as funcionalidades.', 'Website + fully customizable panel — price scales with the features you need.', 'Sitio + panel 100% personalizable — el valor cambia según las funciones.'), preco: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'), href: '/pacotes/#pacotes' },
+  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site + painel customizável — base R$ 890; pet/creche a partir de R$ 1.190.', 'Website + custom panel — base R$ 890; pet/daycare from R$ 1,190.', 'Sitio + panel personalizable — base R$ 890; pet/guardería desde R$ 1.190.'), preco: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'), href: '/pacotes/#pacotes' },
   { id: 'aplicativos', titulo: L('Aplicativos mobile', 'Mobile apps', 'Aplicaciones móviles'), descricao: L('Apps para iOS e Android — catálogos, agendamento, painéis e soluções sob medida para o seu negócio.', 'iOS and Android apps — catalogs, booking, admin panels and custom solutions for your business.', 'Apps para iOS y Android — catálogos, agendamiento, paneles y soluciones a medida para su negocio.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'site' },
   { id: 'landing', titulo: L('Landing Pages', 'Landing Pages', 'Landing Pages'), descricao: L('Páginas estratégicas para captar leads e vender mais pelo WhatsApp.', 'Strategic pages to capture leads and sell more via WhatsApp.', 'Páginas estratégicas para captar leads y vender más por WhatsApp.'), preco: L('a partir de R$ 450', 'from R$ 450', 'desde R$ 450'), href: '/portfolio/' },
   { id: 'institucional', titulo: L('Sites institucionais', 'Business websites', 'Sitios institucionales'), descricao: L('Presença profissional com múltiplas seções, SEO e credibilidade.', 'Professional presence with multiple sections, SEO and credibility.', 'Presencia profesional con múltiples secciones, SEO y credibilidad.'), preco: L('a partir de R$ 1.990', 'from R$ 1,990', 'desde R$ 1.990'), href: '/pacotes/#pacotes' },

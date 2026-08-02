@@ -121,9 +121,9 @@ Para agilizar:
       '¡Hola! Me interesa una landing page personalizada (desde R$ 450). Me gustaría un presupuesto.',
     ),
     pacoteLandingAdmin: L(
-      'Olá! Tenho interesse no pacote Landing + Painel (a partir de R$ 890) — painel customizável sob medida. Gostaria de um orçamento.',
-      'Hi! I am interested in the Landing + Panel package (from R$ 890) — a custom-built panel. I would like a quote.',
-      '¡Hola! Me interesa el paquete Landing + Panel (desde R$ 890) — panel a medida. Me gustaría un presupuesto.',
+      'Olá! Tenho interesse no pacote Landing + Painel (base a partir de R$ 890; pet/creche a partir de R$ 1.190). Gostaria de um orçamento.',
+      'Hi! I am interested in the Landing + Panel package (base from R$ 890; pet/daycare from R$ 1,190). I would like a quote.',
+      '¡Hola! Me interesa el paquete Landing + Panel (base desde R$ 890; pet/guardería desde R$ 1.190). Me gustaría un presupuesto.',
     ),
     pacotePresenca: L(
       'Olá! Tenho interesse no pacote Site Institucional (site completo com WhatsApp). Gostaria de um orçamento.',
@@ -372,9 +372,9 @@ Para agilizar:
           '¿Cuánto cuesta un sitio web profesional?',
         ),
         resposta: L(
-          'Landing pages personalizadas começam a partir de R$ 450. O pacote Landing + Painel (a partir de R$ 890) inclui um painel 100% customizável — não é pacote travado; o valor muda conforme as funcionalidades e a complexidade. Sites institucionais começam a partir de R$ 1.990. E-commerce e integrações são orçados conforme escopo.',
-          'Custom landing pages start from R$ 450. The Landing + Panel package (from R$ 890) includes a fully customizable panel — not a locked feature set; price scales with features and complexity. Business websites start from R$ 1,990. E-commerce and integrations are quoted by scope.',
-          'Las landing pages personalizadas comienzan desde R$ 450. El paquete Landing + Panel (desde R$ 890) incluye un panel 100% personalizable — no es un paquete cerrado; el valor cambia según funciones y complejidad. Los sitios institucionales comienzan desde R$ 1.990. E-commerce e integraciones se presupuestan según alcance.',
+          'Landing pages personalizadas começam a partir de R$ 450. O pacote Landing + Painel começa a partir de R$ 890 (painel base). Com regras de negócio — ex.: pet/creche com reservas — a partir de R$ 1.190. O painel é 100% customizável; o valor muda com a complexidade. Sites institucionais começam a partir de R$ 1.990. E-commerce e integrações são orçados conforme escopo.',
+          'Custom landing pages start from R$ 450. The Landing + Panel package starts from R$ 890 (base panel). With business rules — e.g. pet/daycare with bookings — from R$ 1,190. The panel is fully customizable; price scales with complexity. Business websites start from R$ 1,990. E-commerce and integrations are quoted by scope.',
+          'Las landing pages personalizadas comienzan desde R$ 450. El paquete Landing + Panel comienza desde R$ 890 (panel base). Con reglas de negocio — ej.: pet/guardería con reservas — desde R$ 1.190. El panel es 100% personalizable; el valor cambia con la complejidad. Los sitios institucionales comienzan desde R$ 1.990. E-commerce e integraciones se presupuestan según alcance.',
         ),
       },
       {
