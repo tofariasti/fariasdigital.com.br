@@ -261,6 +261,21 @@ export const portfolioLocalized = {
 export const demosLocalized = [
     {
       titulo: L(
+        'Pátio Canino — Hospedagem',
+        'Pátio Canino — Dog Boarding',
+        'Pátio Canino — Hospedaje',
+      ),
+      segmento: segmentLocalized.servicos,
+      url: 'https://tofariasti.github.io/landing-patio-canino/',
+      badge: L('Landing + Admin', 'Landing + Admin', 'Landing + Admin'),
+      descricao: L(
+        'Landing de conversão (simulador de estadia, livre de gaiolas, WhatsApp) + painel demo para tutores, reservas e serviços — sem backend.',
+        'Conversion landing (stay simulator, cage-free boarding, WhatsApp) + demo panel for tutors, bookings and services — no backend.',
+        'Landing de conversión (simulador de estadía, sin jaulas, WhatsApp) + panel demo para tutores, reservas y servicios — sin backend.',
+      ),
+    },
+    {
+      titulo: L(
         'Pet shop',
         'Pet shop',
         'Pet shop',
