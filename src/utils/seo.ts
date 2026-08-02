@@ -53,7 +53,7 @@ function businessEntity(locale: Locale) {
     description: seo.descriptionDefault,
     email: config.email,
     telephone: '+55-51-99121-3724',
-    priceRange: 'R$300-R$5000',
+    priceRange: 'R$450-R$5000',
     address: {
       '@type': 'PostalAddress',
       addressLocality: seo.local.cidade,

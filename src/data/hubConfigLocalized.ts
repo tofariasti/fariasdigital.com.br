@@ -116,14 +116,14 @@ Para agilizar:
 ¡Gracias!`,
     ),
     pacoteLanding: L(
-      'Olá! Tenho interesse em uma landing page personalizada (a partir de R$ 300). Gostaria de um orçamento.',
-      'Hi! I am interested in a custom landing page (from R$ 300). I would like a quote.',
-      '¡Hola! Me interesa una landing page personalizada (desde R$ 300). Me gustaría un presupuesto.',
+      'Olá! Tenho interesse em uma landing page personalizada (a partir de R$ 450). Gostaria de um orçamento.',
+      'Hi! I am interested in a custom landing page (from R$ 450). I would like a quote.',
+      '¡Hola! Me interesa una landing page personalizada (desde R$ 450). Me gustaría un presupuesto.',
     ),
     pacoteLandingAdmin: L(
-      'Olá! Tenho interesse no pacote Landing + Painel (a partir de R$ 590) — quero atualizar textos e preços sozinha. Gostaria de um orçamento.',
-      'Hi! I am interested in the Landing + Panel package (from R$ 590) — I want to update copy and prices myself. I would like a quote.',
-      '¡Hola! Me interesa el paquete Landing + Panel (desde R$ 590) — quiero actualizar textos y precios sola. Me gustaría un presupuesto.',
+      'Olá! Tenho interesse no pacote Landing + Painel (a partir de R$ 890) — painel customizável sob medida. Gostaria de um orçamento.',
+      'Hi! I am interested in the Landing + Panel package (from R$ 890) — a custom-built panel. I would like a quote.',
+      '¡Hola! Me interesa el paquete Landing + Panel (desde R$ 890) — panel a medida. Me gustaría un presupuesto.',
     ),
     pacotePresenca: L(
       'Olá! Tenho interesse no pacote Site Institucional (site completo com WhatsApp). Gostaria de um orçamento.',
@@ -286,9 +286,9 @@ Para agilizar:
           'Landing Page y Creación de Sitios | Farias Digital',
         ),
         description: L(
-          'Landing pages a partir de R$ 300 · Sites institucionais a partir de R$ 1.490. E-commerce, automação WhatsApp e SEO básico.',
-          'Landing pages from R$ 300 · Business websites from R$ 1,490. E-commerce, WhatsApp automation and basic SEO.',
-          'Landing pages desde R$ 300 · Sitios institucionales desde R$ 1.490. E-commerce, automatización WhatsApp y SEO básico.',
+          'Landing pages a partir de R$ 450 · Sites institucionais a partir de R$ 1.990. E-commerce, automação WhatsApp e SEO básico.',
+          'Landing pages from R$ 450 · Business websites from R$ 1,990. E-commerce, WhatsApp automation and basic SEO.',
+          'Landing pages desde R$ 450 · Sitios institucionales desde R$ 1.990. E-commerce, automatización WhatsApp y SEO básico.',
         ),
       },
       drone: {
@@ -334,9 +334,9 @@ Para agilizar:
           'Portafolio de Sitios y Landing Pages | Farias Digital',
         ),
         description: L(
-          'Exemplos de landing pages por segmento e projetos em produção. Personalização a partir de R$ 300.',
-          'Landing page examples by industry and live projects. Customization from R$ 300.',
-          'Ejemplos de landing pages por segmento y proyectos en producción. Personalización desde R$ 300.',
+          'Exemplos de landing pages por segmento e projetos em produção. Personalização a partir de R$ 450.',
+          'Landing page examples by industry and live projects. Customization from R$ 450.',
+          'Ejemplos de landing pages por segmento y proyectos en producción. Personalización desde R$ 450.',
         ),
       },
       faq: {
@@ -346,9 +346,9 @@ Para agilizar:
           'Preguntas Frecuentes — Sitios y Landing Pages | Farias Digital',
         ),
         description: L(
-          'Dúvidas sobre preços, prazos, SEO, domínio e hospedagem. Landing pages a partir de R$ 300.',
-          'Questions about pricing, timelines, SEO, domain and hosting. Landing pages from R$ 300.',
-          'Dudas sobre precios, plazos, SEO, dominio y hosting. Landing pages desde R$ 300.',
+          'Dúvidas sobre preços, prazos, SEO, domínio e hospedagem. Landing pages a partir de R$ 450.',
+          'Questions about pricing, timelines, SEO, domain and hosting. Landing pages from R$ 450.',
+          'Dudas sobre precios, plazos, SEO, dominio y hosting. Landing pages desde R$ 450.',
         ),
       },
       'por-que-site': {
@@ -372,9 +372,9 @@ Para agilizar:
           '¿Cuánto cuesta un sitio web profesional?',
         ),
         resposta: L(
-          'Landing pages personalizadas começam a partir de R$ 300. O pacote Landing + Painel (a partir de R$ 590) inclui painel no celular para você editar textos, preços e fotos sozinha. Sites institucionais começam a partir de R$ 1.490. E-commerce e integrações são orçados conforme escopo.',
-          'Custom landing pages start from R$ 300. The Landing + Panel package (from R$ 590) includes a mobile panel so you can edit copy, prices and photos yourself. Business websites start from R$ 1,490. E-commerce and integrations are quoted by scope.',
-          'Las landing pages personalizadas comienzan desde R$ 300. El paquete Landing + Panel (desde R$ 590) incluye panel en el celular para editar textos, precios y fotos sola. Los sitios institucionales comienzan desde R$ 1.490. E-commerce e integraciones se presupuestan según alcance.',
+          'Landing pages personalizadas começam a partir de R$ 450. O pacote Landing + Painel (a partir de R$ 890) inclui um painel 100% customizável — não é pacote travado; o valor muda conforme as funcionalidades e a complexidade. Sites institucionais começam a partir de R$ 1.990. E-commerce e integrações são orçados conforme escopo.',
+          'Custom landing pages start from R$ 450. The Landing + Panel package (from R$ 890) includes a fully customizable panel — not a locked feature set; price scales with features and complexity. Business websites start from R$ 1,990. E-commerce and integrations are quoted by scope.',
+          'Las landing pages personalizadas comienzan desde R$ 450. El paquete Landing + Panel (desde R$ 890) incluye un panel 100% personalizable — no es un paquete cerrado; el valor cambia según funciones y complejidad. Los sitios institucionales comienzan desde R$ 1.990. E-commerce e integraciones se presupuestan según alcance.',
         ),
       },
       {
@@ -384,9 +384,9 @@ Para agilizar:
           '¿Puedo actualizar el sitio sola, como en Instagram?',
         ),
         resposta: L(
-          'Sim — no pacote Landing + Painel você edita do celular o que muda com frequência: textos, preços, fotos, horário e WhatsApp. Na landing simples (R$ 300), alterações posteriores são via suporte. Instagram continua ideal para posts do dia a dia; o site concentra o que vende e aparece no Google.',
-          'Yes — with the Landing + Panel package you edit from your phone what changes often: copy, prices, photos, hours and WhatsApp. On the simple landing (R$ 300), later changes go through support. Instagram remains ideal for daily posts; the website holds what sells and ranks on Google.',
-          'Sí — en el paquete Landing + Panel edita desde el celular lo que cambia seguido: textos, precios, fotos, horario y WhatsApp. En la landing simple (R$ 300), los cambios posteriores son vía soporte. Instagram sigue ideal para publicaciones diarias; el sitio concentra lo que vende y aparece en Google.',
+          'Sim — no pacote Landing + Painel você edita do celular o que combinarmos no escopo (textos, preços, fotos, horário, WhatsApp e o que mais fizer sentido para o seu negócio). O painel é sob medida, não um conjunto fixo de funções. Na landing simples (R$ 450), alterações posteriores são via suporte. Instagram continua ideal para posts do dia a dia; o site concentra o que vende e aparece no Google.',
+          'Yes — with Landing + Panel you edit from your phone whatever we agree in scope (copy, prices, photos, hours, WhatsApp and anything else that fits your business). The panel is custom-built, not a fixed feature set. On the simple landing (R$ 450), later changes go through support. Instagram remains ideal for daily posts; the website holds what sells and ranks on Google.',
+          'Sí — en Landing + Panel edita desde el celular lo que acordemos en el alcance (textos, precios, fotos, horario, WhatsApp y lo que encaje en su negocio). El panel es a medida, no un set fijo. En la landing simple (R$ 450), los cambios posteriores son vía soporte. Instagram sigue ideal para publicaciones diarias; el sitio concentra lo que vende y aparece en Google.',
         ),
       },
       {
@@ -396,9 +396,9 @@ Para agilizar:
           '¿Cuál es la diferencia entre landing page y sitio institucional?',
         ),
         resposta: L(
-          'A landing page (a partir de R$ 300) é uma página única focada em conversão. O pacote Landing + Painel (a partir de R$ 590) acrescenta autonomia para você editar conteúdo. O site institucional (a partir de R$ 1.490) tem mais seções (serviços, sobre, contato, localização) para quem precisa de presença completa.',
-          'A landing page (from R$ 300) is a single conversion-focused page. The Landing + Panel package (from R$ 590) adds autonomy to edit content yourself. A business website (from R$ 1,490) has more sections (services, about, contact, location) for businesses that need a full presence.',
-          'La landing page (desde R$ 300) es una página única enfocada en conversión. El paquete Landing + Panel (desde R$ 590) añade autonomía para editar contenido. El sitio institucional (desde R$ 1.490) tiene más secciones (servicios, sobre, contacto, ubicación) para quien necesita presencia completa.',
+          'A landing page (a partir de R$ 450) é uma página única focada em conversão. O pacote Landing + Painel (a partir de R$ 890) acrescenta um painel 100% customizável — o valor sobe conforme as funcionalidades. O site institucional (a partir de R$ 1.990) tem mais seções (serviços, sobre, contato, localização) para quem precisa de presença completa.',
+          'A landing page (from R$ 450) is a single conversion-focused page. The Landing + Panel package (from R$ 890) adds a fully customizable panel — price rises with the features you need. A business website (from R$ 1,990) has more sections (services, about, contact, location) for businesses that need a full presence.',
+          'La landing page (desde R$ 450) es una página única enfocada en conversión. El paquete Landing + Panel (desde R$ 890) añade un panel 100% personalizable — el valor sube según las funciones. El sitio institucional (desde R$ 1.990) tiene más secciones (servicios, sobre, contacto, ubicación) para quien necesita presencia completa.',
         ),
       },
       {

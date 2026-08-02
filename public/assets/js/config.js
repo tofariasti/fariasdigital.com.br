@@ -50,8 +50,8 @@ Para agilizar:
 • Data ou período:
 
 Obrigado!`,
-    pacoteLanding: 'Olá! Tenho interesse em uma landing page personalizada (a partir de R$ 300). Gostaria de um orçamento.',
-    pacoteLandingAdmin: 'Olá! Tenho interesse no pacote Landing + Painel (a partir de R$ 590) — quero atualizar textos e preços sozinha. Gostaria de um orçamento.',
+    pacoteLanding: 'Olá! Tenho interesse em uma landing page personalizada (a partir de R$ 450). Gostaria de um orçamento.',
+    pacoteLandingAdmin: 'Olá! Tenho interesse no pacote Landing + Painel (a partir de R$ 890) — painel customizável sob medida. Gostaria de um orçamento.',
     pacotePresenca: 'Olá! Tenho interesse no pacote Site Institucional (site completo com WhatsApp). Gostaria de um orçamento.',
     pacoteLoja: 'Olá! Tenho interesse no pacote Loja Essencial (e-commerce / catálogo online). Gostaria de um orçamento.',
     pacoteAutomacao: 'Olá! Tenho interesse em automação de WhatsApp (formulários, mensagens automáticas ou integração). Gostaria de um orçamento.',
@@ -68,8 +68,8 @@ Obrigado!`,
   },
 
   pricingLanding: {
-    preco: 'a partir de R$ 300,00',
-    precoCurto: 'R$ 300',
+    preco: 'a partir de R$ 450,00',
+    precoCurto: 'R$ 450',
     titulo: 'Landing pages personalizadas',
     lead: 'Escolha o modelo do seu segmento — com ou sem painel para você atualizar sozinha.',
   },
@@ -78,7 +78,7 @@ Obrigado!`,
     {
       id: 'landing-page',
       nome: 'Landing Page',
-      preco: 'a partir de R$ 300',
+      preco: 'a partir de R$ 450',
       publico: 'Negócios locais que querem presença rápida no Google',
       inclui: [
         '1 página focada em conversão (modelo do seu segmento)',
@@ -93,15 +93,16 @@ Obrigado!`,
     {
       id: 'landing-painel',
       nome: 'Landing + Painel',
-      preco: 'a partir de R$ 590',
-      publico: 'Quem quer autonomia para atualizar preços, textos e fotos — como no Instagram',
+      preco: 'a partir de R$ 890',
+      publico: 'Quem quer autonomia real — painel 100% sob medida, não um pacote travado',
       inclui: [
         'Tudo da Landing Page personalizada',
-        'Painel simples no celular: textos, preços, fotos, horário e WhatsApp',
-        'Você edita sozinha o que muda toda semana — sem chamar o desenvolvedor',
+        'Painel 100% customizável no celular — montado para o seu negócio',
+        'Base típica: textos, preços, fotos, horário e WhatsApp (pode incluir mais)',
+        'Funcionalidades extras sob consulta — o valor muda com a complexidade',
         'Treinamento rápido na entrega + suporte humano quando precisar',
       ],
-      naoInclui: 'Domínio e hospedagem (podem ser orçados à parte)',
+      naoInclui: 'Domínio e hospedagem (orçáveis à parte). Recursos avançados alteram o valor conforme escopo.',
       mensagemWhatsApp: 'pacoteLandingAdmin',
       destaque: true,
       badge: 'Recomendado',
@@ -109,7 +110,7 @@ Obrigado!`,
     {
       id: 'site-institucional',
       nome: 'Site Institucional',
-      preco: 'a partir de R$ 1.490',
+      preco: 'a partir de R$ 1.990',
       publico: 'Comércio local, clínicas, prestadores de serviço',
       inclui: [
         'Site com múltiplas seções (serviços, sobre, contato, localização)',
@@ -124,7 +125,7 @@ Obrigado!`,
     {
       id: 'loja-essencial',
       nome: 'Loja Essencial',
-      preco: 'a partir de R$ 2.990',
+      preco: 'a partir de R$ 3.890',
       publico: 'E-commerce e varejo local',
       inclui: [
         'Loja online / catálogo com até 50 produtos',
@@ -172,7 +173,7 @@ Obrigado!`,
     lead: 'Referências de layout, código e experiência no celular — para você avaliar a qualidade antes de pedir orçamento.',
     grupoDemos: {
       titulo: 'Landing pages por segmento',
-      lead: 'Modelos prontos para você ver layout e responsividade. Ao contratar, personalizo com a identidade da sua empresa — a partir de R$ 300,00.',
+      lead: 'Modelos prontos para você ver layout e responsividade. Ao contratar, personalizo com a identidade da sua empresa — a partir de R$ 450,00.',
     },
     badgeDemo: 'Pronto para personalizar',
   },
@@ -490,7 +491,7 @@ Obrigado!`,
   intentItems: [
     {
       titulo: 'Atualizar sozinha',
-      descricao: 'Painel simples para mudar preços, textos e fotos — sem depender do desenvolvedor.',
+      descricao: 'Painel sob medida para o seu negócio — não é pacote com funções travadas.',
       href: '/pacotes/#pacotes',
     },
     {
@@ -526,28 +527,28 @@ Obrigado!`,
       id: 'landing-painel',
       titulo: 'Landing + Painel',
       descricao: 'Site que você mesma atualiza — preços, textos e fotos direto do celular.',
-      preco: 'a partir de R$ 590',
+      preco: 'a partir de R$ 890',
       href: '/pacotes/#pacotes',
     },
     {
       id: 'landing',
       titulo: 'Landing Pages',
       descricao: 'Páginas estratégicas para captar leads e vender mais pelo WhatsApp.',
-      preco: 'a partir de R$ 300',
+      preco: 'a partir de R$ 450',
       href: '/portfolio/',
     },
     {
       id: 'institucional',
       titulo: 'Sites institucionais',
       descricao: 'Presença profissional com múltiplas seções, SEO e credibilidade.',
-      preco: 'a partir de R$ 1.490',
+      preco: 'a partir de R$ 1.990',
       href: '/pacotes/#pacotes',
     },
     {
       id: 'ecommerce',
       titulo: 'E-commerce',
       descricao: 'Loja virtual, catálogo de produtos e pedidos pelo WhatsApp ou pagamento online.',
-      preco: 'a partir de R$ 2.990',
+      preco: 'a partir de R$ 3.890',
       href: '/pacotes/#pacotes',
     },
     {
@@ -646,11 +647,11 @@ Obrigado!`,
     paginas: {
       home: {
         title: 'Farias Digital | Landing Pages e Sites Profissionais',
-        description: 'Landing pages a partir de R$ 300, sites institucionais, e-commerce e automação WhatsApp. MEI · Nota Fiscal · Orçamento grátis.',
+        description: 'Landing pages a partir de R$ 450, sites institucionais, e-commerce e automação WhatsApp. MEI · Nota Fiscal · Orçamento grátis.',
       },
       pacotes: {
         title: 'Landing Page e Criação de Sites | Farias Digital',
-        description: 'Landing pages a partir de R$ 300 · Sites institucionais a partir de R$ 1.490. E-commerce, automação WhatsApp e SEO básico.',
+        description: 'Landing pages a partir de R$ 450 · Sites institucionais a partir de R$ 1.990. E-commerce, automação WhatsApp e SEO básico.',
       },
       drone: {
         title: 'Drone para Imóveis e Empresas | Farias Digital',
@@ -662,11 +663,11 @@ Obrigado!`,
       },
       portfolio: {
         title: 'Portfólio de Sites e Landing Pages | Farias Digital',
-        description: 'Exemplos de landing pages por segmento e projetos em produção. Personalização a partir de R$ 300.',
+        description: 'Exemplos de landing pages por segmento e projetos em produção. Personalização a partir de R$ 450.',
       },
       faq: {
         title: 'Perguntas Frequentes — Sites e Landing Pages | Farias Digital',
-        description: 'Dúvidas sobre preços, prazos, SEO, domínio e hospedagem. Landing pages a partir de R$ 300.',
+        description: 'Dúvidas sobre preços, prazos, SEO, domínio e hospedagem. Landing pages a partir de R$ 450.',
       },
       'por-que-site': {
         title: 'Por que ter site além do Instagram | Farias Digital',
@@ -676,11 +677,11 @@ Obrigado!`,
     faq: [
       {
         pergunta: 'Quanto custa um site profissional?',
-        resposta: 'Landing pages personalizadas começam a partir de R$ 300,00 — ideal para presença rápida no Google com WhatsApp integrado. Sites institucionais com múltiplas seções começam a partir de R$ 1.490. E-commerce e projetos com integrações são orçados conforme escopo.',
+        resposta: 'Landing pages personalizadas começam a partir de R$ 450,00 — ideal para presença rápida no Google com WhatsApp integrado. Sites institucionais com múltiplas seções começam a partir de R$ 1.990. E-commerce e projetos com integrações são orçados conforme escopo.',
       },
       {
         pergunta: 'Qual a diferença entre landing page e site institucional?',
-        resposta: 'A landing page (a partir de R$ 300) é uma página única focada em conversão — escolho um modelo do seu segmento e personalizo com sua marca. O site institucional (a partir de R$ 1.490) tem mais seções (serviços, sobre, contato, localização) e transmite mais credibilidade para negócios que precisam de presença completa.',
+        resposta: 'A landing page (a partir de R$ 450) é uma página única focada em conversão — escolho um modelo do seu segmento e personalizo com sua marca. O site institucional (a partir de R$ 1.990) tem mais seções (serviços, sobre, contato, localização) e transmite mais credibilidade para negócios que precisam de presença completa.',
       },
       {
         pergunta: 'A Farias Digital emite nota fiscal?',

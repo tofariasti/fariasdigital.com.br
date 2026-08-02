@@ -321,7 +321,7 @@ Story Instagram vertical 9:16, slide de abertura.
 Fundo navy #070b12 com grid sutil tech.
 Logo Farias Digital pequeno topo esquerdo (anexo).
 Headline grande branco: "[HEADLINE]"
-Subheadline cyan: "a partir de R$ 300"
+Subheadline cyan: "a partir de R$ 450"
 Ícone ilustrativo minimalista do segmento [ÍCONE] à direita ou centro inferior.
 Rodapé discreto cinza: "fariasdigital.com.br"
 Estilo editorial SaaS B2B, sem foto de pessoa, sem mockup de celular.
@@ -345,7 +345,7 @@ Estilo editorial SaaS B2B, sem foto de pessoa, sem mockup de celular.
 **Orçamento — variação story 1 (pacotes):**
 
 ```
-Story 9:16. Headline: "Landing a partir de R$ 300". Sub cyan: "Site institucional R$ 1.490".
+Story 9:16. Headline: "Landing a partir de R$ 450". Sub cyan: "Site institucional R$ 1.990".
 Três linhas com bullet cyan: "Modelo do seu segmento" / "WhatsApp integrado" / "40+ demos".
 Logo FD topo. [bloco Flat] [negative Flat]
 ```
@@ -424,7 +424,7 @@ Grid 3x3 ícones minimalistas cyan com glow suave (saúde, auto, loja, turismo, 
 **Slide 3**
 ```
 Slide 3 de 5, mesma série Neon [anexo].
-Número grande gradiente cyan→roxo: "R$ 300"
+Número grande gradiente cyan→roxo: "R$ 450"
 Texto branco: "Landing page personalizada"
 Texto menor cyan: "Modelo do seu segmento"
 [bloco Neon] [negative Neon]
@@ -470,7 +470,7 @@ Grid 3x3 de ícones minimalistas cyan (saúde, auto, loja, turismo, pet, etc.).
 **Slide 3**
 ```
 Slide 3 de 5, mesma série [anexo].
-Número grande cyan: "R$ 300"
+Número grande cyan: "R$ 450"
 Texto branco: "Landing page personalizada"
 Texto menor: "Modelo do seu segmento"
 [bloco Flat] [negative Flat]
@@ -647,7 +647,7 @@ Silhueta montanhas cyan + wireframe mobile. Texto: "Animações da landing". [bl
 
 ```
 Story 9:16. Título: "Landing ou site institucional?"
-Dois blocos lado a lado: esquerda cyan "Landing R$ 300", direita violeta "Institucional R$ 1.490".
+Dois blocos lado a lado: esquerda cyan "Landing R$ 450", direita violeta "Institucional R$ 1.990".
 Área inferior vazia para sticker quiz Instagram. [bloco Flat] [negative Flat]
 ```
 
@@ -711,7 +711,7 @@ Sub: "Nutricionista" ou "Ótica Visão Clara". Wireframe mobile. [bloco Flat] [n
 ```
 Story 9:16. Fundo navy com borda cyan sutil.
 Headline grande: "Orçamento em 24h"
-Sub: "Landing a partir de R$ 300"
+Sub: "Landing a partir de R$ 450"
 Botão verde: "Chamar no WhatsApp"
 Urgência profissional, sem countdown falso. [bloco Flat] [negative Flat]
 ```

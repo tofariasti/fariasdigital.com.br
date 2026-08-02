@@ -105,15 +105,15 @@ export function HeroHome({
               <div className="hero-pricing-tags">
                 <span className="hero-pricing-tag">
                   <span className="hero-pricing-tag__label">{t(uiCopy.hero.landingTag)}</span>
-                  <span className="hero-pricing-tag__price">{t(uiCopy.hero.from300)}</span>
+                  <span className="hero-pricing-tag__price">{t(uiCopy.hero.from450)}</span>
                 </span>
                 <span className="hero-pricing-tag hero-pricing-tag--accent">
                   <span className="hero-pricing-tag__label">{t(uiCopy.hero.panelTag)}</span>
-                  <span className="hero-pricing-tag__price">{t(uiCopy.hero.from590)}</span>
+                  <span className="hero-pricing-tag__price">{t(uiCopy.hero.from890)}</span>
                 </span>
                 <span className="hero-pricing-tag">
                   <span className="hero-pricing-tag__label">{t(uiCopy.hero.institutionalTag)}</span>
-                  <span className="hero-pricing-tag__price">{t(uiCopy.hero.from1490)}</span>
+                  <span className="hero-pricing-tag__price">{t(uiCopy.hero.from1990)}</span>
                 </span>
                 <span className="hero-pricing-tag hero-pricing-tag--app">
                   <span className="hero-pricing-tag__label">{t(uiCopy.hero.appTag)}</span>

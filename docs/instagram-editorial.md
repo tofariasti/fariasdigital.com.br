@@ -12,7 +12,7 @@ Plano para replicar o agrupamento do portfólio em **destaques** (Stories perman
 
 ```
 Sites e landing pages para PMEs
-40+ modelos por segmento · a partir de R$ 300
+40+ modelos por segmento · a partir de R$ 450
 Porto Alegre e todo o Brasil · NF
 👇 Veja o modelo do seu negócio
 ```
@@ -45,7 +45,7 @@ Repita o mesmo roteiro em todos os segmentos:
 
 | Story | Conteúdo | Dica |
 |-------|----------|------|
-| 1 | Gancho | *"Site para [segmento] — a partir de R$ 300"* + logo Farias Digital |
+| 1 | Gancho | *"Site para [segmento] — a partir de R$ 450"* + logo Farias Digital |
 | 2 | Demo principal | Gravação de tela no celular (390px), scroll do hero até CTA WhatsApp |
 | 3 | Demo secundária | Outro modelo do mesmo segmento (ou badge **Landing + Admin**) |
 | 4 | Demo terciária | Terceiro exemplo ou detalhe (formulário, dark mode, animação) |
@@ -65,8 +65,8 @@ Segmentos do site em `segmentsLocalized.ts`. Abaixo: demos **prioritários** par
 
 | Story | Conteúdo | Link |
 |-------|----------|------|
-| Pacote landing | A partir de R$ 300 · modelo do seu segmento | [WA pacote landing](https://wa.me/5551991213724?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20landing%20page%20personalizada%20(a%20partir%20de%20R%24%20300).%20Gostaria%20de%20um%20or%C3%A7amento.) |
-| Site institucional | A partir de R$ 1.490 | [WA site institucional](https://wa.me/5551991213724?text=Ol%C3%A1!%20Tenho%20interesse%20no%20pacote%20Site%20Institucional%20(site%20completo%20com%20WhatsApp).%20Gostaria%20de%20um%20or%C3%A7amento.) |
+| Pacote landing | A partir de R$ 450 · modelo do seu segmento | [WA pacote landing](https://wa.me/5551991213724?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20landing%20page%20personalizada%20(a%20partir%20de%20R%24%20300).%20Gostaria%20de%20um%20or%C3%A7amento.) |
+| Site institucional | A partir de R$ 1.990 | [WA site institucional](https://wa.me/5551991213724?text=Ol%C3%A1!%20Tenho%20interesse%20no%20pacote%20Site%20Institucional%20(site%20completo%20com%20WhatsApp).%20Gostaria%20de%20um%20or%C3%A7amento.) |
 | Portfólio | 40+ modelos | https://fariasdigital.com.br/portfolio/ |
 | Geral | Conversa sem compromisso | [WA geral](https://wa.me/5551991213724?text=Ol%C3%A1!%20Vi%20o%20site%20fariasdigital.com.br%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.) |
 
@@ -298,7 +298,7 @@ Site para [SEGMENTO] — modelo pronto para personalizar ✨
 
 ✅ Layout profissional no celular
 ✅ Botão WhatsApp integrado
-✅ A partir de R$ 300
+✅ A partir de R$ 450
 
 Quer um assim? Link na bio ou chama no direct.
 .
@@ -324,7 +324,7 @@ Slide 5: 40+ modelos no portfólio — link na bio
 
 - [ ] Gravar em **390px** (iPhone/Android) ou DevTools mobile
 - [ ] Mostrar **scroll** e **botão WhatsApp** em todo Reel de demo
-- [ ] Legenda com segmento + preço “a partir de R$ 300”
+- [ ] Legenda com segmento + preço “a partir de R$ 450”
 - [ ] Arquivar story no destaque correto no mesmo dia
 - [ ] Etiqueta no WhatsApp Business: `instagram`, `segmento-[nome]`, `demo-[titulo]`
 - [ ] UTM opcional no link da bio: `?utm_source=instagram&utm_medium=bio`

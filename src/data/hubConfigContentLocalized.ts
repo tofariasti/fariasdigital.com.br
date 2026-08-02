@@ -3,8 +3,8 @@ import { segmentLocalized } from './segmentsLocalized'
 
 
 export const pricingLandingLocalized = {
-  preco: L('a partir de R$ 300,00', 'from R$ 300', 'desde R$ 300'),
-  precoCurto: L('R$ 300', 'R$ 300', 'R$ 300'),
+  preco: L('a partir de R$ 450,00', 'from R$ 450', 'desde R$ 450'),
+  precoCurto: L('R$ 450', 'R$ 450', 'R$ 450'),
   titulo: L('Landing pages personalizadas', 'Custom landing pages', 'Landing pages personalizadas'),
   lead: L(
     'Escolha o modelo do seu segmento — com ou sem painel para você atualizar sozinha.',
@@ -17,7 +17,7 @@ export const pacotesWebLocalized = [
   {
     id: 'landing-page',
     nome: L('Landing Page', 'Landing Page', 'Landing Page'),
-    preco: L('a partir de R$ 300', 'from R$ 300', 'desde R$ 300'),
+    preco: L('a partir de R$ 450', 'from R$ 450', 'desde R$ 450'),
     publico: L(
       'Negócios locais que querem presença rápida no Google',
       'Local businesses that want quick Google visibility',
@@ -37,28 +37,29 @@ export const pacotesWebLocalized = [
   {
     id: 'landing-painel',
     nome: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'),
-    preco: L('a partir de R$ 590', 'from R$ 590', 'desde R$ 590'),
+    preco: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'),
     publico: L(
-      'Quem quer autonomia para atualizar preços, textos e fotos — como no Instagram',
-      'Those who want autonomy to update prices, copy and photos — like on Instagram',
-      'Quien quiere autonomía para actualizar precios, textos y fotos — como en Instagram',
+      'Quem quer autonomia real — painel 100% sob medida, não um pacote travado',
+      'Those who want real autonomy — a fully custom panel, not a locked package',
+      'Quien quiere autonomía real — panel 100% a medida, no un paquete cerrado',
     ),
     inclui: [
       L('Tudo da Landing Page personalizada', 'Everything in the custom Landing Page', 'Todo de la Landing Page personalizada'),
-      L('Painel simples no celular: textos, preços, fotos, horário e WhatsApp', 'Simple mobile panel: copy, prices, photos, hours and WhatsApp', 'Panel simple en el celular: textos, precios, fotos, horario y WhatsApp'),
-      L('Você edita sozinha o que muda toda semana — sem chamar o desenvolvedor', 'You edit weekly changes yourself — without calling the developer', 'Usted edita sola lo que cambia cada semana — sin llamar al desarrollador'),
+      L('Painel 100% customizável no celular — montado para o seu negócio', 'Fully customizable mobile panel — built for your business', 'Panel 100% personalizable en el celular — montado para su negocio'),
+      L('Base típica: textos, preços, fotos, horário e WhatsApp (pode incluir mais)', 'Typical base: copy, prices, photos, hours and WhatsApp (can include more)', 'Base típica: textos, precios, fotos, horario y WhatsApp (puede incluir más)'),
+      L('Funcionalidades extras sob consulta — o valor muda com a complexidade', 'Extra features on request — price scales with complexity', 'Funciones extra bajo consulta — el valor cambia con la complejidad'),
       L('Treinamento rápido na entrega + suporte humano quando precisar', 'Quick training at handoff + human support when needed', 'Capacitación rápida en la entrega + soporte humano cuando lo necesite'),
     ],
-    naoInclui: L('Domínio e hospedagem (podem ser orçados à parte)', 'Domain and hosting (can be quoted separately)', 'Dominio y hosting (se pueden presupuestar aparte)'),
+    naoInclui: L('Domínio e hospedagem (orçáveis à parte). Recursos avançados (ex.: reservas, ERP, pagamentos) alteram o valor conforme escopo.', 'Domain and hosting (quoted separately). Advanced features (e.g. bookings, ERP, payments) change the price by scope.', 'Dominio y hosting (aparte). Funciones avanzadas (ej.: reservas, ERP, pagos) cambian el valor según el alcance.'),
     mensagemWhatsApp: 'pacoteLandingAdmin',
     destaque: true,
     badge: L('Recomendado', 'Recommended', 'Recomendado'),
-    valorPercebido: L('Autonomia de Instagram + site que vende no Google', 'Instagram-level autonomy + a website that sells on Google', 'Autonomía de Instagram + sitio que vende en Google'),
+    valorPercebido: L('Painel sob medida + site que vende no Google', 'Custom panel + a website that sells on Google', 'Panel a medida + sitio que vende en Google'),
   },
   {
     id: 'site-institucional',
     nome: L('Site Institucional', 'Business Website', 'Sitio Institucional'),
-    preco: L('a partir de R$ 1.490', 'from R$ 1,490', 'desde R$ 1.490'),
+    preco: L('a partir de R$ 1.990', 'from R$ 1,990', 'desde R$ 1.990'),
     valorPercebido: L('Presença profissional que vende por anos', 'Professional presence that sells for years', 'Presencia profesional que vende por años'),
     publico: L('Comércio local, clínicas, prestadores de serviço', 'Local retail, clinics, service providers', 'Comercio local, clínicas, prestadores de servicio'),
     inclui: [
@@ -74,7 +75,7 @@ export const pacotesWebLocalized = [
   {
     id: 'loja-essencial',
     nome: L('Loja Essencial', 'Essential Store', 'Tienda Esencial'),
-    preco: L('a partir de R$ 2.990', 'from R$ 2,990', 'desde R$ 2.990'),
+    preco: L('a partir de R$ 3.890', 'from R$ 3,890', 'desde R$ 3.890'),
     valorPercebido: L('Catálogo online que vende 24h por dia', 'Online catalog that sells 24/7', 'Catálogo online que vende 24h al día'),
     publico: L('E-commerce e varejo local', 'E-commerce and local retail', 'E-commerce y retail local'),
     inclui: [
@@ -242,17 +243,17 @@ export const portfolioLocalized = {
   grupoDemos: {
     titulo: L('Todos os modelos por segmento', 'All templates by industry', 'Todos los modelos por segmento'),
     lead: L(
-      'Modelos prontos para avaliar layout e responsividade. Os com badge Landing + Admin incluem painel demo — é a prova do pacote Landing + Painel (a partir de R$ 590).',
-      'Ready-made templates to preview layout and responsiveness. Those with the Landing + Admin badge include a demo panel — proof of the Landing + Panel package (from R$ 590).',
-      'Modelos listos para evaluar layout y responsividad. Los con badge Landing + Admin incluyen panel demo — prueba del paquete Landing + Panel (desde R$ 590).',
+      'Modelos prontos para avaliar layout e responsividade. Os com badge Landing + Admin mostram um painel demo — a base do pacote Landing + Painel (a partir de R$ 890), que é customizável sob medida.',
+      'Ready-made templates to preview layout and responsiveness. Those with the Landing + Admin badge show a demo panel — the base of the Landing + Panel package (from R$ 890), which is fully custom-built.',
+      'Modelos listos para evaluar layout y responsividad. Los con badge Landing + Admin muestran un panel demo — la base del paquete Landing + Panel (desde R$ 890), que es personalizable a medida.',
     ),
   },
   grupoPainel: {
     titulo: L('Landing + Painel em ação', 'Landing + Panel in action', 'Landing + Panel en acción'),
     lead: L(
-      'Abra o site e teste o painel no celular — preços, textos e fotos editáveis sem depender de desenvolvedor. É o que você leva no pacote a partir de R$ 590.',
-      'Open the site and try the panel on your phone — editable prices, copy and photos without relying on a developer. That is what you get in the package from R$ 590.',
-      'Abra el sitio y pruebe el panel en el celular — precios, textos y fotos editables sin depender del desarrollador. Es lo que incluye el paquete desde R$ 590.',
+      'Abra o site e teste um painel demo no celular. No projeto real o painel é 100% customizável — não é pacote travado; o valor a partir de R$ 890 sobe conforme as funcionalidades e a complexidade.',
+      'Open the site and try a demo panel on your phone. In a real project the panel is fully customizable — not a locked package; pricing from R$ 890 scales with features and complexity.',
+      'Abra el sitio y pruebe un panel demo en el celular. En el proyecto real el panel es 100% personalizable — no es un paquete cerrado; el valor desde R$ 890 sube según funciones y complejidad.',
     ),
   },
   badgeDemo: L('Pronto para personalizar', 'Ready to customize', 'Listo para personalizar'),
@@ -930,7 +931,7 @@ export const comparativoInstagramLocalized = {
   ],
   site: [
     { titulo: L('Aparece no Google 24h por dia', 'Visible on Google 24/7', 'Aparece en Google 24h al día'), texto: L('Clientes encontram você quando precisam. SEO traz visitas grátis, sem depender de algoritmo.', 'Customers find you when they need you. SEO brings free visits without relying on algorithms.', 'Los clientes lo encuentran cuando lo necesitan. SEO trae visitas gratis, sin depender del algoritmo.') },
-    { titulo: L('Você atualiza sem depender de dev', 'You update without relying on a dev', 'Usted actualiza sin depender del dev'), texto: L('Com o pacote Landing + Painel, muda preços, textos e fotos do celular — a autonomia do Instagram aplicada ao que vende.', 'With the Landing + Panel package, change prices, copy and photos from your phone — Instagram-level autonomy for what actually sells.', 'Con el paquete Landing + Panel, cambia precios, textos y fotos desde el celular — la autonomía de Instagram aplicada a lo que vende.') },
+    { titulo: L('Você atualiza sem depender de dev', 'You update without relying on a dev', 'Usted actualiza sin depender del dev'), texto: L('Com Landing + Painel, o painel é 100% sob medida — não é pacote travado. Montamos o que você precisa; o valor muda com a complexidade.', 'With Landing + Panel, the panel is fully custom-built — not a locked package. We build what you need; price scales with complexity.', 'Con Landing + Panel, el panel es 100% a medida — no es un paquete cerrado. Montamos lo que necesita; el valor cambia con la complejidad.') },
     { titulo: L('Você é dono do canal', 'You own the channel', 'Es dueño del canal'), texto: L('Seu domínio, seu conteúdo, sua lista de clientes. Ninguém pode tirar isso de você.', 'Your domain, your content, your customer list. No one can take that away.', 'Su dominio, su contenido, su lista de clientes. Nadie puede quitárselo.') },
     { titulo: L('100% do público vê seu conteúdo', '100% of visitors see your content', '100% del público ve su contenido'), texto: L('Não existe algoritmo cortando seu alcance. Quem acessa, vê tudo que você quer mostrar.', 'No algorithm cutting your reach. Visitors see everything you want to show.', 'No hay algoritmo cortando su alcance. Quien accede, ve todo lo que quiere mostrar.') },
     { titulo: L('Leva direto para a conversão', 'Leads straight to conversion', 'Lleva directo a la conversión'), texto: L('Botões de WhatsApp, formulários estratégicos e páginas que vendem. Menos cliques, mais venda.', 'WhatsApp buttons, strategic forms and pages that sell. Fewer clicks, more sales.', 'Botones de WhatsApp, formularios estratégicos y páginas que venden. Menos clics, más venta.') },
@@ -956,7 +957,7 @@ export const comparativoInstagramLocalized = {
 }
 
 export const intentItemsLocalized = [
-  { titulo: L('Atualizar sozinha', 'Update on your own', 'Actualizar sola'), descricao: L('Painel simples para mudar preços, textos e fotos — sem depender do desenvolvedor.', 'Simple panel to change prices, copy and photos — without relying on the developer.', 'Panel simple para cambiar precios, textos y fotos — sin depender del desarrollador.'), href: '/pacotes/#pacotes' },
+  { titulo: L('Atualizar sozinha', 'Update on your own', 'Actualizar sola'), descricao: L('Painel sob medida para o seu negócio — não é pacote com funções travadas.', 'A custom panel for your business — not a locked feature package.', 'Panel a medida para su negocio — no es un paquete con funciones fijas.'), href: '/pacotes/#pacotes' },
   { titulo: L('Presença no Google', 'Google visibility', 'Presencia en Google'), descricao: L('Aparecer quando o cliente pesquisa seu serviço no Google.', 'Show up when customers search for your service on Google.', 'Aparecer cuando el cliente busca su servicio en Google.'), href: '/#site-vs-instagram' },
   { titulo: L('Vender pelo WhatsApp', 'Sell via WhatsApp', 'Vender por WhatsApp'), descricao: L('Formulários e botões que levam o visitante direto para conversa.', 'Forms and buttons that take visitors straight to a conversation.', 'Formularios y botones que llevan al visitante directo a la conversación.'), href: '/pacotes/#pacotes' },
   { titulo: L('Loja online', 'Online store', 'Tienda online'), descricao: L('Catálogo de produtos com pedido ou orçamento pelo WhatsApp.', 'Product catalog with orders or quotes via WhatsApp.', 'Catálogo de productos con pedido o presupuesto por WhatsApp.'), href: '/pacotes/#pacotes' },
@@ -965,11 +966,11 @@ export const intentItemsLocalized = [
 ]
 
 export const servicosLocalized = [
-  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site que você mesma atualiza — preços, textos e fotos direto do celular.', 'A website you update yourself — prices, copy and photos from your phone.', 'Sitio que usted misma actualiza — precios, textos y fotos directo del celular.'), preco: L('a partir de R$ 590', 'from R$ 590', 'desde R$ 590'), href: '/pacotes/#pacotes' },
+  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site + painel 100% customizável — o valor muda conforme as funcionalidades.', 'Website + fully customizable panel — price scales with the features you need.', 'Sitio + panel 100% personalizable — el valor cambia según las funciones.'), preco: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'), href: '/pacotes/#pacotes' },
   { id: 'aplicativos', titulo: L('Aplicativos mobile', 'Mobile apps', 'Aplicaciones móviles'), descricao: L('Apps para iOS e Android — catálogos, agendamento, painéis e soluções sob medida para o seu negócio.', 'iOS and Android apps — catalogs, booking, admin panels and custom solutions for your business.', 'Apps para iOS y Android — catálogos, agendamiento, paneles y soluciones a medida para su negocio.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'site' },
-  { id: 'landing', titulo: L('Landing Pages', 'Landing Pages', 'Landing Pages'), descricao: L('Páginas estratégicas para captar leads e vender mais pelo WhatsApp.', 'Strategic pages to capture leads and sell more via WhatsApp.', 'Páginas estratégicas para captar leads y vender más por WhatsApp.'), preco: L('a partir de R$ 300', 'from R$ 300', 'desde R$ 300'), href: '/portfolio/' },
-  { id: 'institucional', titulo: L('Sites institucionais', 'Business websites', 'Sitios institucionales'), descricao: L('Presença profissional com múltiplas seções, SEO e credibilidade.', 'Professional presence with multiple sections, SEO and credibility.', 'Presencia profesional con múltiples secciones, SEO y credibilidad.'), preco: L('a partir de R$ 1.490', 'from R$ 1,490', 'desde R$ 1.490'), href: '/pacotes/#pacotes' },
-  { id: 'ecommerce', titulo: L('E-commerce', 'E-commerce', 'E-commerce'), descricao: L('Loja virtual, catálogo de produtos e pedidos pelo WhatsApp ou pagamento online.', 'Online store, product catalog and orders via WhatsApp or online payment.', 'Tienda virtual, catálogo de productos y pedidos por WhatsApp o pago online.'), preco: L('a partir de R$ 2.990', 'from R$ 2,990', 'desde R$ 2.990'), href: '/pacotes/#pacotes' },
+  { id: 'landing', titulo: L('Landing Pages', 'Landing Pages', 'Landing Pages'), descricao: L('Páginas estratégicas para captar leads e vender mais pelo WhatsApp.', 'Strategic pages to capture leads and sell more via WhatsApp.', 'Páginas estratégicas para captar leads y vender más por WhatsApp.'), preco: L('a partir de R$ 450', 'from R$ 450', 'desde R$ 450'), href: '/portfolio/' },
+  { id: 'institucional', titulo: L('Sites institucionais', 'Business websites', 'Sitios institucionales'), descricao: L('Presença profissional com múltiplas seções, SEO e credibilidade.', 'Professional presence with multiple sections, SEO and credibility.', 'Presencia profesional con múltiples secciones, SEO y credibilidad.'), preco: L('a partir de R$ 1.990', 'from R$ 1,990', 'desde R$ 1.990'), href: '/pacotes/#pacotes' },
+  { id: 'ecommerce', titulo: L('E-commerce', 'E-commerce', 'E-commerce'), descricao: L('Loja virtual, catálogo de produtos e pedidos pelo WhatsApp ou pagamento online.', 'Online store, product catalog and orders via WhatsApp or online payment.', 'Tienda virtual, catálogo de productos y pedidos por WhatsApp o pago online.'), preco: L('a partir de R$ 3.890', 'from R$ 3,890', 'desde R$ 3.890'), href: '/pacotes/#pacotes' },
   { id: 'whatsapp', titulo: L('Automação WhatsApp', 'WhatsApp automation', 'Automatización WhatsApp'), descricao: L('Formulários inteligentes, mensagens prontas e fluxos que agilizam o atendimento.', 'Smart forms, ready messages and flows that speed up support.', 'Formularios inteligentes, mensajes listos y flujos que agilizan la atención.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'pacoteAutomacao' },
   { id: 'integracoes', titulo: L('Integrações & APIs', 'Integrations & APIs', 'Integraciones y APIs'), descricao: L('Pagamento online, ERP, marketplaces e sistemas Laravel sob medida.', 'Online payment, ERP, marketplaces and custom Laravel systems.', 'Pago online, ERP, marketplaces y sistemas Laravel a medida.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'site' },
   { id: 'drone', titulo: L('Imagens aéreas', 'Aerial imagery', 'Imágenes aéreas'), descricao: L('Fotos e vídeos com drone para imóveis, obras e empresas.', 'Drone photos and videos for real estate, construction and businesses.', 'Fotos y videos con dron para inmuebles, obras y empresas.'), preco: L('a partir de R$ 650', 'from R$ 650', 'desde R$ 650'), href: 'https://techdrone360.com.br/', externo: true },

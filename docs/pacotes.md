@@ -8,7 +8,7 @@
 
 **Público:** negócios locais que querem presença rápida no Google com WhatsApp integrado.
 
-**Investimento:** a partir de **R$ 300**
+**Investimento:** a partir de **R$ 450**
 
 | Entregável | Detalhe |
 |------------|---------|
@@ -30,22 +30,22 @@
 
 ## Web — Landing + Painel (recomendado)
 
-**Público:** quem quer autonomia para atualizar preços, textos e fotos — a facilidade do Instagram aplicada ao site que vende no Google.
+**Público:** quem quer autonomia real — painel 100% sob medida, não um pacote travado com funções inalteráveis.
 
-**Investimento:** a partir de **R$ 590**
+**Investimento:** a partir de **R$ 890** (base). Funcionalidades extras alteram o valor conforme a complexidade.
 
 | Entregável | Detalhe |
 |------------|---------|
 | Landing page | Tudo do pacote Landing Page personalizada |
-| Painel no celular | Textos, preços, fotos, horário e WhatsApp |
-| Autonomia | Cliente edita o que muda toda semana — sem chamar o desenvolvedor |
+| Painel customizável | Montado para o negócio (base típica: textos, preços, fotos, horário, WhatsApp) |
+| Sob medida | Reservas, tutores, catálogo avançado etc. sob consulta — sobem o preço |
 | Treinamento | Capacitação rápida na entrega + suporte humano quando precisar |
 
-**Não inclui:** domínio e hospedagem (podem ser orçados à parte).
+**Não inclui:** domínio e hospedagem (orçáveis à parte). Recursos avançados (ex.: reservas, ERP, pagamentos) mudam o investimento conforme escopo.
 
-**Prazo típico:** 7–12 dias úteis após aprovação do escopo e recebimento do material.
+**Prazo típico:** 7–12 dias úteis após aprovação do escopo e recebimento do material (prazo sobe com a complexidade do painel).
 
-**Posicionamento comercial:** pacote destaque no hub — responde à objeção “site é difícil de atualizar”.
+**Posicionamento comercial:** destaque no hub — painel **não é produto fechado**; demos (ex.: Pátio Canino) são referência, não o limite do que pode ser feito.
 
 ---
 
@@ -53,7 +53,7 @@
 
 **Público:** comércio local, clínicas, prestadores de serviço, profissionais liberais.
 
-**Investimento:** a partir de **R$ 1.490**
+**Investimento:** a partir de **R$ 1.990**
 
 | Entregável | Detalhe |
 |------------|---------|
@@ -75,7 +75,7 @@
 
 **Público:** e-commerce, lojas pequenas e varejo com catálogo limitado.
 
-**Investimento:** a partir de **R$ 2.990**
+**Investimento:** a partir de **R$ 3.890**
 
 | Entregável | Detalhe |
 |------------|---------|

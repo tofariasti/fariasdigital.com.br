@@ -3,7 +3,7 @@ import { demoSlugFromUrl, isLandingAdminDemo } from './heroDemo'
 
 export const PORTFOLIO_PANEL_PARAM = 'painel'
 
-/** Business-relevant demos first — proof of the R$ 590 panel package. */
+/** Business-relevant demos first — proof of the R$ 890 panel package. */
 const PANEL_SHOWCASE_SLUGS = [
   'landing-patio-canino',
   'landing-nutricionista',

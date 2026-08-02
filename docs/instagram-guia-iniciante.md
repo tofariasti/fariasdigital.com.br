@@ -63,7 +63,7 @@ Cada destaque (Saúde, Varejo, Orçamento…) segue **sempre o mesmo roteiro de 
 
 ```
 Story 1  →  Gancho (imagem feita no MyHub)
-             "Site para Saúde — a partir de R$ 300"
+             "Site para Saúde — a partir de R$ 450"
 
 Story 2  →  Demo 1 (GRAVAR tela do celular)
              Abrir landing-nutricionista no Chrome, scroll até o WhatsApp
@@ -91,7 +91,7 @@ Depois de publicar os 5 stories **no mesmo dia**:
 
 | # | Nome | Conteúdo resumido |
 |---|------|-------------------|
-| 1 | Orçamento | Preços R$ 300 / R$ 1.490 + WhatsApp |
+| 1 | Orçamento | Preços R$ 450 / R$ 1.990 + WhatsApp |
 | 2 | Saúde | Dentista, nutricionista, ótica… |
 | 3 | Automotivo | Oficina, autopeças… |
 | 4 | Varejo | Supermercado, loja de móveis… |
@@ -209,7 +209,7 @@ Site: [myhub.ia.br/images](https://myhub.ia.br/images)
 - [ ] **Bio** (copiar do editorial §1):
   ```
   Sites e landing pages para PMEs
-  40+ modelos por segmento · a partir de R$ 300
+  40+ modelos por segmento · a partir de R$ 450
   Porto Alegre e todo o Brasil · NF
   👇 Veja o modelo do seu negócio
   ```
@@ -241,7 +241,7 @@ Site: [myhub.ia.br/images](https://myhub.ia.br/images)
 
    ✅ Layout profissional no celular
    ✅ Botão WhatsApp integrado
-   ✅ A partir de R$ 300
+   ✅ A partir de R$ 450
 
    Quer um assim? Link na bio ou chama no direct.
    .

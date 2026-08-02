@@ -11,7 +11,7 @@ describe('buildWhatsAppUrl', () => {
 
   it('builds pacote landing URL', () => {
     const url = buildWhatsAppUrl('pacoteLanding')
-    expect(url).toContain('R%24%20300')
+    expect(url).toContain('R%24%20450')
   })
 
   it('falls back to geral for unknown keys at runtime', () => {
