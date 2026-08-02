@@ -162,12 +162,12 @@ test.describe('Responsiveness', () => {
     await page.goto('/portfolio/')
     await expect(page.locator('#painel-demos')).toBeVisible()
     await expect(page.locator('#painel-demos .demo-card--admin').first()).toBeVisible()
-    await expect(page.locator('#painel-demos .demo-card__title').first()).toHaveText(/Nutricionista|Ótica/)
+    await expect(page.locator('#painel-demos .demo-card__title').first()).toHaveText(/Pátio Canino|Nutricionista|Ótica/)
 
     await page.getByRole('tab', { name: 'Landing + Painel' }).click()
     await expect(page).toHaveURL(/painel=1/)
     await expect(page.getByRole('tab', { name: 'Landing + Painel' })).toHaveAttribute('aria-selected', 'true')
-    await expect(page.locator('#demos-root .demo-card--admin')).toHaveCount(6)
+    await expect(page.locator('#demos-root .demo-card--admin')).toHaveCount(7)
     await expect(page.locator('#demos-root .demo-card__badge--admin').first()).toBeVisible()
   })
 
