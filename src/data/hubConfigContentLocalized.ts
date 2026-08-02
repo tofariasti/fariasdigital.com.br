@@ -269,9 +269,9 @@ export const demosLocalized = [
       url: 'https://tofariasti.github.io/landing-patio-canino/',
       badge: L('Landing + Admin', 'Landing + Admin', 'Landing + Admin'),
       descricao: L(
-        'Landing de conversão (simulador de estadia, livre de gaiolas, WhatsApp) + painel demo para tutores, reservas e serviços — sem backend.',
-        'Conversion landing (stay simulator, cage-free boarding, WhatsApp) + demo panel for tutors, bookings and services — no backend.',
-        'Landing de conversión (simulador de estadía, sin jaulas, WhatsApp) + panel demo para tutores, reservas y servicios — sin backend.',
+        'Landing livre de gaiolas (galeria, simulador, WhatsApp) + painel demo com pets, reservas, rotina, upload de mídia e edição de logo/WhatsApp/redes.',
+        'Cage-free landing (gallery, stay simulator, WhatsApp) + demo panel with pets, bookings, daily care, media upload and logo/WhatsApp/socials editing.',
+        'Landing sin jaulas (galería, simulador, WhatsApp) + panel demo con mascotas, reservas, rutina, subida de medios y edición de logo/WhatsApp/redes.',
       ),
     },
     {
