@@ -2,8 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="theme-color" content="#0B0E14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Proposta FD" />
   <title>Proposta Matheus Damasceno — Creche/Hospedagem | Farias Digital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,6 +50,7 @@
       -webkit-font-smoothing: antialiased;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
+      min-height: 100dvh;
     }
     a { color: var(--primary-bright); text-decoration: none; }
     a:hover { color: var(--accent); }
@@ -398,13 +404,89 @@
       .grid-3, .grid-2, .cta, .showcase, .extras { grid-template-columns: 1fr; }
       .hero, .body { padding-left: 1.15rem; padding-right: 1.15rem; }
       .hero__meta { text-align: left; }
+
+      /* Shell de app nativo no celular */
+      html, body {
+        background: var(--bg);
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .print-bar {
+        width: 100%;
+        margin: 0;
+        padding: calc(0.55rem + env(safe-area-inset-top, 0px)) 0.85rem 0.55rem;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(11, 14, 20, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--border);
+      }
+      .print-bar::before {
+        content: "Proposta";
+        font: 700 0.95rem var(--font-display);
+        letter-spacing: -0.02em;
+        color: var(--text);
+      }
+      .print-bar button {
+        padding: 0.45rem 0.8rem;
+        font-size: 0.8rem;
+      }
+      .doc {
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+      }
+      .hero {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+      }
+      .hero h1 { max-width: none; }
+      .body {
+        padding-bottom: 1.25rem;
+      }
+      .card, .extra, .callout, .shot {
+        border-radius: 14px;
+      }
+      .btn {
+        min-height: 48px;
+        border-radius: 14px;
+        justify-content: center;
+      }
+      .app-dock {
+        display: flex;
+        position: fixed;
+        left: 0; right: 0; bottom: 0;
+        z-index: 30;
+        gap: 0.55rem;
+        padding: 0.7rem 0.85rem calc(0.7rem + env(safe-area-inset-bottom, 0px));
+        background: rgba(11, 14, 20, 0.94);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-top: 1px solid var(--border);
+        box-shadow: 0 -12px 28px rgba(0, 0, 0, 0.35);
+      }
+      .app-dock .btn {
+        flex: 1;
+        margin: 0;
+      }
+      .app-dock .btn--light {
+        flex: 0.72;
+      }
+    }
+    @media (min-width: 801px) {
+      .app-dock { display: none; }
     }
     @media print {
       body { background: #fff; color: #18181b; }
-      .print-bar { display: none !important; }
+      .print-bar, .app-dock { display: none !important; }
       .doc {
         width: 100%; margin: 0; border: none; border-radius: 0; box-shadow: none;
         background: #fff;
+        padding-bottom: 0;
       }
       .hero { background: #0B0E14 !important; color: #fff !important; -webkit-print-color-adjust: exact; }
       .card, .cta__side { border-color: #e4e4e7; background: #fafafa; }
@@ -761,5 +843,10 @@
       </footer>
     </div>
   </article>
+
+  <nav class="app-dock" aria-label="Ações rápidas">
+    <a class="btn btn--wa" href="https://wa.me/5551991213724?text=Ol%C3%A1%21%20Li%20a%20proposta%20da%20creche%2Fhospedagem%20(painel%20pet%20a%20partir%20de%20R%24%202.400).%20Quero%20alinhar%20o%20escopo.">WhatsApp</a>
+    <a class="btn btn--light" href="https://fariasdigital.com.br/pacotes/">Pacotes</a>
+  </nav>
 </body>
 </html>
