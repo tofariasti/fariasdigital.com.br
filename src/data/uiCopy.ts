@@ -182,7 +182,7 @@ export const uiCopy = {
     panelTag: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'),
     institutionalTag: L('Site institucional', 'Business website', 'Sitio institucional'),
     from450: L('a partir de R$ 450', 'from R$ 450', 'desde R$ 450'),
-    from890: L('base R$ 890 · pet R$ 1.190', 'base R$ 890 · pet R$ 1,190', 'base R$ 890 · pet R$ 1.190'),
+    from890: L('base R$ 890 · pet R$ 2.400', 'base R$ 890 · pet R$ 2,400', 'base R$ 890 · pet R$ 2.400'),
     preview: {
       typeLanding: L('Landing page', 'Landing page', 'Landing page'),
       typeEcommerce: L('E-commerce', 'E-commerce', 'E-commerce'),
@@ -341,9 +341,9 @@ export const uiCopy = {
     ),
     solutionTitle: L('A solução', 'The solution', 'La solución'),
     solutionText: L(
-      'Landing + Painel: site com WhatsApp e painel 100% customizável — base a partir de R$ 890; pet/creche (reservas etc.) a partir de R$ 1.190.',
-      'Landing + Panel: website with WhatsApp and a fully customizable panel — base from R$ 890; pet/daycare (bookings etc.) from R$ 1,190.',
-      'Landing + Panel: sitio con WhatsApp y panel 100% personalizable — base desde R$ 890; pet/guardería (reservas etc.) desde R$ 1.190.',
+      'Landing + Painel: site com WhatsApp e painel 100% customizável — base a partir de R$ 890; pet/creche (reservas etc.) a partir de R$ 2.400.',
+      'Landing + Panel: website with WhatsApp and a fully customizable panel — base from R$ 890; pet/daycare (bookings etc.) from R$ 2,400.',
+      'Landing + Panel: sitio con WhatsApp y panel 100% personalizable — base desde R$ 890; pet/guardería (reservas etc.) desde R$ 2.400.',
     ),
     servicesTitleBefore: L('Soluções completas ', 'Complete solutions ', 'Soluciones completas '),
     servicesTitleHighlight: L('para o seu negócio', 'for your business', 'para su negocio'),
@@ -418,7 +418,7 @@ export const uiCopy = {
   },
   porQueSite: {
     ctaTitle: L('Pronto para sair do risco do Instagram?', 'Ready to leave Instagram risk behind?', '¿Listo para salir del riesgo de Instagram?'),
-    ctaText: L('Landing a partir de R$ 450 · Painel base R$ 890 · Pet/creche a partir de R$ 1.190 · Orçamento em até 24h.', 'Landing from R$ 450 · Base panel R$ 890 · Pet/daycare from R$ 1,190 · Quote within 24h.', 'Landing desde R$ 450 · Panel base R$ 890 · Pet/guardería desde R$ 1.190 · Presupuesto en hasta 24h.'),
+    ctaText: L('Landing a partir de R$ 450 · Painel base R$ 890 · Pet/creche a partir de R$ 2.400 · Orçamento em até 24h.', 'Landing from R$ 450 · Base panel R$ 890 · Pet/daycare from R$ 2,400 · Quote within 24h.', 'Landing desde R$ 450 · Panel base R$ 890 · Pet/guardería desde R$ 2.400 · Presupuesto en hasta 24h.'),
   },
   sobre: {
     title1: L('Atendimento direto,', 'Direct contact,', 'Atención directa,'),
