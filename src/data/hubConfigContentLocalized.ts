@@ -37,7 +37,7 @@ export const pacotesWebLocalized = [
   {
     id: 'landing-painel',
     nome: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'),
-    preco: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'),
+    preco: L('base R$ 890 · pet a partir de R$ 1.190', 'base R$ 890 · pet from R$ 1,190', 'base R$ 890 · pet desde R$ 1.190'),
     publico: L(
       'Quem quer autonomia real — painel 100% sob medida, não um pacote travado',
       'Those who want real autonomy — a fully custom panel, not a locked package',
@@ -45,7 +45,8 @@ export const pacotesWebLocalized = [
     ),
     inclui: [
       L('Tudo da Landing Page personalizada', 'Everything in the custom Landing Page', 'Todo de la Landing Page personalizada'),
-      L('Painel 100% customizável no celular — montado para o seu negócio', 'Fully customizable mobile panel — built for your business', 'Panel 100% personalizable en el celular — montado para su negocio'),
+      L('Painel 100% customizável no celular — aparência de app nativo', 'Fully customizable mobile panel — native-app look', 'Panel 100% personalizable en el celular — apariencia de app nativo'),
+      L('Com a sua identidade visual (logo, cores, fontes e tom)', 'With your visual identity (logo, colors, fonts and tone)', 'Con su identidad visual (logo, colores, tipografías y tono)'),
       L('Base típica (a partir de R$ 890): textos, preços, fotos, horário e WhatsApp', 'Typical base (from R$ 890): copy, prices, photos, hours and WhatsApp', 'Base típica (desde R$ 890): textos, precios, fotos, horario y WhatsApp'),
       L('Com regras de negócio (ex.: pet/creche, reservas): a partir de R$ 1.190', 'With business rules (e.g. pet/daycare, bookings): from R$ 1,190', 'Con reglas de negocio (ej.: pet/guardería, reservas): desde R$ 1.190'),
       L('Treinamento rápido na entrega + suporte humano quando precisar', 'Quick training at handoff + human support when needed', 'Capacitación rápida en la entrega + soporte humano cuando lo necesite'),
@@ -966,7 +967,7 @@ export const intentItemsLocalized = [
 ]
 
 export const servicosLocalized = [
-  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site + painel customizável — base R$ 890; pet/creche a partir de R$ 1.190.', 'Website + custom panel — base R$ 890; pet/daycare from R$ 1,190.', 'Sitio + panel personalizable — base R$ 890; pet/guardería desde R$ 1.190.'), preco: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'), href: '/pacotes/#pacotes' },
+  { id: 'landing-painel', titulo: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'), descricao: L('Site + painel customizável — base R$ 890; pet/creche a partir de R$ 1.190.', 'Website + custom panel — base R$ 890; pet/daycare from R$ 1,190.', 'Sitio + panel personalizable — base R$ 890; pet/guardería desde R$ 1.190.'), preco: L('base R$ 890 · pet a partir de R$ 1.190', 'base R$ 890 · pet from R$ 1,190', 'base R$ 890 · pet desde R$ 1.190'), href: '/pacotes/#pacotes' },
   { id: 'aplicativos', titulo: L('Aplicativos mobile', 'Mobile apps', 'Aplicaciones móviles'), descricao: L('Apps para iOS e Android — catálogos, agendamento, painéis e soluções sob medida para o seu negócio.', 'iOS and Android apps — catalogs, booking, admin panels and custom solutions for your business.', 'Apps para iOS y Android — catálogos, agendamiento, paneles y soluciones a medida para su negocio.'), preco: L('sob medida', 'custom', 'a medida'), wa: 'site' },
   { id: 'landing', titulo: L('Landing Pages', 'Landing Pages', 'Landing Pages'), descricao: L('Páginas estratégicas para captar leads e vender mais pelo WhatsApp.', 'Strategic pages to capture leads and sell more via WhatsApp.', 'Páginas estratégicas para captar leads y vender más por WhatsApp.'), preco: L('a partir de R$ 450', 'from R$ 450', 'desde R$ 450'), href: '/portfolio/' },
   { id: 'institucional', titulo: L('Sites institucionais', 'Business websites', 'Sitios institucionales'), descricao: L('Presença profissional com múltiplas seções, SEO e credibilidade.', 'Professional presence with multiple sections, SEO and credibility.', 'Presencia profesional con múltiples secciones, SEO y credibilidad.'), preco: L('a partir de R$ 1.990', 'from R$ 1,990', 'desde R$ 1.990'), href: '/pacotes/#pacotes' },

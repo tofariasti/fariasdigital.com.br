@@ -126,8 +126,9 @@ Inclui levantamento, proposta por fases e contrato com marcos de pagamento. Esco
 
 | Serviço | Faixa sugerida |
 |---------|----------------|
-| Manutenção site (texto, foto, pequenos ajustes) | R$ 199–349/mês |
-| Hospedagem + domínio gerenciados | R$ 39–79/mês (custo repassado + margem) |
+| Plano de horas (2h / 4h / 8h por mês) | R$ 199 · 349 · 649 |
+| Hora avulsa | R$ 120/h |
+| Hospedagem + domínio (ex.: HostGator Plano P) | ~R$ 150+/ano (cliente contrata) |
 
 ---
 

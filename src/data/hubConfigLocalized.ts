@@ -396,9 +396,9 @@ Para agilizar:
           '¿Cuál es la diferencia entre landing page y sitio institucional?',
         ),
         resposta: L(
-          'A landing page (a partir de R$ 450) é uma página única focada em conversão. O pacote Landing + Painel (a partir de R$ 890) acrescenta um painel 100% customizável — o valor sobe conforme as funcionalidades. O site institucional (a partir de R$ 1.990) tem mais seções (serviços, sobre, contato, localização) para quem precisa de presença completa.',
-          'A landing page (from R$ 450) is a single conversion-focused page. The Landing + Panel package (from R$ 890) adds a fully customizable panel — price rises with the features you need. A business website (from R$ 1,990) has more sections (services, about, contact, location) for businesses that need a full presence.',
-          'La landing page (desde R$ 450) es una página única enfocada en conversión. El paquete Landing + Panel (desde R$ 890) añade un panel 100% personalizable — el valor sube según las funciones. El sitio institucional (desde R$ 1.990) tiene más secciones (servicios, sobre, contacto, ubicación) para quien necesita presencia completa.',
+          'A landing page (a partir de R$ 450) é uma página única focada em conversão. O pacote Landing + Painel começa na base a partir de R$ 890; com regras de negócio (ex.: pet/creche) a partir de R$ 1.190. O site institucional (a partir de R$ 1.990) tem mais seções (serviços, sobre, contato, localização) para quem precisa de presença completa.',
+          'A landing page (from R$ 450) is a single conversion-focused page. Landing + Panel starts from R$ 890 (base); with business rules (e.g. pet/daycare) from R$ 1,190. A business website (from R$ 1,990) has more sections (services, about, contact, location) for businesses that need a full presence.',
+          'La landing page (desde R$ 450) es una página única enfocada en conversión. Landing + Panel comienza desde R$ 890 (base); con reglas de negocio (ej.: pet/guardería) desde R$ 1.190. El sitio institucional (desde R$ 1.990) tiene más secciones (servicios, sobre, contacto, ubicación) para quien necesita presencia completa.',
         ),
       },
       {

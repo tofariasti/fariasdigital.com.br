@@ -182,7 +182,7 @@ export const uiCopy = {
     panelTag: L('Landing + Painel', 'Landing + Panel', 'Landing + Panel'),
     institutionalTag: L('Site institucional', 'Business website', 'Sitio institucional'),
     from450: L('a partir de R$ 450', 'from R$ 450', 'desde R$ 450'),
-    from890: L('a partir de R$ 890', 'from R$ 890', 'desde R$ 890'),
+    from890: L('base R$ 890 · pet R$ 1.190', 'base R$ 890 · pet R$ 1,190', 'base R$ 890 · pet R$ 1.190'),
     preview: {
       typeLanding: L('Landing page', 'Landing page', 'Landing page'),
       typeEcommerce: L('E-commerce', 'E-commerce', 'E-commerce'),
